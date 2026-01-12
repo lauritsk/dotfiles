@@ -6,11 +6,14 @@ dot_Brewfile
 private_Library/
 {{ end }}
 
-{{ if ne .chezmoi.os "linux" }}
-private_dot_config/nushell/
-private_dot_config/lazygit/
-private_dot_config/usql/
+{{ if eq .chezmoi.os "darwin" }}
 private_dot_config/rainfrog/
+private_dot_config/usql/
+private_dot_config/lazygit/
+private_dot_config/nushell/
+{{ end }}
+
+{{ if ne .chezmoi.os "linux" }}
 {{ end }}
 
 {{ if ne .chezmoi.os "windows" }}

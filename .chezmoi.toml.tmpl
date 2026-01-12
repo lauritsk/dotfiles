@@ -1,34 +1,3 @@
-{{- $github_user := output "curl" "-s" "https://api.github.com/users/lauritskarl" | fromJson -}}
-{{- $ssh_keys := gitHubKeys "lauritskarl" -}}
-
-{{- $email := "" -}}
-{{- if $github_user.email -}}
-    {{- $email = $github_user.email -}}
-{{- else -}}
-    {{- $email = promptStringOnce . "email" "Email address" -}}
-{{- end -}}
-
-{{- $name := "" -}}
-{{- if $github_user.name -}}
-    {{- $name = $github_user.name -}}
-{{- else -}}
-    {{- $name = promptStringOnce . "name" "Your name" -}}
-{{- end -}}
-
-{{- $ssh_key := "" -}}
-{{- if (gt (len $ssh_keys) 0) -}}
-    {{- $ssh_key = (index $ssh_keys 0).Key -}}
-{{- else -}}
-    {{- $ssh_key = promptStringOnce . "ssh_key" "SSH signing key" -}}
-{{- end -}}
-
-{{- $git_user := "" -}}
-{{- if $github_user.login -}}
-    {{- $git_user = $github_user.login -}}
-{{- else -}}
-    {{- $git_user = promptStringOnce . "git_user" "GitHub username" -}}
-{{- end -}}
-
 {{- $onepasswordAgent := "" -}}
 {{- $onepasswordProgram := "" -}}
 {{- if eq .chezmoi.os "darwin" -}}
@@ -43,10 +12,11 @@
 {{- end -}}
 
 [data]
-    email = {{ $email | quote }}
-    name = {{ $name | quote }}
-    ssh_key = {{ $ssh_key | quote }}
-    git_user = {{ $git_user | quote }}
+    github_token = {{ onepassword "op://Personal/GitHub/github_token" | quote }}
+    name = "Karl Hans Laurits"
+    git_user = "lauritskarl"
+    email = "karl@laurits.dev"
+    ssh_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIERNxt3cnIcfexVELx9Rv/VbP+E64DKVT8iMIYj1e79N"
     onepasswordAgent = {{ $onepasswordAgent | quote }}
     onepasswordProgram = {{ $onepasswordProgram | quote }}
 
@@ -56,6 +26,3 @@
 
 [onepassword]
     prompt = true
-
-[edit]
-    command = "hx"
