@@ -10,21 +10,19 @@ desc = "Open $SHELL here"
 on = [ "g", "r" ]
 run = 'shell -- ya emit cd "$(git rev-parse --show-toplevel)"'
 
-{{ if eq .chezmoi.os "darwin" -}}
 [[mgr.prepend_keymap]]
 on = "<C-p>"
 run = 'shell -- qlmanage -p "$@"'
 desc = "Quick Look preview"
 
-{{ end -}}
 [[mgr.prepend_keymap]]
 on   = [ "g", "p" ]
-run  = "cd {{ .chezmoi.homeDir }}/Documents/Projects"
+run  = "cd /Users/karl/Documents/Projects"
 desc = "Cd to ~/Documents/Projects"
 
 [[mgr.prepend_keymap]]
 on   = [ "g", "c" ]
-run  = "cd {{ .chezmoi.homeDir }}/.config"
+run  = "cd /Users/karl/.config"
 desc = "Cd to ~/.config"
 
 [[mgr.prepend_keymap]]
