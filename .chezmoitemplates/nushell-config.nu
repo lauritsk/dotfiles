@@ -9,6 +9,7 @@ $env.config.footer_mode = "auto"
 
 {{ if eq .chezmoi.os "darwin" -}}
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
+$env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/sbin')
 {{- end }}
 
 mkdir ($nu.data-dir | path join "vendor/autoload")
