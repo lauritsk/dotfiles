@@ -5,7 +5,7 @@ show_skipped = false
 cleanup = true
 skip_notify = true
 pre_sudo = true
-disable = ["gem", "ruby_gems"]
+disable = ["gem", "ruby_gems", "node"]
 
 [brew]
 greedy_cask = true
@@ -14,10 +14,7 @@ fetch_head = true
 
 [git]
 max_concurrency = 5
-repos = [
-    "/Users/karl/Documents/Projects/*/",
-    "/Users/karl/.config/*/"
-]
+repos = ["/Users/karl/Documents/Projects/*/"]
 arguments = "--rebase --autostash"
 
 [chezmoi]
@@ -32,4 +29,3 @@ interactive = false
 runtime = "docker"
 system_prune = true
 use_sudo = false
-

@@ -1,6 +1,0 @@
-[packages.linux.arch]
-aur = [
-    "1password",
-    "helium-browser-bin",
-    "yubico-authenticator",
-]

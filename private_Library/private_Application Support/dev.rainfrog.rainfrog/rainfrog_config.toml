@@ -1,3 +1,0 @@
-[db]
-pg = { host = "localhost", driver = "postgres", port = 5432, database = "local", username = "local" }
-mysql = { host = "localhost", driver = "mysql", port = 3306, database = "local", username = "local" }

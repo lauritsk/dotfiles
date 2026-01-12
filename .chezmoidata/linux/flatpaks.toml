@@ -1,6 +1,0 @@
-[packages.linux]
-flatpaks = [
-    "com.mikrotik.WinBox",
-    "net.filebot.FileBot",
-    "org.signal.Signal",
-]

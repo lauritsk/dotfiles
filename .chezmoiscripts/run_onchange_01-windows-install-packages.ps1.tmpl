@@ -1,9 +1,0 @@
-{{- if eq .chezmoi.os "windows" -}}
-$ErrorActionPreference = "Stop"
-
-Write-Host "Applying winget configuration..."
-
-winget configure --file "{{ .chezmoi.sourceDir }}/config.winget"
-
-Write-Host "Package installation complete."
-{{ end -}}

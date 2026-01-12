@@ -1,25 +1,3 @@
-{{- $onepasswordAgent := "" -}}
-{{- $onepasswordProgram := "" -}}
-{{- if eq .chezmoi.os "darwin" -}}
-    {{- $onepasswordAgent = (joinPath .chezmoi.homeDir "Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock") -}}
-    {{- $onepasswordProgram = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign" -}}
-{{- else if eq .chezmoi.os "linux" -}}
-    {{- $onepasswordAgent = (joinPath .chezmoi.homeDir ".1password/agent.sock") -}}
-    {{- $onepasswordProgram = "/opt/1Password/op-ssh-sign" -}}
-{{- else if eq .chezmoi.os "windows" -}}
-    {{- $onepasswordAgent = "\\\\.\\pipe\\openssh-ssh-agent" -}}
-    {{- $onepasswordProgram = (joinPath "C:/Users" .chezmoi.username "AppData/Local/1Password/app/8/op-ssh-sign.exe") -}}
-{{- end -}}
-
-[data]
-    github_token = ""
-    name = "Karl Hans Laurits"
-    git_user = "lauritskarl"
-    email = "karl@laurits.dev"
-    ssh_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIERNxt3cnIcfexVELx9Rv/VbP+E64DKVT8iMIYj1e79N"
-    onepasswordAgent = {{ $onepasswordAgent | quote }}
-    onepasswordProgram = {{ $onepasswordProgram | quote }}
-
 [git]
     autoCommit = true
     autoPush = true

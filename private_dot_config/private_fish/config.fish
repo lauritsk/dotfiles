@@ -5,7 +5,6 @@ if status is-interactive
     set --global --export VISUAL zed
     set --global --export PAGER bat
     mise activate fish | source
-    fzf --fish | source
     zoxide init fish --cmd cd | source
     starship init fish | source
 end
