@@ -3,6 +3,3 @@ font-family = "Monaspace Neon NF Regular"
 font-size = 14
 maximize = true
 shell-integration-features = "no-cursor,ssh-env"
-{{ if lookPath "nu" -}}
-command = {{ lookPath "nu" | quote }}
-{{ end -}}
