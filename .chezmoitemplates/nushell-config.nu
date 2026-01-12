@@ -25,7 +25,7 @@ $env.SHELL = "nu"
 $env.PAGER = "bat"
 $env.EDITOR = "hx"
 $env.VISUAL = "zed"
-$env.GITHUB_TOKEN = {{ onepassword "op://Personal/GitHub/github_token" | quote }}
+$env.GITHUB_TOKEN = {{ .chezmoi.data.github_token | quote }}
 
 def --env y [...args] {
 	let tmp = (mktemp -t "yazi-cwd.XXXXXX")
