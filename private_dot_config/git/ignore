@@ -1,4 +1,3 @@
-{{ if eq .chezmoi.os "darwin" -}}
 ### macOS ###
 # General
 .DS_Store
@@ -29,4 +28,3 @@ Temporary Items
 
 # iCloud generated files
 *.icloud
-{{ end -}}
