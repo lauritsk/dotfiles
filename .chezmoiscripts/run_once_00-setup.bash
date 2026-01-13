@@ -19,7 +19,7 @@ elif [ "$OS" = "Linux" ]; then
     if [ -f /etc/os-release ]; then
         . /etc/os-release
         
-        if [[ "$ID" == "debian" || "$ID" == "ubuntu" ]]; then
+        if [[ "$ID_LIKE" == "debian"; then
             echo "📦 Installing Debian/Ubuntu dependencies..."
             sudo apt update -y && sudo apt install -y curl git build-essential
             
@@ -27,7 +27,7 @@ elif [ "$OS" = "Linux" ]; then
             echo "📦 Installing Fedora dependencies..."
             sudo dnf update -y && sudo dnf install -y curl git @development-tools
 
-        elif [[ "$ID" == "arch" ]]; then
+        elif [[ "$ID_LIKE" == "arch" ]]; then
             echo "📦 Installing Arch dependencies..."
             sudo pacman -Syu --noconfirm --needed curl git base-devel
         fi
