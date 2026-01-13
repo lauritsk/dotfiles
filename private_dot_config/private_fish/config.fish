@@ -26,10 +26,6 @@ if status is-interactive
             set -gxp LDFLAGS "-L$HOMEBREW_PREFIX/opt/llvm/lib"
             set -gxp CPPFLAGS "-I$HOMEBREW_PREFIX/opt/llvm/include"
         end
-
-        if test -d "$HOMEBREW_PREFIX/opt/rustup/bin"
-            fish_add_path "$HOMEBREW_PREFIX/opt/rustup/bin"
-        end
     end
 
     if test -d $HOME/.cargo/bin
