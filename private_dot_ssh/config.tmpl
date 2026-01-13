@@ -1,4 +1,6 @@
-Include ~/.orbstack/ssh/config
+{{ if eq .chezmoi.os "darwin" -}}
+Include {{ .chezmoi.homeDir }}/.orbstack/ssh/config
+{{- end }}
 
 {{ range $name, $server := .servers -}}
 Host {{ $name }}
@@ -9,4 +11,4 @@ Host {{ $name }}
 {{ end -}}
 
 Host *
-    IdentityFile ~/.ssh/id_ed25519
+    IdentityFile {{ .chezmoi.homeDir }}/.ssh/id_ed25519

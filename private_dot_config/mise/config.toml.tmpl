@@ -2,9 +2,8 @@
 experimental = true
 color_theme = "catppuccin"
 idiomatic_version_file_enable_tools = ["python", "node"]
-trusted_config_paths = ["~/Documents/Projects", "/workspaces"]
+trusted_config_paths = ["{{ .chezmoi.homeDir }}/Documents/Projects", "/workspaces"]
 lockfile = true
-# locked = true
 
 [settings.npm]
 package_manager = "bun"

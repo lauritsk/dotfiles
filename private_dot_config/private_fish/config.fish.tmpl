@@ -2,10 +2,10 @@ if status is-interactive
     set -gx fish_greeting
     set -gx fish_key_bindings fish_vi_key_bindings
 
-    set -gx XDG_CONFIG_HOME $HOME/.config
-    set -gx XDG_CACHE_HOME $HOME/.cache
-    set -gx XDG_DATA_HOME $HOME/.local/share
-    set -gx XDG_STATE_HOME $HOME/.local/state
+    set -gx XDG_CONFIG_HOME {{ .chezmoi.homeDir }}/.config
+    set -gx XDG_CACHE_HOME {{ .chezmoi.homeDir }}/.cache
+    set -gx XDG_DATA_HOME {{ .chezmoi.homeDir }}/.local/share
+    set -gx XDG_STATE_HOME {{ .chezmoi.homeDir }}/.local/state
 
     eval ({{ .brewPath }} shellenv)
 
@@ -24,13 +24,8 @@ if status is-interactive
         end
     end
 
-    if test -d $HOME/.cargo/bin
-        fish_add_path $HOME/.cargo/bin
-    end
-
-    if test -d $HOME/go/bin
-        fish_add_path $HOME/go/bin
-    end
+    fish_add_path {{ .chezmoi.homeDir }}/.cargo/bin
+    fish_add_path {{ .chezmoi.homeDir }}/go/bin
 
     set -gx SHELL fish
     set -gx PAGER bat
@@ -44,6 +39,6 @@ if status is-interactive
     type -q fnox; and fnox activate fish | source
 end
 
-if test -f ~/.orbstack/shell/init2.fish
-    source ~/.orbstack/shell/init2.fish
-end
+{{ if eq .chezmoi.os "darwin" -}}
+source ~/.orbstack/shell/init2.fish
+{{- end }}
