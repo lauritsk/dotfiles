@@ -3,11 +3,9 @@ type = "sftp"
 host = "u502559.your-storagebox.de"
 user = "u502559"
 port = 23
-identity_agent = "/Users/karl/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 
 [services.nas]
 type = "sftp"
 host = "nas.cormo-tegu.ts.net"
 user = "karl"
 port = 22
-identity_agent = "/Users/karl/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
