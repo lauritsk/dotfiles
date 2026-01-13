@@ -50,7 +50,7 @@ eval "$("$BREW_PREFIX/bin/brew" shellenv)"
 
 if [[ -f "$HOME/.config/homebrew/Brewfile" ]]; then
     echo "📦 Running Homebrew Bundle..."
-    brew bundle --global
+    brew bundle --file="$HOME/.config/homebrew/Brewfile"
 else
     echo "⚠️  No Brewfile found. Skipping bundle."
 fi
