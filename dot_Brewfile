@@ -37,7 +37,7 @@ brew "golangci-lint"
 brew "gopls"
 brew "grex"
 brew "harper"
-brew "helix", args: ["HEAD"]
+brew "helix"
 brew "helm"
 brew "helm-ls"
 brew "imagemagick"
