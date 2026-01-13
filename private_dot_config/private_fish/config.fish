@@ -5,21 +5,23 @@ if status is-interactive
         eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
     end
 
-    if test -d /opt/homebrew/opt/ruby
-        fish_add_path /opt/homebrew/opt/ruby/bin
-        set -gxp LDFLAGS -L/opt/homebrew/opt/ruby/lib
-        set -gxp CPPFLAGS -I/opt/homebrew/opt/ruby/include
-        set -gxp PKG_CONFIG_PATH /opt/homebrew/opt/ruby/lib/pkgconfig
-    end
+    if set -q HOMEBREW_PREFIX
+        if test -d "$HOMEBREW_PREFIX/opt/ruby"
+            fish_add_path "$HOMEBREW_PREFIX/opt/ruby/bin"
+            set -gxp LDFLAGS "-L$HOMEBREW_PREFIX/opt/ruby/lib"
+            set -gxp CPPFLAGS "-I$HOMEBREW_PREFIX/opt/ruby/include"
+            set -gxp PKG_CONFIG_PATH "$HOMEBREW_PREFIX/opt/ruby/lib/pkgconfig"
+        end
 
-    if test -d /opt/homebrew/opt/llvm
-        fish_add_path /opt/homebrew/opt/llvm/bin
-        set -gxp LDFLAGS -L/opt/homebrew/opt/llvm/lib
-        set -gxp CPPFLAGS -I/opt/homebrew/opt/llvm/include
-    end
+        if test -d "$HOMEBREW_PREFIX/opt/llvm"
+            fish_add_path "$HOMEBREW_PREFIX/opt/llvm/bin"
+            set -gxp LDFLAGS "-L$HOMEBREW_PREFIX/opt/llvm/lib"
+            set -gxp CPPFLAGS "-I$HOMEBREW_PREFIX/opt/llvm/include"
+        end
 
-    if test -d /opt/homebrew/opt/rustup/bin
-        fish_add_path /opt/homebrew/opt/rustup/bin
+        if test -d "$HOMEBREW_PREFIX/opt/rustup/bin"
+            fish_add_path "$HOMEBREW_PREFIX/opt/rustup/bin"
+        end
     end
 
     if test -d $HOME/.cargo/bin
