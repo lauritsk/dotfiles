@@ -5,3 +5,7 @@ set -euo pipefail
 
 echo "🍺 Homebrew Bundle: Ensuring system matches Brewfile..."
 
+echo "📦 Syncing packages (Installing missing, Removing extra)..."
+brew bundle install --global --cleanup --force
+
+echo "✅ Homebrew state synced."
