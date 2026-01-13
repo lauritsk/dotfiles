@@ -4,7 +4,4 @@
 
 ```bash
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --one-shot $GITHUB_USERNAME
-fish
-atuin login
-atuin sync # if necessary
 ```
