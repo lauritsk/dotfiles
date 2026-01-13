@@ -1,4 +1,5 @@
 if status is-interactive
+    eval (/opt/homebrew/bin/brew shellenv)
     fish_add_path /opt/homebrew/opt/llvm/bin
     set -gx LDFLAGS "-L/opt/homebrew/opt/llvm/lib"
     set -gx CPPFLAGS "-I/opt/homebrew/opt/llvm/include"
@@ -9,6 +10,7 @@ if status is-interactive
     set -gx LDFLAGS -L/opt/homebrew/opt/ruby/lib
     set -gx CPPFLAGS -I/opt/homebrew/opt/ruby/include
     set -gx PKG_CONFIG_PATH /opt/homebrew/opt/ruby/lib/pkgconfig
+    mise activate fish | source
     zoxide init fish --cmd cd | source
     starship init fish | source
     atuin init fish | source
