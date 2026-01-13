@@ -3,11 +3,7 @@ set -euo pipefail
 
 source "$HOME/.bashrc"
 
-if [[ -f "$HOME/.config/homebrew/Brewfile" ]]; then
-    echo "📦 Running Homebrew Bundle..."
-    brew bundle --global
-else
-    echo "⚠️  No Brewfile found. Skipping bundle."
-fi
+echo "📦 Running Homebrew Bundle..."
+brew bundle --global
 
 echo "✅ Successfully installed Homebrew packages!"

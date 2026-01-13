@@ -3,8 +3,18 @@ encryption = "age"
 [age]
     identity = "{{ .chezmoi.homeDir }}/key.txt"
     recipient = "age1p8wf9jpysgyxrxylmexy6wfx3cs0ydukzh7hwd34c5df0jy8wg9s33hexs"
-    
+
 [git]
     autoAdd = true
     autoCommit = true
     autoPush = true
+
+{{ $brewPath := "" }}
+{{- if eq .chezmoi.os "darwin" -}}
+    {{- $brewPath = "/opt/homebrew/bin/brew" -}}
+{{- else if eq .chezmoi.os "linux" -}}
+    {{- $brewPath = "/home/linuxbrew/.linuxbrew/bin/brew" -}}
+{{- end -}}
+
+[data]
+    brewPath = {{ $brewPath | quote }}

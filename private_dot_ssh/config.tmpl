@@ -1,0 +1,12 @@
+Include ~/.orbstack/ssh/config
+
+{{ range $name, $server := .servers -}}
+Host {{ $name }}
+    HostName {{ $server.host }}
+    User {{ $server.user }}
+    Port {{ $server.port }}
+
+{{ end -}}
+
+Host *
+    IdentityFile ~/.ssh/id_ed25519
