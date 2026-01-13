@@ -7,11 +7,11 @@
 [core]
         fsmonitor = true
         untrackedCache = true
-        excludesfile = /Users/karl/.config/git/ignore
+        excludesfile = {{ .chezmoi.homeDir }}/.config/git/ignore
 [gpg]
         format = ssh
 [gpg "ssh"]
-        allowedSignersFile = /Users/karl/.ssh/allowed_signers
+        allowedSignersFile = {{ .chezmoi.homeDir }}/.ssh/allowed_signers
 [tag]
         sort = version:refname
         gpgsign = true
