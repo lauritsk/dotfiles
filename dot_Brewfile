@@ -1,5 +1,6 @@
 tap "oven-sh/bun"
 tap "xo/xo"
+brew "age"
 brew "atuin", restart_service: :changed
 brew "bandwhich"
 brew "openssl@3"
