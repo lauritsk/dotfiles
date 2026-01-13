@@ -59,6 +59,9 @@ else
     echo "⚠️  No Brewfile found. Skipping bundle."
 fi
 
+echo "🚀 Installing Rust with rustup..."
+rustup default stable
+
 # if [ -f "$HOME/.config/mise/config.toml" ]; then
 #     echo "📦  Installing Mise packages..."
 #     mise install
