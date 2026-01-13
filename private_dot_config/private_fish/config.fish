@@ -40,6 +40,10 @@ if status is-interactive
         fish_add_path $HOME/go/bin
     end
 
+    set -gx PAGER bat
+    set -gx EDITOR hx
+    set -gx VISUAL zed
+
     type -q mise; and mise activate fish | source
     type -q zoxide; and zoxide init fish --cmd cd | source
     type -q starship; and starship init fish | source

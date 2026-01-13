@@ -8,3 +8,7 @@ if [[ -x /opt/homebrew/bin/brew ]]; then
 elif [[ -x /home/linuxbrew/.linuxbrew/bin/brew ]]; then
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
+
+export PAGER=bat
+export EDITOR=hx
+export VISUAL=zed
