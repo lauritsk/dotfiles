@@ -8,4 +8,4 @@ export XDG_STATE_HOME=$HOME/.local/state
 export SHELL=fish
 export PAGER=bat
 export EDITOR=hx
-export VISUAL=zed
+export VISUAL="zed --wait"

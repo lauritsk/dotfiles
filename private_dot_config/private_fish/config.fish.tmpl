@@ -30,7 +30,7 @@ if status is-interactive
     set -gx SHELL fish
     set -gx PAGER bat
     set -gx EDITOR hx
-    set -gx VISUAL zed
+    set -gx VISUAL "zed --wait"
 
     type -q mise; and mise activate fish | source
     type -q zoxide; and zoxide init fish --cmd cd | source
