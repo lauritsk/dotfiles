@@ -1,5 +1,7 @@
 [ui]
 default-command = "log"
+pager = "delta"
+diff-formatter = ":git"
 
 [user]
 name = "Karl Hans Laurits"
