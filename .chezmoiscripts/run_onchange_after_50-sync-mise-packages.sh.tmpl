@@ -3,6 +3,8 @@ set -euo pipefail
 
 # {{ include "private_dot_config/mise/config.toml" | sha256sum }}
 
+source "{{ .chezmoi.homeDir }}/.bashrc"
+
 echo "🍺 Mise install: Ensuring system matches Mise config..."
 
 echo "📦 Syncing packages (Installing missing, Removing extra)..."

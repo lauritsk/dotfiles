@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-source "$HOME/.bashrc"
+source "{{ .chezmoi.homeDir }}/.bashrc"
 
 echo "📦  Installing Mise packages..."
 mise install --yes

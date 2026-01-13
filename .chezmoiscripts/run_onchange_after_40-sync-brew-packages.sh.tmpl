@@ -3,6 +3,8 @@ set -euo pipefail
 
 # {{ include "private_dot_config/homebrew/Brewfile.tmpl" | sha256sum }}
 
+source "{{ .chezmoi.homeDir }}/.bashrc"
+
 echo "🍺 Homebrew Bundle: Ensuring system matches Brewfile..."
 
 echo "📦 Syncing packages (Installing missing, Removing extra)..."
