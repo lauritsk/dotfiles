@@ -3,15 +3,43 @@ set -euo pipefail
 
 source "{{ .chezmoi.homeDir }}/.bashrc"
 
-cd {{ .chezmoi.sourceDir }}
+# cd {{ .chezmoi.sourceDir }}
 
-fnox exec -- sh -c 'atuin login \
+# if atuin status | grep -q "Username:"; then
+#     echo "✅ Atuin is already logged in."
+# else
+#     echo "🔓 Logging into Atuin..."
+#     fnox exec -- sh -c 'atuin login \
+#       --username "$ATUIN_USERNAME" \
+#       --password "$ATUIN_PASSWORD" \
+#       --key "$ATUIN_KEY"'
+#     echo "✅ Successfully signed into atuin!"
+# fi
+
+# echo "🔄 Syncing Atuin..."
+# atuin sync
+
+# echo "✅ Atuin setup complete!"
+
+
+# This is the more unreliable method until atuin status command gets fixed...
+
+cd "{{ .chezmoi.sourceDir }}"
+
+echo "🔓 Attempting to log into Atuin..."
+
+if fnox exec -- sh -c 'atuin login \
   --username "$ATUIN_USERNAME" \
   --password "$ATUIN_PASSWORD" \
-  --key "$ATUIN_KEY"'
+  --key "$ATUIN_KEY"'; then
+    echo "✅ Successfully signed into atuin!"
+else
+    echo "⚠️  Login command exited with error. Assuming already logged in..."
+fi
 
+cd "{{ .chezmoi.homeDir }}"
+
+echo "🔄 Syncing Atuin..."
 atuin sync
 
-cd {{ .chezmoi.homeDir }}
-
-echo "✅ Successfully signed into atuin!"
+echo "✅ Atuin setup complete!"
