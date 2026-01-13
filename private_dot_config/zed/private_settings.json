@@ -86,9 +86,7 @@
     "show_branch_icon": true,
   },
   "terminal": {
-    "shell": {
-      "program": "/opt/homebrew/bin/nu",
-    },
+    "shell": "system",
     "toolbar": {
       "breadcrumbs": true,
     },
