@@ -78,7 +78,14 @@ if FISH_PATH="$(command -v fish)"; then
         echo "   Fish is already the default shell."
     fi
 else
-    echo "⚠️  Fish command not found in PATH. Is it listed in your Brewfile?"
+    echo "⚠️  Fish command not found in PATH."
+fi
+
+if command -v atuin; then
+    echo "   Now sign into atuin..."
+    atuin login
+else
+    echo "⚠️  Atuin command not found in PATH."
 fi
 
 echo "✅ Setup complete!"
