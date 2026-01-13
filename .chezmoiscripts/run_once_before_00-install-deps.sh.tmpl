@@ -1,36 +1,29 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-OS="$(uname -s)"
-ARCH="$(uname -m)"
-
-echo "🚀 Installing system dependencies for $OS ($ARCH)..."
-
-if [[ "$OS" = "Darwin" ]]; then
+{{ if eq .chezmoi.os "darwin" }}
     echo "🍎 macOS detected."
     echo "   No dependencies required."
 
-elif [[ "$OS" = "Linux" ]]; then
+{{ else if eq .chezmoi.os "linux" }}
     echo "🐧 Linux detected."
 
-    if [[ -f /etc/os-release ]]; then
-        . /etc/os-release
+    {{ if eq .chezmoi.osRelease.id "debian" }}
+        echo "📦 Installing Debian/Ubuntu dependencies..."
+        sudo apt update -y && sudo apt install -y curl git build-essential
 
-        if [[ "$ID_LIKE" == "debian" ]]; then
-            echo "📦 Installing Debian/Ubuntu dependencies..."
-            sudo apt update -y && sudo apt install -y curl git build-essential
+    {{ else if eq .chezmoi.osRelease.id "fedora" }}
+        echo "📦 Installing Fedora dependencies..."
+        sudo dnf update -y && sudo dnf install -y curl git @development-tools
 
-        elif [[ "$ID" == "fedora" ]]; then
-            echo "📦 Installing Fedora dependencies..."
-            sudo dnf update -y && sudo dnf install -y curl git @development-tools
+    {{ else if eq .chezmoi.osRelease.id "arch" }}
+        echo "📦 Installing Arch dependencies..."
+        sudo pacman -Syu --noconfirm --needed curl git base-devel
 
-        elif [[ "$ID_LIKE" == "arch" ]]; then
-            echo "📦 Installing Arch dependencies..."
-            sudo pacman -Syu --noconfirm --needed curl git base-devel
-        fi
-    else
-        echo "⚠️  Warning: Unknown Linux distribution. Skipping system deps."
-    fi
-fi
+    {{ else }}
+        echo "⚠️ Warning: Unknown Linux distribution. Skipping system deps."
+    {{ end }}
+
+{{ end }}
 
 echo "✅ Successfully installed system dependencies!"

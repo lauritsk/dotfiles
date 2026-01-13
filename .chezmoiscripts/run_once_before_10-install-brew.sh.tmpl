@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-OS="$(uname -s)"
-ARCH="$(uname -m)"
-
-echo "🚀 Installing Homebrew for $OS ($ARCH)..."
+echo "🚀 Installing Homebrew..."
 
 if ! command -v {{ .brewPath }}; then
     echo "🍺 Installing Homebrew..."
