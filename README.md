@@ -3,8 +3,9 @@
 1. Install [Homebrew](https://brew.sh/)
 
 ```bash
-sudo apt install git -y
+sudo apt install git build-essential gcc -y
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 ```
 
 2. Ensure age key is set in ~/key.txt
