@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+OS="$(uname -s)"
+ARCH="$(uname -m)"
+
+echo "🚀 Installing Homebrew for $OS ($ARCH)..."
+
+if [[ "$OS" == "Darwin" && "$ARCH" == "arm64" ]]; then
+    BREW_PREFIX="/opt/homebrew"
+elif [[ "$OS" == "Linux" ]]; then
+    BREW_PREFIX="/home/linuxbrew/.linuxbrew"
+fi
+
+if ! command -v "$BREW_PREFIX/bin/brew"; then
+    echo "🍺 Installing Homebrew..."
+    NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+    echo "✅ Homebrew already installed."
+fi
+
+echo "✅ Successfully installed Homebrew!"

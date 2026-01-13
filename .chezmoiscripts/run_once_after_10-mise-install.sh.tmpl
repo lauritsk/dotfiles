@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "🌍 Activating Homebrew environment..."
+eval "$("$BREW_PREFIX/bin/brew" shellenv)"
+
+if [[ -f "$HOME/.config/mise/config.toml" ]]; then
+    echo "📦  Installing Mise packages..."
+    mise install
+else
+    echo "⚠️  No mise config file found. Skipping mise install."
+fi
+
+echo "✅ Successfully installed mise packages!"

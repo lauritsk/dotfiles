@@ -4,7 +4,7 @@ set -euo pipefail
 OS="$(uname -s)"
 ARCH="$(uname -m)"
 
-echo "🚀 Starting system bootstrap for $OS ($ARCH)..."
+echo "🚀 Installing system dependencies for $OS ($ARCH)..."
 
 if [[ "$OS" = "Darwin" ]]; then
     echo "🍎 macOS detected."
@@ -32,15 +32,4 @@ elif [[ "$OS" = "Linux" ]]; then
     fi
 fi
 
-if [[ "$OS" == "Darwin" && "$ARCH" == "arm64" ]]; then
-    BREW_PREFIX="/opt/homebrew"
-elif [[ "$OS" == "Linux" ]]; then
-    BREW_PREFIX="/home/linuxbrew/.linuxbrew"
-fi
-
-if ! command -v "$BREW_PREFIX/bin/brew"; then
-    echo "🍺 Installing Homebrew..."
-    NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-else
-    echo "✅ Homebrew already installed."
-fi
+echo "✅ Successfully installed system dependencies!"

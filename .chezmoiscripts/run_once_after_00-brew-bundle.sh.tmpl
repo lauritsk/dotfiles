@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "🌍 Activating Homebrew environment..."
+eval "$("$BREW_PREFIX/bin/brew" shellenv)"
+
+if [[ -f "$HOME/.config/homebrew/Brewfile" ]]; then
+    echo "📦 Running Homebrew Bundle..."
+    brew bundle --file="$HOME/.config/homebrew/Brewfile"
+else
+    echo "⚠️  No Brewfile found. Skipping bundle."
+fi
+
+echo "✅ Successfully installed Homebrew packages!"
