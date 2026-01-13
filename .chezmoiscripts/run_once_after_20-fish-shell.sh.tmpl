@@ -1,14 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if [[ "$OS" == "Darwin" && "$ARCH" == "arm64" ]]; then
-    BREW_PREFIX="/opt/homebrew"
-elif [[ "$OS" == "Linux" ]]; then
-    BREW_PREFIX="/home/linuxbrew/.linuxbrew"
-fi
-
-echo "🌍 Activating Homebrew environment..."
-eval "$("$BREW_PREFIX/bin/brew" shellenv)"
+source "$HOME/.bashrc"
 
 if FISH_PATH="$(command -v fish)"; then
     echo "🐠 Configuring Fish shell..."
