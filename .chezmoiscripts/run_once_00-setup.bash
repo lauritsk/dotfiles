@@ -52,12 +52,19 @@ fi
 echo "🌍 Activating Homebrew environment..."
 eval "$("$BREW_PREFIX/bin/brew" shellenv)"
 
-if [ -f "$HOME/.Brewfile" ]; then
+if [ -f "$HOME/.Brewfile" ] || [ -f "$HOME/.config/homebrew/Brewfile" ]; then
     echo "📦 Running Homebrew Bundle..."
     brew bundle --global
 else
-    echo "⚠️  No Brewfile found in Home directory. Skipping bundle."
+    echo "⚠️  No Brewfile found. Skipping bundle."
 fi
+
+# if [ -f "$HOME/.config/mise/config.toml" ]; then
+#     echo "📦  Installing Mise packages..."
+#     mise install
+# else
+#     echo "⚠️  No mise config file found in ~/.config/mise directory. Skipping mise install."
+# fi
 
 if FISH_PATH="$(command -v fish)"; then
     echo "🐠 Configuring Fish shell..."
