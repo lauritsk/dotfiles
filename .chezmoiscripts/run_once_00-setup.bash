@@ -12,17 +12,17 @@ echo "🚀 Starting system bootstrap for $OS ($ARCH)..."
 
 if [ "$OS" = "Darwin" ]; then
     echo "🍎 macOS detected."
-    
+
 elif [ "$OS" = "Linux" ]; then
     echo "🐧 Linux detected."
-    
+
     if [ -f /etc/os-release ]; then
         . /etc/os-release
-        
+
         if [[ "$ID_LIKE" == "debian" ]]; then
             echo "📦 Installing Debian/Ubuntu dependencies..."
             sudo apt update -y && sudo apt install -y curl git build-essential
-            
+
         elif [[ "$ID" == "fedora" ]]; then
             echo "📦 Installing Fedora dependencies..."
             sudo dnf update -y && sudo dnf install -y curl git @development-tools
