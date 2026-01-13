@@ -21,13 +21,15 @@ elif [ "$OS" = "Linux" ]; then
         
         if [[ "$ID" == "debian" || "$ID" == "ubuntu" ]]; then
             echo "📦 Installing Debian/Ubuntu dependencies..."
-            sudo apt update -y
-            sudo apt install -y curl git build-essential
+            sudo apt update -y && sudo apt install -y curl git build-essential
             
         elif [[ "$ID" == "fedora" ]]; then
             echo "📦 Installing Fedora dependencies..."
-            sudo dnf update -y
-            sudo dnf install -y curl git @development-tools
+            sudo dnf update -y && sudo dnf install -y curl git @development-tools
+
+        elif [[ "$ID" == "arch" ]]; then
+            echo "📦 Installing Arch dependencies..."
+            sudo pacman -Syu --noconfirm --needed curl git base-devel
         fi
     else
         echo "⚠️  Warning: Unknown Linux distribution. Skipping system deps."
@@ -47,7 +49,11 @@ else
     echo "✅ Homebrew already installed."
 fi
 
-echo "🔧 Initializing Homebrew environment..."
-eval "$("$BREW_PREFIX/bin/brew" shellenv)"
+if [ -f "$HOME/.Brewfile" ]; then
+    echo "📦 Running Homebrew Bundle..."
+    $BREW_PREFIX/bin/brew bundle --global
+else
+    echo "⚠️  No Brewfile found in Home directory. Skipping bundle."
+fi
 
-echo "✅ Setup complete! Brew version: $(brew --version | head -n1)"
+echo "✅ Setup complete!
