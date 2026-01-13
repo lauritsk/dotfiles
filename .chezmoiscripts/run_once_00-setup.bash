@@ -50,7 +50,6 @@ else
 fi
 
 echo "🌍 Activating Homebrew environment..."
-echo ""
 eval "$("$BREW_PREFIX/bin/brew" shellenv)"
 
 if [ -f "$HOME/.Brewfile" ]; then
