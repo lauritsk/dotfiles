@@ -5,9 +5,15 @@
         email = karl@laurits.dev
         signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIERNxt3cnIcfexVELx9Rv/VbP+E64DKVT8iMIYj1e79N
 [core]
+        pager = delta
         fsmonitor = true
         untrackedCache = true
         excludesfile = {{ .chezmoi.homeDir }}/.config/git/ignore
+[interactive]
+        diffFilter = delta --color-only
+[delta]
+        navigate = true
+        side-by-side = true
 [gpg]
         format = ssh
 [gpg "ssh"]
