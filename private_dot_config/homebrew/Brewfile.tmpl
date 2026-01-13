@@ -1,12 +1,12 @@
-tap "oven-sh/bun"
-brew "age"
+tap "oven-sh{{ .chezmoi.pathSeparator }}bun"
+brew "{{ .chezmoi.config.encryption }}"
 brew "openssl@3"
 brew "ansible"
 brew "ansible-language-server"
 brew "atuin"
 brew "bandwhich"
 brew "bash-language-server"
-brew "bat"
+brew "{{ .chezmoi.config.pager }}"
 brew "biome"
 brew "bottom"
 brew "cargo-binstall"
@@ -16,7 +16,7 @@ brew "chezmoi"
 brew "csvlens"
 brew "curl"
 brew "delve"
-brew "docker-language-server"
+brew "{{ .chezmoi.config.docker.command }}-language-server"
 brew "doggo"
 brew "dua-cli"
 brew "exiftool"
@@ -30,7 +30,7 @@ brew "usage"
 brew "fnox"
 brew "fzf"
 brew "gh"
-brew "git"
+brew "{{ .chezmoi.config.git.command }}"
 brew "glow"
 brew "gnupg"
 brew "go"
@@ -93,7 +93,7 @@ brew "yamlfmt"
 brew "yazi"
 brew "ykman"
 brew "zoxide"
-brew "oven-sh/bun/bun"
+brew "oven-sh{{ .chezmoi.pathSeparator }}bun{{ .chezmoi.pathSeparator }}bun"
 cask "1password"
 cask "1password-cli"
 cask "affinity"
@@ -108,15 +108,15 @@ cask "tailscale-app"
 cask "winbox"
 cask "yubico-authenticator"
 cask "zed"
-mas "DigiDoc4", id: 1370791134
-mas "Infuse", id: 1136220934
-mas "Microsoft Excel", id: 462058435
-mas "Microsoft PowerPoint", id: 462062816
-mas "Microsoft Word", id: 462054704
-mas "Reeder", id: 6475002485
-mas "Web eID", id: 1576665083
-mas "WhatsApp", id: 310633997
-mas "WireGuard", id: 1451685025
-go "github.com/bootdotdev/bootdev"
+mas "DigiDoc4", id{{ .chezmoi.pathListSeparator }} 1370791134
+mas "Infuse", id{{ .chezmoi.pathListSeparator }} 1136220934
+mas "Microsoft Excel", id{{ .chezmoi.pathListSeparator }} 462058435
+mas "Microsoft PowerPoint", id{{ .chezmoi.pathListSeparator }} 462062816
+mas "Microsoft Word", id{{ .chezmoi.pathListSeparator }} 462054704
+mas "Reeder", id{{ .chezmoi.pathListSeparator }} 6475002485
+mas "Web eID", id{{ .chezmoi.pathListSeparator }} 1576665083
+mas "WhatsApp", id{{ .chezmoi.pathListSeparator }} 310633997
+mas "WireGuard", id{{ .chezmoi.pathListSeparator }} 1451685025
+go "github.com{{ .chezmoi.pathSeparator }}bootdotdev{{ .chezmoi.pathSeparator }}bootdev"
 cargo "caligula"
 cargo "systemd-lsp"
