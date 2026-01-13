@@ -49,27 +49,33 @@ else
     echo "✅ Homebrew already installed."
 fi
 
+echo "🌍 Activating Homebrew environment..."
+eval "$("$BREW_PREFIX/bin/brew" shellenv)"
+
 if [ -f "$HOME/.Brewfile" ]; then
     echo "📦 Running Homebrew Bundle..."
-    $BREW_PREFIX/bin/brew bundle --global
+    brew bundle --global
 else
     echo "⚠️  No Brewfile found in Home directory. Skipping bundle."
 fi
 
-FISH_BIN="$BREW_PREFIX/bin/fish"
-if [ -x "$FISH_BIN" ]; then
+if FISH_PATH="$(command -v fish)"; then
     echo "🐠 Configuring Fish shell..."
+    echo "   Found at: $FISH_PATH"
 
-    if ! grep -q "$FISH_BIN" /etc/shells; then
-        echo "Adding $FISH_BIN to /etc/shells..."
-        echo "$FISH_BIN" | sudo tee -a /etc/shells >/dev/null
+    if ! grep -q "$FISH_PATH" /etc/shells; then
+        echo "   Adding to /etc/shells..."
+        echo "$FISH_PATH" | sudo tee -a /etc/shells >/dev/null
     fi
 
-    echo "Changing default shell to Fish..."
-    sudo chsh -s "$FISH_BIN" "$USER"
-
+    if [ "$SHELL" != "$FISH_PATH" ]; then
+        echo "   Changing default shell to Fish..."
+        sudo chsh -s "$FISH_PATH" "$USER"
+    else
+        echo "   Fish is already the default shell."
+    fi
 else
-    echo "⚠️  Fish binary not found at $FISH_BIN. Is it listed in your Brewfile?"
+    echo "⚠️  Fish command not found in PATH. Is it listed in your Brewfile?"
 fi
 
 echo "✅ Setup complete!"
