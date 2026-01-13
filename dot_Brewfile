@@ -22,7 +22,6 @@ brew "gh"
 brew "glow"
 brew "gnupg"
 brew "go"
-brew "grex"
 brew "harper"
 brew "helix", args: ["HEAD"]
 brew "imagemagick"
