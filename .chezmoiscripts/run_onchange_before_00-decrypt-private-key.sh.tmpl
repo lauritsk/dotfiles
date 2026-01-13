@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if [[ ! -f "${HOME}/.config/chezmoi/key.txt" ]]; then
-    mkdir -p "${HOME}/.config/chezmoi"
-    "{{ .chezmoi.executable }}" age decrypt --output "${HOME}/.config/chezmoi/key.txt" --passphrase "{{ .chezmoi.sourceDir }}/key.txt.age"
-    chmod 600 "${HOME}/.config/chezmoi/key.txt"
-fi
+# {{ include "key.txt.age" | sha256sum }}
+
+mkdir -p "{{ .chezmoi.homeDir }}/.config/chezmoi"
+
+"{{ .chezmoi.executable }}" age decrypt --output "{{ .chezmoi.homeDir }}/.config/chezmoi/key.txt" --passphrase "{{ .chezmoi.sourceDir }}/key.txt.age"
+
+chmod 600 "{{ .chezmoi.homeDir }}/.config/chezmoi/key.txt"
