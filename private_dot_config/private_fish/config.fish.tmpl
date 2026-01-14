@@ -7,7 +7,7 @@ if status is-interactive
     set -gx XDG_DATA_HOME {{ .chezmoi.homeDir }}/.local/share
     set -gx XDG_STATE_HOME {{ .chezmoi.homeDir }}/.local/state
 
-    eval ({{ .brewPath }} shellenv)
+    eval ({{ .brewPath }}/brew shellenv)
 
     if test -d "$HOMEBREW_PREFIX/opt/ruby"
         fish_add_path "$HOMEBREW_PREFIX/opt/ruby/bin"
