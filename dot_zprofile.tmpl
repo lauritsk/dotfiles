@@ -1,4 +1,2 @@
-{{ template "shell" . -}}
-
+eval "$({{ .brewPath }}/brew shellenv)"
 eval "$(mise activate zsh)"
-eval "$(fnox activate zsh)"
