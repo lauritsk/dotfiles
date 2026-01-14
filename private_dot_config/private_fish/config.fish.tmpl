@@ -22,6 +22,7 @@ if status is-interactive
         set -gxp CPPFLAGS "-I$HOMEBREW_PREFIX/opt/llvm/include"
     end
 
+    fish_add_path --prepend {{ .chezmoi.homeDir }}/bin
     fish_add_path {{ .chezmoi.homeDir }}/.cargo/bin
     fish_add_path {{ .chezmoi.homeDir }}/go/bin
 
