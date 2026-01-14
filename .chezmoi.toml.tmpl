@@ -15,9 +15,9 @@ encryption = "age"
 
 {{ $brewPath := "" }}
 {{- if eq .chezmoi.os "darwin" -}}
-    {{- $brewPath = "/opt/homebrew/bin/brew" -}}
+    {{- $brewPath = "/opt/homebrew/bin" -}}
 {{- else if eq .chezmoi.os "linux" -}}
-    {{- $brewPath = "/home/linuxbrew/.linuxbrew/bin/brew" -}}
+    {{- $brewPath = "/home/linuxbrew/.linuxbrew/bin" -}}
 {{- end -}}
 
 [data]
