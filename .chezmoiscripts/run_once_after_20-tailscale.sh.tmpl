@@ -3,8 +3,6 @@ set -euo pipefail
 
 source "{{ .chezmoi.homeDir }}/.bashrc"
 
-cd {{ .chezmoi.sourceDir }}
-
 echo "🔓 Logging into Tailscale..."
 fnox exec -- sh -c 'sudo tailscale up \
   --auth-key "$TS_AUTH_KEY"'

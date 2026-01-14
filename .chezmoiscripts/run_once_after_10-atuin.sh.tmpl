@@ -3,8 +3,6 @@ set -euo pipefail
 
 source "{{ .chezmoi.homeDir }}/.bashrc"
 
-# cd {{ .chezmoi.sourceDir }}
-
 # if atuin status | grep -q "Username:"; then
 #     echo "✅ Atuin is already logged in."
 # else
@@ -24,8 +22,6 @@ source "{{ .chezmoi.homeDir }}/.bashrc"
 
 # This is the more unreliable method until atuin status command gets fixed...
 
-cd "{{ .chezmoi.sourceDir }}"
-
 echo "🔓 Attempting to log into Atuin..."
 
 if fnox exec -- sh -c 'atuin login \
@@ -36,8 +32,6 @@ if fnox exec -- sh -c 'atuin login \
 else
     echo "⚠️  Login command exited with error. Assuming already logged in..."
 fi
-
-cd "{{ .chezmoi.homeDir }}"
 
 echo "🔄 Syncing Atuin..."
 atuin sync
