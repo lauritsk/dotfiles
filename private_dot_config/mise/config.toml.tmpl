@@ -123,8 +123,7 @@ zoxide = "latest"
 description = "Sync Homebrew and Mise packages"
 run = [
     "brew bundle install --global --cleanup --force",
-    "mise install",
-    "mise install --global"
+    "mise install"
 ]
 sources = ["{{ .chezmoi.homeDir }}/.config/homebrew/Brewfile", "mise.lock"]
 
