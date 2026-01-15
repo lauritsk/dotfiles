@@ -3,7 +3,6 @@ set -euo pipefail
 
 echo "🚀 Starting initial environment setup..."
 
-# Install system dependencies
 {{ if eq .chezmoi.os "linux" }}
     {{ if eq .chezmoi.osRelease.id "fedora" }}
         echo "📦 Installing Fedora dependencies..."
@@ -22,12 +21,16 @@ echo "🚀 Starting initial environment setup..."
     {{ end }}
 {{ end }}
 
-# Install Homebrew if needed
 if ! command -v {{ .brewPath }}/brew >/dev/null 2>&1; then
     echo "🍺 Installing Homebrew..."
     NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
     echo "✅ Homebrew already installed."
+fi
+
+if ! command -v mise >/dev/null 2>&1; then
+    echo "mise Installing mise..."
+    {{ .brewPath }}/brew install mise
 fi
 
 echo "✅ Initial setup complete!"
