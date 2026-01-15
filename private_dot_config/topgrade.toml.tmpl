@@ -5,7 +5,6 @@ show_skipped = false
 cleanup = true
 skip_notify = true
 pre_sudo = true
-disable = ["gem", "ruby_gems", "node"]
 
 [brew]
 greedy_cask = true
@@ -19,11 +18,6 @@ arguments = "--rebase --autostash"
 
 [chezmoi]
 exclude_encrypted = false
-
-[mise]
-bump = true
-jobs = 4
-interactive = false
 
 [containers]
 runtime = "docker"

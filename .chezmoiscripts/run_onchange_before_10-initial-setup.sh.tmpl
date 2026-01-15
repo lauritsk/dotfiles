@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "🚀 Starting initial environment setup..."
+
+if ! command -v /opt/homebrew/bin/brew >/dev/null 2>&1; then
+    echo "🍺 Installing Homebrew..."
+    NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+    echo "✅ Homebrew already installed."
+fi
+
+echo "✅ Initial setup complete!"

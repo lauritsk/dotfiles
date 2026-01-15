@@ -1,12 +1,4 @@
 Include {{ .chezmoi.homeDir }}/.lima/*/ssh.config
 
-{{ range $name, $server := .servers -}}
-Host {{ $name }}
-    HostName {{ $server.host }}
-    User {{ $server.user }}
-    Port {{ $server.port }}
-
-{{ end -}}
-
 Host *
     IdentityFile {{ .chezmoi.homeDir }}/.ssh/id_ed25519

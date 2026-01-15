@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# {{ include "dot_Brewfile.tmpl" | sha256sum }}
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+echo "📦 Running package sync task..."
+brew bundle --global

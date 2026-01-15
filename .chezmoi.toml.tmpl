@@ -13,16 +13,8 @@ encryption = "age"
     pager = "delta"
     exclude = ["scripts"]
 
-{{ $brewPath := "" }}
-{{- if eq .chezmoi.os "darwin" -}}
-    {{- $brewPath = "/opt/homebrew/bin" -}}
-{{- else if eq .chezmoi.os "linux" -}}
-    {{- $brewPath = "/home/linuxbrew/.linuxbrew/bin" -}}
-{{- end -}}
-
 [data]
     name = "Karl Hans Laurits"
     email = "karl@laurits.dev"
     username = "lauritskarl"
     sshPublicKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIERNxt3cnIcfexVELx9Rv/VbP+E64DKVT8iMIYj1e79N"
-    brewPath = {{ $brewPath | quote }}

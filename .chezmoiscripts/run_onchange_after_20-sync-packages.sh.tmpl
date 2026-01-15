@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-# {{ include "private_dot_config/homebrew/Brewfile.tmpl" | sha256sum }}
-# {{ include "private_dot_config/mise/config.toml.tmpl" | sha256sum }}
-
-eval "$({{ .brewPath }}/brew shellenv)"
-
-echo "📦 Running package sync task..."
-mise run setup:packages

@@ -1,8 +1,0 @@
-{{ range $name, $server := .servers -}}
-[services.{{ $name }}]
-type = "sftp"
-host = {{ $server.host | quote }}
-user = {{ $server.user | quote }}
-port = {{ $server.port }}
-
-{{ end -}}
