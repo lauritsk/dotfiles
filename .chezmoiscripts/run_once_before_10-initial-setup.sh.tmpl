@@ -28,9 +28,9 @@ else
     echo "✅ Homebrew already installed."
 fi
 
-if ! command -v mise >/dev/null 2>&1; then
-    echo "mise Installing mise..."
-    {{ .brewPath }}/brew install node uv go rust age mise
-fi
+eval "$({{ .brewPath }}/brew shellenv)"
+
+echo "🔧 Installing core tools for mise..."
+brew install node go rust age mise
 
 echo "✅ Initial setup complete!"
