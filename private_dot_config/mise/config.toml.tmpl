@@ -118,3 +118,49 @@ xh = "latest"
 yamlfmt = "latest"
 yazi = "latest"
 zoxide = "latest"
+
+[tasks."setup:packages"]
+description = "Sync Homebrew and Mise packages"
+run = [
+    "brew bundle install --global --cleanup --force",
+    "mise install",
+    "mise install --global"
+]
+sources = ["{{ .chezmoi.homeDir }}/.config/homebrew/Brewfile", "mise.lock"]
+
+[tasks."setup:auth"]
+description = "Authenticate services (Atuin, Tailscale)"
+depends = ["setup:auth:atuin", "setup:auth:tailscale"]
+
+[tasks."setup:auth:atuin"]
+description = "Login to Atuin if not already logged in"
+run = """
+    atuin login --username "$ATUIN_USERNAME" --password "$ATUIN_PASSWORD" --key "$ATUIN_KEY" || echo "Atuin login skipped/failed"
+    atuin sync
+"""
+
+[tasks."setup:auth:tailscale"]
+description = "Authenticate Tailscale"
+run = """
+    if command -v tailscale >/dev/null; then
+        sudo tailscale up --auth-key "$TS_AUTH_KEY" || true
+    fi
+"""
+
+[tasks."setup:shell"]
+description = "Configure Fish as the default shell"
+run = """
+    FISH_PATH="$(command -v fish)"
+    if ! grep -q "$FISH_PATH" /etc/shells; then
+        echo "Adding fish to /etc/shells..."
+        echo "$FISH_PATH" | sudo tee -a /etc/shells
+    fi
+    if [[ "$SHELL" != "$FISH_PATH" ]]; then
+        echo "Changing shell to fish..."
+        sudo chsh -s "$FISH_PATH" "$USER"
+    fi
+"""
+
+[tasks.setup]
+description = "Run all setup tasks (Great for new machines)"
+depends = ["setup:packages", "setup:auth", "setup:shell"]
