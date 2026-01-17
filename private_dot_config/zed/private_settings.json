@@ -1,4 +1,14 @@
 {
+  "bottom_dock_layout": "contained",
+  "status_bar": {
+    "active_encoding_button": "non_utf8"
+  },
+  "which_key": {
+    "enabled": true
+  },
+  "buffer_line_height": "comfortable",
+  "ui_font_family": "Monaspace Neon",
+  "ssh_connections": [],
   "centered_layout": {
     "right_padding": null,
     "left_padding": null
@@ -13,13 +23,19 @@
     "show": "auto"
   },
   "colorize_brackets": true,
-  "buffer_font_family": "Monaspace Neon NF",
+  "buffer_font_family": "Monaspace Neon",
   "git_panel": {
+    "tree_view": true,
     "status_style": "icon",
-    "sort_by_path": false,
-    "collapse_untracked_diff": false,
+    "sort_by_path": true,
+    "collapse_untracked_diff": true,
   },
   "project_panel": {
+    "sort_mode": "directories_first",
+    "show_diagnostics": "errors",
+    "git_status": true,
+    "hide_gitignore": false,
+    "default_width": 240.0,
     "entry_spacing": "comfortable",
     "hide_root": true,
   },
@@ -114,8 +130,8 @@
   },
   "redact_private_values": true,
   "vim_mode": true,
-  "ui_font_size": 16,
-  "buffer_font_size": 15,
+  "ui_font_size": 14.0,
+  "buffer_font_size": 14.0,
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
