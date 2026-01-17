@@ -1,0 +1,5 @@
+github.com{{ .chezmoi.pathListSeparator }}
+    {{ .chezmoi.config.git.command }}_protocol{{ .chezmoi.pathListSeparator }} ssh
+    users{{ .chezmoi.pathListSeparator }}
+        {{ .username }}{{ .chezmoi.pathListSeparator }}
+    user{{ .chezmoi.pathListSeparator }} {{ .username }}
