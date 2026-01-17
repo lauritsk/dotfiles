@@ -1,7 +1,8 @@
+brew "chezmoi"
 brew "gh"
 brew "mas"
-brew "mise"
 brew "usage"
+brew "mise"
 cask "1password"
 cask "affinity"
 cask "font-monaspace"
@@ -10,6 +11,7 @@ cask "helium-browser"
 cask "orbstack"
 cask "rustdesk"
 cask "signal"
+cask "tailscale-app"
 cask "winbox"
 cask "yubico-authenticator"
 cask "zed"
@@ -18,3 +20,4 @@ mas "Infuse", id: 1136220934
 mas "Reeder", id: 6475002485
 mas "Web eID", id: 1576665083
 mas "WhatsApp", id: 310633997
+mas "WireGuard", id: 1451685025
