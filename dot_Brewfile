@@ -1,4 +1,6 @@
 brew "mas"
+brew "mise"
+brew "usage"
 cask "1password"
 cask "affinity"
 cask "font-monaspace"
