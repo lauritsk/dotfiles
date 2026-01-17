@@ -1,0 +1,10 @@
+[ui]
+default-command = "log"
+
+[user]
+name = "{{ .name }}"
+email = "{{ .email }}"
+
+[signing]
+backend = "ssh"
+key = "{{ .sshPublicKey }}"
