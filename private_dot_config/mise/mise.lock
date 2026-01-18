@@ -1,0 +1,3 @@
+[[tools.starship]]
+version = "1.24.2"
+backend = "aqua:starship/starship"
