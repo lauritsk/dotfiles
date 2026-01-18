@@ -1,11 +1,22 @@
-{{ if eq .chezmoi.os "darwin" }}
 #!/usr/bin/env bash
 set -euo pipefail
+
+echo "📦 Running package sync task..."
+
+{{ if eq .chezmoi.os "darwin" }}
 
 # {{ include "dot_Brewfile" | sha256sum }}
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-echo "📦 Running package sync task..."
 brew bundle --global
+
+{{ else if eq .chezmoi.os "linux" }}
+
+# {{ include "private_dot_config/mise/mise.lock" | sha256sum }}
+
+eval "$(~/.local/bin/mise activate)"
+
+mise install
+
 {{ end }}
