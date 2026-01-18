@@ -23,4 +23,13 @@ else
     echo "✅ Mise already installed."
 fi
 
+{{ if eq .chezmoi.os.idLike "debian" }}
+
+if ! command -v fish > /dev/null 2>&1; then
+    echo "🍺 Installing Fish..."
+    sudo apt -y install fish && sudo chsh -s $(which fish) $USER
+else
+    echo "✅ Fish already installed."
+fi
+
 {{ end }}
