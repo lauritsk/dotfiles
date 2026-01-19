@@ -4,4 +4,15 @@ key.txt.age
 {{ if ne .chezmoi.os "darwin" }}
 dot_Brewfile
 dot_zprofile
+private_dot_config/ghostty
+private_dot_config/zed
+{{ end }}
+
+{{ if ne .chezmoi.os "linux" }}
+private_dot_config/gh
+private_dot_config/helix
+private_dot_config/mise
+private_dot_config/private_atuin
+private_dot_config/private_fish
+private_dot_config/yazi
 {{ end }}
