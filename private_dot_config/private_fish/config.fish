@@ -1,5 +1,5 @@
 if status is-interactive
-    fish_add_path {{ .chezmoi.homeDir }}/.local/bin
+    fish_add_path ~/.local/bin
     set -gx fish_greeting
     set -gx fish_key_bindings fish_vi_key_bindings
     type -q mise; and mise activate fish | source
