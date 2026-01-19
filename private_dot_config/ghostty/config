@@ -3,4 +3,3 @@ font-family = "Monaspace Neon Regular"
 font-size = 14
 maximize = true
 shell-integration-features = "no-cursor,ssh-env"
-command = /opt/homebrew/bin/fish
