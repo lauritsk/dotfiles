@@ -1,6 +1,6 @@
 [settings]
 experimental = true
-trusted_config_paths = [ "/workspaces/*" ]
+trusted_config_paths = [ "/workspaces" ]
 
 [env]
 EDITOR = "hx"
