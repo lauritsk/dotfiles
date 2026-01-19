@@ -2,9 +2,14 @@
 set -euo pipefail
 
 # {{ include "key.txt.age" | sha256sum }}
+KEY_FILE="{{ .chezmoi.homeDir }}/.config/chezmoi/key.txt"
+mkdir -p "$(dirname "$KEY_FILE")"
 
-mkdir -p "{{ .chezmoi.homeDir }}/.config/chezmoi"
+if [ -n "${AGE_SECRET_KEY:-}" ]; then
+    echo "Restoring age key from AGE_SECRET_KEY environment variable..."
+    echo "${AGE_SECRET_KEY}" > "$KEY_FILE"
+else
+    "{{ .chezmoi.executable }}" age decrypt --output "$KEY_FILE" --passphrase "{{ .chezmoi.sourceDir }}/key.txt.age"
+fi
 
-"{{ .chezmoi.executable }}" age decrypt --output "{{ .chezmoi.homeDir }}/.config/chezmoi/key.txt" --passphrase "{{ .chezmoi.sourceDir }}/key.txt.age"
-
-chmod 600 "{{ .chezmoi.homeDir }}/.config/chezmoi/key.txt"
+chmod 600 "$KEY_FILE"
