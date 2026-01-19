@@ -1,5 +1,7 @@
+{{ if eq .chezmoi.os "linux" }}
 #!/usr/bin/env bash
 set -euo pipefail
 
 shell="$(awk -F : "\$1 == \"${USER}\" { print \$7 }" /etc/passwd)"
 exec "${shell}"
+{{ end }}
