@@ -7,7 +7,7 @@ echo "🚀 Starting package sync..."
 
 # {{ include "dot_Brewfile" | sha256sum }}
 if command -v /opt/homebrew/bin/brew > /dev/null 2>&1; then
-    echo "📦 Syncing Homebrew packages..."
+    echo "🔄 Syncing Homebrew packages..."
     eval "$(/opt/homebrew/bin/brew shellenv)"
     brew bundle --global
     echo "✅ Homebrew packages synced."
@@ -20,7 +20,7 @@ fi
 
 # {{ include "private_dot_config/mise/mise.lock" | sha256sum }}
 if command -v {{ .chezmoi.homeDir}}/.local/bin/mise > /dev/null 2>&1; then
-    echo "📦 Installing Mise..."
+    echo "🔄 Syncing Mise packages..."
     eval "$(~/.local/bin/mise activate)"
     mise install
     echo "✅ Mise packages synced."

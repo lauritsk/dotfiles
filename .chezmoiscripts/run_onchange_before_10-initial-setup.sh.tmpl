@@ -6,7 +6,7 @@ echo "🚀 Starting initial environment setup..."
 {{ if eq .chezmoi.os "darwin" }}
 
 if ! command -v /opt/homebrew/bin/brew > /dev/null 2>&1; then
-    echo "🍺 Installing Homebrew..."
+    echo "📦 Installing Homebrew..."
     NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
     echo "✅ Homebrew already installed."
@@ -15,22 +15,51 @@ fi
 {{ else if eq .chezmoi.os "linux" }}
 
 if ! command -v mise > /dev/null 2>&1; then
-    echo "🍺 Installing Mise..."
+    echo "📦 Installing Mise..."
     curl https://mise.run | sh
 else
     echo "✅ Mise already installed."
 fi
 
-{{ if eq .chezmoi.osRelease.idLike "debian" }}
+{{ if eq .chezmoi.osRelease.id "fedora" }}
 
 if ! command -v fish > /dev/null 2>&1; then
-    echo "🍺 Installing Fish..."
-    sudo apt -y install fish && sudo chsh -s $(which fish) $USER
+    echo "📦 Installing Fish..."
+    sudo dnf -y install fish
+else
+    echo "✅ Fish already installed."
+fi
+
+{{ else if eq .chezmoi.osRelease.idLike "debian" }}
+
+if ! command -v fish > /dev/null 2>&1; then
+    echo "📦 Installing Fish..."
+    sudo apt -y install fish
+else
+    echo "✅ Fish already installed."
+fi
+
+{{ else if eq .chezmoi.osRelease.idLike "arch" }}
+
+if ! command -v fish > /dev/null 2>&1; then
+    echo "📦 Installing Fish..."
+    sudo pacman -S --noconfirm fish && sudo chsh -s $(which fish) $USER
 else
     echo "✅ Fish already installed."
 fi
 
 {{ end }}
+
+if [ "$SHELL" != "$(command -v fish)" ]; then
+    echo "🔄 Setting Fish as the default shell..."
+    if ! grep -q "$(command -v fish)" /etc/shells; then
+        command -v fish | sudo tee -a /etc/shells
+    fi
+    sudo chsh -s "$(command -v fish)" "$USER"
+    echo "✅ Default shell changed to Fish."
+else
+    echo "✅ Fish is already the default shell."
+fi
 
 {{ end }}
 
