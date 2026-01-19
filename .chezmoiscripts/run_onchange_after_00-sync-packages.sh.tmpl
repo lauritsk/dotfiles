@@ -19,7 +19,7 @@ fi
 {{ else if eq .chezmoi.os "linux" }}
 
 # {{ include "private_dot_config/mise/mise.lock" | sha256sum }}
-if command -v mise > /dev/null 2>&1; then
+if command -v {{ .chezmoi.homeDir}}/.local/bin/mise > /dev/null 2>&1; then
     echo "📦 Installing Mise..."
     eval "$(~/.local/bin/mise activate)"
     mise install
