@@ -1,4 +1,9 @@
 {
+  "agent_servers": {
+    "opencode": {
+      "type": "registry"
+    }
+  },
   "bottom_dock_layout": "contained",
   "status_bar": {
     "active_encoding_button": "non_utf8"
