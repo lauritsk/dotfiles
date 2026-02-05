@@ -28,7 +28,7 @@ if ! command -v git > /dev/null 2>&1; then
     sudo apt -y install git fish
     {{ else if eq .chezmoi.osRelease.id "fedora" }}
     sudo dnf -y install git fish
-    {{ else if eq .chezmoi.osRelease.idLike "arch" }}
+    {{ else if eq (default "" (index .chezmoi.osRelease "idLike")) "arch" }}
     sudo pacman -S --noconfirm git fish
     {{ end }}
 else
