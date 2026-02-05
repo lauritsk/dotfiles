@@ -1,8 +1,13 @@
 {
-  "agent_servers": {
-    "opencode": {
-      "type": "registry"
+  "context_servers": {
+    "bun-docs-mcp": {
+      "enabled": true,
+      "remote": false,
+      "settings": {}
     }
+  },
+  "agent_servers": {
+    
   },
   "bottom_dock_layout": "contained",
   "status_bar": {
@@ -81,7 +86,7 @@
     "use_modifier_to_send": true,
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-haiku-4.5",
+      "model": "gpt-5-mini",
     },
     "play_sound_when_agent_done": true,
     "always_allow_tool_actions": true,
