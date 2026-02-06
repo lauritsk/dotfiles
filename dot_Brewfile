@@ -1,5 +1,10 @@
+tap "oven-sh/bun"
 brew "chezmoi"
+brew "gh"
 brew "mas"
+brew "ripgrep"
+brew "uv"
+brew "oven-sh/bun/bun"
 cask "affinity"
 cask "font-monaspace"
 cask "font-symbols-only-nerd-font"
@@ -8,6 +13,7 @@ cask "helium-browser"
 cask "orbstack"
 cask "signal"
 cask "winbox"
+cask "wireshark-app"
 cask "zed"
 mas "Bitwarden", id: 1352778147
 mas "DigiDoc4", id: 1370791134
