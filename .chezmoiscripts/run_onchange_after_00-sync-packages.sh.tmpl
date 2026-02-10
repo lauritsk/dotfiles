@@ -24,16 +24,22 @@ fi
 {{ else if eq .chezmoi.os "linux" }}
 
 # {{ include "private_dot_config/mise/mise.lock" | sha256sum }}
-if command -v {{ .chezmoi.homeDir}}/.local/bin/mise > /dev/null 2>&1; then
+MISE_BIN="$(command -v mise || true)"
+if [ -z "$MISE_BIN" ] && [ -x "{{ .chezmoi.homeDir }}/.local/bin/mise" ]; then
+    MISE_BIN="{{ .chezmoi.homeDir }}/.local/bin/mise"
+fi
+
+if [ -n "$MISE_BIN" ]; then
     echo "🔄 Syncing Mise packages..."
-    eval "$(~/.local/bin/mise activate bash)"
-    if ! mise install --dry-run-code --quiet; then
-        echo "Installing stuff using mise"
-        mise install
+    if "$MISE_BIN" install --dry-run-code --quiet > /dev/null 2>&1; then
+        echo "✅ Mise tools already satisfied."
+    else
+        echo "Installing tools using mise..."
+        "$MISE_BIN" install
     fi
     echo "✅ Mise packages synced."
 else
-    echo "❌ Mise command not found..."
+    echo "❌ Mise command not found (checked PATH and {{ .chezmoi.homeDir }}/.local/bin/mise)."
     exit 1
 fi
 
