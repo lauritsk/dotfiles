@@ -25,11 +25,11 @@ fi
 if ! command -v git > /dev/null 2>&1; then
     echo "📦 Installing essential packages..."
     {{ if (or (eq .chezmoi.osRelease.id "debian") (eq .chezmoi.osRelease.id "ubuntu")) }}
-    sudo apt -y install git fish
+    sudo apt update && sudo apt -y install git fish
     {{ else if eq .chezmoi.osRelease.id "fedora" }}
-    sudo dnf -y install git fish
+    sudo dnf check-upgrade && sudo dnf -y install git fish
     {{ else if eq .chezmoi.osRelease.id "arch" }}
-    sudo pacman -S --noconfirm git fish
+    sudo pacman -Syu --noconfirm git fish
     {{ end }}
 else
     echo "✅ Essential packages already installed."
