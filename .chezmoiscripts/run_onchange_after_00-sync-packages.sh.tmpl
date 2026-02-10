@@ -22,7 +22,10 @@ fi
 if command -v {{ .chezmoi.homeDir}}/.local/bin/mise > /dev/null 2>&1; then
     echo "🔄 Syncing Mise packages..."
     eval "$(~/.local/bin/mise activate bash)"
-    mise install
+    if ! mise install --dry-run-code --quiet; then
+        echo "Installing stuff using mise"
+        mise install
+    fi
     echo "✅ Mise packages synced."
 else
     echo "❌ Mise command not found..."
