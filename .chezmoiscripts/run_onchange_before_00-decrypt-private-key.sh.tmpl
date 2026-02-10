@@ -6,7 +6,9 @@ trap 'echo "ERROR: ${0##*/} failed at line $LINENO" >&2' ERR
 KEY_FILE="{{ .chezmoi.homeDir }}/.config/chezmoi/key.txt"
 mkdir -p "$(dirname "$KEY_FILE")"
 
-if [ -n "${AGE_SECRET_KEY:-}" ]; then
+if [ -s "$KEY_FILE" ]; then
+    echo "✅ Existing age key found; skipping restore."
+elif [ -n "${AGE_SECRET_KEY:-}" ]; then
     echo "Restoring age key from AGE_SECRET_KEY environment variable..."
     echo "${AGE_SECRET_KEY}" > "$KEY_FILE"
 elif [ ! -t 0 ]; then

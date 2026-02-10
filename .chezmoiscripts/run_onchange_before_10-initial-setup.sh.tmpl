@@ -40,6 +40,10 @@ retry() {
     done
 }
 
+is_container() {
+    [ -f /.dockerenv ] || [ -f /run/.containerenv ] || grep -qaE '(docker|containerd|kubepods|lxc)' /proc/1/cgroup 2>/dev/null
+}
+
 if command -v git > /dev/null 2>&1 && command -v fish > /dev/null 2>&1 && command -v curl > /dev/null 2>&1; then
     echo "✅ Essential packages already installed."
 else
@@ -66,7 +70,9 @@ else
 fi
 
 FISH_PATH="$(command -v fish)"
-if [ "${SHELL:-}" != "$FISH_PATH" ]; then
+if is_container; then
+    echo "ℹ️ Container environment detected; skipping default shell change."
+elif [ "${SHELL:-}" != "$FISH_PATH" ]; then
     if [ -t 0 ] && command -v chsh > /dev/null 2>&1; then
         echo "🔄 Setting Fish as the default shell..."
         if ! grep -q "$FISH_PATH" /etc/shells; then

@@ -29,6 +29,15 @@ if [ -z "$MISE_BIN" ] && [ -x "{{ .chezmoi.homeDir }}/.local/bin/mise" ]; then
     MISE_BIN="{{ .chezmoi.homeDir }}/.local/bin/mise"
 fi
 
+if [ -z "$MISE_BIN" ]; then
+    echo "📦 Mise not found; installing..."
+    curl --fail --location --retry 5 --retry-all-errors --connect-timeout 10 https://mise.run | sh
+    MISE_BIN="$(command -v mise || true)"
+    if [ -z "$MISE_BIN" ] && [ -x "{{ .chezmoi.homeDir }}/.local/bin/mise" ]; then
+        MISE_BIN="{{ .chezmoi.homeDir }}/.local/bin/mise"
+    fi
+fi
+
 if [ -n "$MISE_BIN" ]; then
     echo "🔄 Syncing Mise packages..."
     if "$MISE_BIN" install --dry-run-code --quiet > /dev/null 2>&1; then
