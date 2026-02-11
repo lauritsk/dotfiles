@@ -3,36 +3,12 @@ experimental = true
 trusted_config_paths = [ "/workspaces" ]
 
 [env]
-EDITOR = "hx"
 MISE_AGE_KEY = { age = "YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBSOW8rM3RwSjhsWVFXZldQY2pVWnRTdGVmM1NHQ0xvaTFtNHVMMUF1WWdVClphN0Jvck1XZjdiY3N6KzgzKzA1cnAyVzBjM2NZL3NCaDU3NEphek1MMFEKLT4gc3NoLWVkMjU1MTkgaytYQ0RnIEo1cFBEVVlob1dOQkN2VUthMEJyRmtZalBhVjZHT0VLdldIemR6QTNNVDAKQkVQd1FvWkxzSXdMaEtHYmg3cm1yaU81aE1xTFc4ZmpoaVRXNlBmL3ZDOAotPiAhLWdyZWFzZSBoYVEgZ1hsWnZbamEgVnxFNAprMkFaT3h4M2o5L3ZEMFdLZHY0TXU5NDhOaUVlYjE2MzJUcwotLS0gRXRCcXhDTnlRVnM2MDlQS1dIQktYR2Z5Tko5TGlJNm9DWml5T1A0bEJRTQpaME5m5x+myDencHsVxMDKEbhxvMT3StQghqsEIHkyvisf/09+7VgTo3gaAzle8LtKzhg0p69xAu8PbtkbPtaEdYhsa/Cs7Ap0UfTpIGiF7eehgfUvT9HZmu3VBKfegJOi4shvi5tnT2eX" }
 GITHUB_TOKEN = { age = "YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAwZ2ZZMzlqRUprWW5GTnBOMlY0VUpFdEc1RXIrZTFPQ3dqcmcvQktRTVRnCnNQQUs1U0lqUUl0WG5JNVBHL3AyNFRoRDI1TDByMzZzQXYvU2lmZENSUWcKLT4gc3NoLWVkMjU1MTkgaytYQ0RnIGsrcmhwRXBuSDNJMkpPamVwYlFqWXdpV1JlZ2ZzWmNzV1lTK0dsT0lhRW8KYy9sRDhnOGJxR1hsMW9uaDEreCs3aStXZjV6UXk1YkJ3cmU0d2ZJTG5vVQotPiAjdyt1Q3pKUS1ncmVhc2UgKlwkOHdxIEd4XTddUyAzOGgKSjJSWFprVFAKLS0tIDcxOXVGSng5blppOUVZL1Zrclk4R0dyQzBVWUhQclR3OXUvRXdJMU0rNmcKXZTVid/Ic9bB0+OvuF9fqcIDfGj/5YBbexFrL+cWPyBeuYthyjFGjd3B8Gj7h0doDt8QDYq7JtnrbnJmIe7EJJfFQhtvdJKW" }
 
-[shell_alias]
-g = "git"
-a = "atuin"
-cm = "chezmoi"
-pf = "pitchfork"
-y = "yazi"
-lg = "lazygit"
-ld = "lazydocker"
-oc = "opencode"
-d = "docker"
-dc = "docker compose"
-
 [tools]
-atuin = "latest"
-chezmoi = "latest"
 fd = "latest"
-fzf = "latest"
-gh = "latest"
-helix = "latest"
-jj = "latest"
-jq = "latest"
-lazygit = "latest"
-opencode = "latest"
-pitchfork = "latest"
 ripgrep = "latest"
 starship = "latest"
 usage = "latest"
-yazi = "latest"
 zoxide = "latest"

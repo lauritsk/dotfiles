@@ -1,21 +1,13 @@
 README.md
-AGENTS.md
 key.txt.age
-install.sh
 
 {{ if ne .chezmoi.os "darwin" }}
-.Brewfile
 .zprofile
-.config/ghostty
+.Brewfile
 .config/zed
 {{ end }}
 
 {{ if ne .chezmoi.os "linux" }}
-.config/gh
-.config/helix
-.config/jj
-.config/mise
-.config/atuin
 .config/fish
-.config/yazi
+.config/mise
 {{ end }}

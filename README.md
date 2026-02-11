@@ -1,13 +1,25 @@
-# Dots
+# dotfiles
 
-On macOS, run this first.
+## macOS bootstrap
 
 ```bash
 xcode-select --install
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply lauritsk
 ```
 
-Set up dotfiles.
+## daily updates
 
 ```bash
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --one-shot lauritsk
+chezmoi diff
+chezmoi apply
 ```
+
+## devcontainer template
+
+After apply, the template is available at:
+
+```bash
+~/.config/devcontainer/templates/dhi-hardened/.devcontainer
+```
+
+Copy it into a repo, set `.env`, and reopen in container.

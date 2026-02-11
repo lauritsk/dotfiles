@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-set -Eeuo pipefail
-trap 'echo "ERROR: ${0##*/} failed at line $LINENO" >&2' ERR
+set -euo pipefail
 
 # {{ include "key.txt.age" | sha256sum }}
 KEY_FILE="{{ .chezmoi.homeDir }}/.config/chezmoi/key.txt"

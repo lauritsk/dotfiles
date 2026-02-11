@@ -1,8 +1,0 @@
-[mgr]
-sort_by = "natural"
-sort_translit = true
-linemode = "permissions"
-show_hidden = true
-
-[preview]
-wrap = "yes"
