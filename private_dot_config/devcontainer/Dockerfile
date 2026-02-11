@@ -13,12 +13,11 @@ RUN apt-get update -y \
     && mkdir -p /etc/sudoers.d \
     && echo "dev ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/dev \
     && chmod 0440 /etc/sudoers.d/dev \
-    && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
 ENV PATH="/home/dev/.local/share/mise/shims:/home/dev/.local/bin:${PATH}"
 
 USER dev
-RUN mise use -g usage@latest chezmoi@latest ripgrep@latest fd@latest
+RUN mise use -g usage@latest chezmoi@latest
 
 WORKDIR /workspaces

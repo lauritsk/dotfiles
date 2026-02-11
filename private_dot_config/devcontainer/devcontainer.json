@@ -8,8 +8,7 @@
   },
   "remoteUser": "dev",
   "containerEnv": {
-    "AGE_SECRET_KEY": "${localEnv:AGE_SECRET_KEY}",
-    "SHELL": "/bin/bash"
+    "AGE_SECRET_KEY": "${localEnv:AGE_SECRET_KEY}"
   },
   "postCreateCommand": "chezmoi init --apply lauritsk"
 }
