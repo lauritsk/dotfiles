@@ -7,5 +7,7 @@ RUN apk add --no-cache ca-certificates curl bash fish git mise chezmoi sudo \
     && echo "dev ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/dev \
     && chmod 0440 /etc/sudoers.d/dev
 
+COPY --chown=dev:dev assets/home/ /home/dev/
+
 USER dev
 WORKDIR /workspaces

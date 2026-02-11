@@ -1,5 +1,6 @@
 README.md
 key.txt.age
+.config/fish
 
 {{ if ne .chezmoi.os "darwin" }}
 .zprofile
@@ -8,6 +9,5 @@ key.txt.age
 {{ end }}
 
 {{ if ne .chezmoi.os "linux" }}
-.config/fish
 .config/mise
 {{ end }}
