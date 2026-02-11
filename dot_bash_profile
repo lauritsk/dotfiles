@@ -1,0 +1,5 @@
+eval "$(mise activate bash --shims)"
+
+if [ -f "$HOME/.bashrc" ]; then
+  . "$HOME/.bashrc"
+fi
