@@ -4,7 +4,9 @@ key.txt.age
 {{ if ne .chezmoi.os "darwin" }}
 .zprofile
 .Brewfile
+.config/fish
 .config/ghostty
+.config/helix
 .config/zed
 {{ end }}
 
