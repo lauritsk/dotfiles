@@ -1,0 +1,35 @@
+theme = "catppuccin_mocha"
+# [theme]
+# dark = "catppuccin_mocha"
+# light = "catppuccin_latte"
+
+[editor]
+line-number = "relative"
+cursorline = true
+bufferline = "multiple"
+end-of-line-diagnostics = "hint"
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.auto-save]
+focus-lost = true
+
+[editor.soft-wrap]
+enable = true
+wrap-at-text-width = true
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
+[keys.normal]
+x = "select_line_below"
+X = "select_line_above"
+
+"C-j" = ["half_page_down", "goto_window_center"]
+"C-k" = ["half_page_up", "goto_window_center"]
