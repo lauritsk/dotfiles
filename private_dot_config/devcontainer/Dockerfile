@@ -18,6 +18,6 @@ RUN apt-get update -y \
 ENV PATH="/home/dev/.local/share/mise/shims:/home/dev/.local/bin:${PATH}"
 
 USER dev
-RUN mise use -g usage@latest chezmoi@latest
+RUN mise use -g usage@latest chezmoi@latest && mise reshim
 
 WORKDIR /workspaces
