@@ -13,5 +13,4 @@ key.txt.age
 {{ if ne .chezmoi.os "linux" }}
 .bash_profile
 .bashrc
-.config/mise
 {{ end }}
