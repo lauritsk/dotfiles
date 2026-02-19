@@ -7,8 +7,4 @@ if status is-interactive
     type -q zoxide; and zoxide init fish --cmd cd | source
 end
 
-test -f ~/.orbstack/shell/init.fish; and source ~/.orbstack/shell/init.fish
-
-# Added by OrbStack: command-line tools and integration
-# This won't be added again if you remove it.
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
