@@ -41,5 +41,7 @@ zoxide = "0.9.9"
 [shell_alias]
 cm = "chezmoi"
 y = "yazi"
+lg = "lazygit"
+ld = "lazydocker"
 taltech = "sudo openfortivpn vpn.taltech.ee:443 --saml-login"
 
