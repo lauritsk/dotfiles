@@ -7,6 +7,7 @@ GITHUB_TOKEN = { age = "YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAwZ2ZZMzlqRUpr
 
 [tools]
 age = "latest"
+bat = "latest"
 chezmoi = "latest"
 fd = "latest"
 gh = "latest"
