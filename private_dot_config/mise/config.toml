@@ -1,5 +1,12 @@
 [settings]
 experimental = true
+activate_aggressive = true
+color_theme = "catppuccin"
+install_before = "7d"
+pin = true
+
+[settings.npm]
+package_manager = "bun"
 
 [env]
 MISE_AGE_KEY = { age = "YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBSOW8rM3RwSjhsWVFXZldQY2pVWnRTdGVmM1NHQ0xvaTFtNHVMMUF1WWdVClphN0Jvck1XZjdiY3N6KzgzKzA1cnAyVzBjM2NZL3NCaDU3NEphek1MMFEKLT4gc3NoLWVkMjU1MTkgaytYQ0RnIEo1cFBEVVlob1dOQkN2VUthMEJyRmtZalBhVjZHT0VLdldIemR6QTNNVDAKQkVQd1FvWkxzSXdMaEtHYmg3cm1yaU81aE1xTFc4ZmpoaVRXNlBmL3ZDOAotPiAhLWdyZWFzZSBoYVEgZ1hsWnZbamEgVnxFNAprMkFaT3h4M2o5L3ZEMFdLZHY0TXU5NDhOaUVlYjE2MzJUcwotLS0gRXRCcXhDTnlRVnM2MDlQS1dIQktYR2Z5Tko5TGlJNm9DWml5T1A0bEJRTQpaME5m5x+myDencHsVxMDKEbhxvMT3StQghqsEIHkyvisf/09+7VgTo3gaAzle8LtKzhg0p69xAu8PbtkbPtaEdYhsa/Cs7Ap0UfTpIGiF7eehgfUvT9HZmu3VBKfegJOi4shvi5tnT2eX" }
@@ -9,18 +16,20 @@ PAGER = "bat"
 EDITOR = "hx"
 
 [tools]
-age = "latest"
-bat = "latest"
-chezmoi = "latest"
-fd = "latest"
-gh = "latest"
-helix = "latest"
-lazydocker = "latest"
-lazygit = "latest"
-ripgrep = "latest"
-starship = "latest"
-yazi = "latest"
-zoxide = "latest"
+age = "1.3.1"
+bat = "0.26.1"
+bun = "1.3.9"
+chezmoi = "2.69.4"
+fd = "10.3.0"
+gh = "2.87.0"
+helix = "25.07.1"
+lazydocker = "0.24.4"
+lazygit = "0.59.0"
+ripgrep = "15.1.0"
+starship = "1.24.2"
+uv = "0.10.4"
+yazi = "26.1.22"
+zoxide = "0.9.9"
 
 [shell_alias]
 cm = "chezmoi"
