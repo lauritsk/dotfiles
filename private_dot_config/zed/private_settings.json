@@ -251,7 +251,7 @@
     },
   },
   "prettier": {
-    "allowed": true,
+    "allowed": false,
   },
   "close_on_file_delete": true,
   "use_system_window_tabs": true,
