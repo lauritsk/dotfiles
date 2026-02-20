@@ -4,6 +4,10 @@ activate_aggressive = true
 color_theme = "catppuccin"
 install_before = "7d"
 pin = true
+trusted_config_paths = [
+    '~/Projects',
+    '/workspaces'
+]
 
 [settings.npm]
 package_manager = "bun"
