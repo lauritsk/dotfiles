@@ -6,6 +6,7 @@ if status is-interactive
     type -q mise; and mise activate fish | source
     type -q starship; and starship init fish | source
     type -q zoxide; and zoxide init fish --cmd cd | source
+    type -q pitchfork; and pitchfork activate fish | source
 else
     type -q mise; and mise activate fish --shims | source
     source ~/.orbstack/shell/init2.fish 2>/dev/null || :
