@@ -11,6 +11,18 @@
     "toggle_relative_line_numbers": true
   },
   "context_servers": {
+    "svelte-mcp": {
+      "enabled": false,
+      "remote": false,
+      "settings": {}
+    },
+    "postgres-context-server": {
+      "enabled": false,
+      "remote": false,
+      "settings": {
+        "database_url": "postgresql://$POSTGRES_USER:$POSTGRES_PASSWORD@localhost:5432/$POSTGRES_DATABASE"
+      }
+    },
     "mise": {
       "enabled": true,
       "remote": false,
@@ -120,7 +132,7 @@
       ]
     },
     "chrome-devtools-mcp-zed": {
-      "enabled": true,
+      "enabled": false,
       "remote": false,
       "settings": {
         "browser_url": null,
