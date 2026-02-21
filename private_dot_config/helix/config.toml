@@ -1,7 +1,7 @@
-theme = "catppuccin_mocha"
 # [theme]
 # dark = "catppuccin_mocha"
 # light = "catppuccin_latte"
+theme = "catppuccin_mocha"
 
 [editor]
 line-number = "relative"
@@ -30,6 +30,5 @@ cursor-line = "warning"
 [keys.normal]
 x = "select_line_below"
 X = "select_line_above"
-
 "C-j" = ["half_page_down", "goto_window_center"]
 "C-k" = ["half_page_up", "goto_window_center"]
