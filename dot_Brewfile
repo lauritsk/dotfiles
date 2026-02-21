@@ -10,6 +10,7 @@ cask "google-chrome"
 cask "helium-browser"
 cask "orbstack"
 cask "signal"
+cask "tailscale-app"
 cask "winbox"
 cask "wireshark-app"
 cask "zed"
@@ -19,7 +20,6 @@ mas "DigiDoc4", id: 1370791134
 mas "Infuse", id: 1136220934
 mas "Microsoft Word", id: 462054704
 mas "Reeder", id: 6475002485
-mas "Tailscale", id: 1475387142
 mas "uBlock Origin Lite", id: 6745342698
 mas "Web eID", id: 1576665083
 mas "WhatsApp", id: 310633997
