@@ -49,5 +49,7 @@ cm = "chezmoi"
 y = "yazi"
 lg = "lazygit"
 ld = "lazydocker"
+dc = "docker compose"
+ts = "tailscale"
 taltech = "sudo openfortivpn vpn.taltech.ee:443 --saml-login"
 
