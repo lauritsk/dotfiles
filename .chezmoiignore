@@ -1,7 +1,5 @@
 README.md
 key.txt.age
-docs
-scripts
 
 {{ if ne .chezmoi.os "darwin" }}
 .zprofile
