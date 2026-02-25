@@ -1,5 +1,0 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$(mise activate zsh --shims)"
-eval "$(mise activate zsh)"
-eval "$(pitchfork activate zsh)"
-source ~/.orbstack/shell/init.zsh 2>/dev/null || :
