@@ -1,10 +1,11 @@
 [settings]
+color_theme = "catppuccin"
 experimental = true
 activate_aggressive = true
-color_theme = "catppuccin"
-install_before = "7d"
 pin = true
+lockfile = true
 locked = true
+install_before = "7d"
 trusted_config_paths = [
     '~/Projects',
     '/workspaces'
