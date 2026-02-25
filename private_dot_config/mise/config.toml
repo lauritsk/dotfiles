@@ -7,7 +7,7 @@ lockfile = true
 locked = true
 install_before = "7d"
 trusted_config_paths = [
-    '~/Projects',
+    '~/projects',
     '/workspaces'
 ]
 
