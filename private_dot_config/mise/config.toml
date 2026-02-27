@@ -60,5 +60,4 @@ oc = "opencode"
 dev = "devcontainer up --dotfiles-repository https://github.com/lauritsk/dotfiles && devcontainer exec --workspace-folder . fish"
 dc = "docker compose"
 ts = "tailscale"
-taltech = "sudo openfortivpn vpn.taltech.ee:443 --saml-login"
 
