@@ -91,19 +91,9 @@ backend = "aqua:sharkdp/fd"
 "platforms.windows-x64-baseline" = { checksum = "sha256:318aa2a6fa664325933e81fda60d523fff29444129e91ebf0726b5b3bcd8b059", url = "https://github.com/sharkdp/fd/releases/download/v10.3.0/fd-v10.3.0-x86_64-pc-windows-msvc.zip"}
 
 [[tools.fnox]]
-version = "1.12.1"
+version = "1.13.0"
 backend = "github:jdx/fnox"
-"platforms.linux-arm64" = { checksum = "sha256:158195c758d05684ae6e3a7c553edf4f163ac13c4466556742810220ee3866c8", url = "https://github.com/jdx/fnox/releases/download/v1.12.1/fnox-aarch64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/353421839"}
-"platforms.linux-arm64-musl" = { checksum = "sha256:158195c758d05684ae6e3a7c553edf4f163ac13c4466556742810220ee3866c8", url = "https://github.com/jdx/fnox/releases/download/v1.12.1/fnox-aarch64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/353421839"}
-"platforms.linux-x64" = { checksum = "sha256:0a28ae0b36584c077dfb4fe0f924246bd3787e58504732f3c7a5dbf3785e738c", url = "https://github.com/jdx/fnox/releases/download/v1.12.1/fnox-x86_64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/353421846"}
-"platforms.linux-x64-baseline" = { checksum = "sha256:0a28ae0b36584c077dfb4fe0f924246bd3787e58504732f3c7a5dbf3785e738c", url = "https://github.com/jdx/fnox/releases/download/v1.12.1/fnox-x86_64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/353421846"}
-"platforms.linux-x64-musl" = { checksum = "sha256:0a28ae0b36584c077dfb4fe0f924246bd3787e58504732f3c7a5dbf3785e738c", url = "https://github.com/jdx/fnox/releases/download/v1.12.1/fnox-x86_64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/353421846"}
-"platforms.linux-x64-musl-baseline" = { checksum = "sha256:0a28ae0b36584c077dfb4fe0f924246bd3787e58504732f3c7a5dbf3785e738c", url = "https://github.com/jdx/fnox/releases/download/v1.12.1/fnox-x86_64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/353421846"}
-"platforms.macos-arm64" = { checksum = "sha256:8dc93b9e53b81f61be5e013d6163ed40062217f69221e7cca28a45cac94797c6", url = "https://github.com/jdx/fnox/releases/download/v1.12.1/fnox-aarch64-apple-darwin.tar.gz", url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/353421842"}
-"platforms.macos-x64" = { checksum = "sha256:8a4409be660a8a7d62baf43b7d34ab43c53c1cf47ad296bd90b5d35cc968d9a1", url = "https://github.com/jdx/fnox/releases/download/v1.12.1/fnox-x86_64-apple-darwin.tar.gz", url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/353421841"}
-"platforms.macos-x64-baseline" = { checksum = "sha256:8a4409be660a8a7d62baf43b7d34ab43c53c1cf47ad296bd90b5d35cc968d9a1", url = "https://github.com/jdx/fnox/releases/download/v1.12.1/fnox-x86_64-apple-darwin.tar.gz", url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/353421841"}
-"platforms.windows-x64" = { checksum = "sha256:2e9cf3f4852d635f757f4216a132b32c568ebfe6af44eb3af3d326f730c721d5", url = "https://github.com/jdx/fnox/releases/download/v1.12.1/fnox-x86_64-pc-windows-msvc.zip", url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/353421843"}
-"platforms.windows-x64-baseline" = { checksum = "sha256:2e9cf3f4852d635f757f4216a132b32c568ebfe6af44eb3af3d326f730c721d5", url = "https://github.com/jdx/fnox/releases/download/v1.12.1/fnox-x86_64-pc-windows-msvc.zip", url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/353421843"}
+"platforms.linux-arm64" = { checksum = "sha256:d8448ab91fd916871ad3112ea5d6c176edf60e905cf9b2a436d0fd39c8ba52a3", url = "https://github.com/jdx/fnox/releases/download/v1.13.0/fnox-aarch64-unknown-linux-gnu.tar.gz", url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/359813254"}
 
 [[tools.fzf]]
 version = "0.68.0"
@@ -121,19 +111,9 @@ backend = "aqua:junegunn/fzf"
 "platforms.windows-x64-baseline" = { checksum = "sha256:4939ed89f3a75258ea47c55c34422b6b3f28e38b85dbd1e27dc4cf5839d5d310", url = "https://github.com/junegunn/fzf/releases/download/v0.68.0/fzf-0.68.0-windows_amd64.zip"}
 
 [[tools.gh]]
-version = "2.87.1"
+version = "2.87.3"
 backend = "aqua:cli/cli"
-"platforms.linux-arm64" = { checksum = "sha256:5e24b5245a0bdc0a4f33080acde0f67855ad75fbcb50a009cc85fcfd535103c5", url = "https://github.com/cli/cli/releases/download/v2.87.1/gh_2.87.1_linux_arm64.tar.gz"}
-"platforms.linux-arm64-musl" = { checksum = "sha256:5e24b5245a0bdc0a4f33080acde0f67855ad75fbcb50a009cc85fcfd535103c5", url = "https://github.com/cli/cli/releases/download/v2.87.1/gh_2.87.1_linux_arm64.tar.gz"}
-"platforms.linux-x64" = { checksum = "sha256:2acbc24ef09a2efa1eaf2f31e85830f577500f85307dc20367769132c3d290aa", url = "https://github.com/cli/cli/releases/download/v2.87.1/gh_2.87.1_linux_amd64.tar.gz"}
-"platforms.linux-x64-baseline" = { checksum = "sha256:2acbc24ef09a2efa1eaf2f31e85830f577500f85307dc20367769132c3d290aa", url = "https://github.com/cli/cli/releases/download/v2.87.1/gh_2.87.1_linux_amd64.tar.gz"}
-"platforms.linux-x64-musl" = { checksum = "sha256:2acbc24ef09a2efa1eaf2f31e85830f577500f85307dc20367769132c3d290aa", url = "https://github.com/cli/cli/releases/download/v2.87.1/gh_2.87.1_linux_amd64.tar.gz"}
-"platforms.linux-x64-musl-baseline" = { checksum = "sha256:2acbc24ef09a2efa1eaf2f31e85830f577500f85307dc20367769132c3d290aa", url = "https://github.com/cli/cli/releases/download/v2.87.1/gh_2.87.1_linux_amd64.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:be3725d4ce90389ba9fd1c69ea00b9498995f0058c1423ceae76ae262c175962", url = "https://github.com/cli/cli/releases/download/v2.87.1/gh_2.87.1_macOS_arm64.zip"}
-"platforms.macos-x64" = { checksum = "sha256:49f66b1e20cf317148e9481682e567f1dd09a230eb7e885d37010f52372c648c", url = "https://github.com/cli/cli/releases/download/v2.87.1/gh_2.87.1_macOS_amd64.zip"}
-"platforms.macos-x64-baseline" = { checksum = "sha256:49f66b1e20cf317148e9481682e567f1dd09a230eb7e885d37010f52372c648c", url = "https://github.com/cli/cli/releases/download/v2.87.1/gh_2.87.1_macOS_amd64.zip"}
-"platforms.windows-x64" = { checksum = "sha256:4a435f3499369630944393481bc35636af8bc6214db1dfed4f6d1610dd589525", url = "https://github.com/cli/cli/releases/download/v2.87.1/gh_2.87.1_windows_amd64.zip"}
-"platforms.windows-x64-baseline" = { checksum = "sha256:4a435f3499369630944393481bc35636af8bc6214db1dfed4f6d1610dd589525", url = "https://github.com/cli/cli/releases/download/v2.87.1/gh_2.87.1_windows_amd64.zip"}
+"platforms.linux-arm64" = { checksum = "sha256:5f5d89563bf26751e2173b37e594065504e85b6b781c1f1832d24bf2c2b4554f", url = "https://github.com/cli/cli/releases/download/v2.87.3/gh_2.87.3_linux_arm64.tar.gz"}
 
 [[tools.go]]
 version = "1.26.0"
@@ -226,17 +206,9 @@ backend = "aqua:anomalyco/opencode"
 "platforms.windows-x64-baseline" = { checksum = "sha256:e31d83fc1c2eb54d707f6f36529bcb8b01b1a2ab50c485c478b5c10e64f1cfff", url = "https://github.com/anomalyco/opencode/releases/download/v1.2.10/opencode-windows-x64.zip"}
 
 [[tools.pitchfork]]
-version = "1.5.0"
+version = "1.6.0"
 backend = "aqua:jdx/pitchfork"
-"platforms.linux-arm64" = { checksum = "sha256:a08fd705272e2dfc55cbd42d4b61ab1b74bb1ebe92aa656e43d5c9009afa4fa3", url = "https://github.com/jdx/pitchfork/releases/download/v1.5.0/pitchfork-aarch64-unknown-linux-gnu.tar.gz"}
-"platforms.linux-arm64-musl" = { checksum = "sha256:a08fd705272e2dfc55cbd42d4b61ab1b74bb1ebe92aa656e43d5c9009afa4fa3", url = "https://github.com/jdx/pitchfork/releases/download/v1.5.0/pitchfork-aarch64-unknown-linux-gnu.tar.gz"}
-"platforms.linux-x64" = { checksum = "sha256:2103603ff83fbcf03a8ab15e88e588e238deca9b56d42ef0fece12e927da51be", url = "https://github.com/jdx/pitchfork/releases/download/v1.5.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"}
-"platforms.linux-x64-baseline" = { checksum = "sha256:2103603ff83fbcf03a8ab15e88e588e238deca9b56d42ef0fece12e927da51be", url = "https://github.com/jdx/pitchfork/releases/download/v1.5.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"}
-"platforms.linux-x64-musl" = { checksum = "sha256:2103603ff83fbcf03a8ab15e88e588e238deca9b56d42ef0fece12e927da51be", url = "https://github.com/jdx/pitchfork/releases/download/v1.5.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"}
-"platforms.linux-x64-musl-baseline" = { checksum = "sha256:2103603ff83fbcf03a8ab15e88e588e238deca9b56d42ef0fece12e927da51be", url = "https://github.com/jdx/pitchfork/releases/download/v1.5.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:157ab54863348c806c1b93acbdc1b9f31b7068c7b9883140cc2ecf8550d68b2d", url = "https://github.com/jdx/pitchfork/releases/download/v1.5.0/pitchfork-aarch64-apple-darwin.tar.gz"}
-"platforms.windows-x64" = { checksum = "sha256:8c0c0c146f744167ff625709363d4b96dcda3b8fc56f0c6c4dba9b90de3750fe", url = "https://github.com/jdx/pitchfork/releases/download/v1.5.0/pitchfork-x86_64-pc-windows-msvc.zip"}
-"platforms.windows-x64-baseline" = { checksum = "sha256:8c0c0c146f744167ff625709363d4b96dcda3b8fc56f0c6c4dba9b90de3750fe", url = "https://github.com/jdx/pitchfork/releases/download/v1.5.0/pitchfork-x86_64-pc-windows-msvc.zip"}
+"platforms.linux-arm64" = { checksum = "sha256:c318b4a7fa373f9dfd3fb39c05f2db9c2e2e794dd6d44529d34fa52e8e707575", url = "https://github.com/jdx/pitchfork/releases/download/v1.6.0/pitchfork-aarch64-unknown-linux-gnu.tar.gz"}
 
 [[tools.ripgrep]]
 version = "15.1.0"
