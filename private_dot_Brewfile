@@ -1,0 +1,51 @@
+tap "oven-sh/bun"
+brew "age"
+brew "atuin", restart_service: :changed
+brew "bat"
+brew "cargo-binstall"
+brew "chezmoi"
+brew "sqlite"
+brew "node"
+brew "cloudflare-wrangler"
+brew "devcontainer"
+brew "exiftool"
+brew "fd"
+brew "ffmpeg"
+brew "fish"
+brew "usage"
+brew "fnox"
+brew "fzf"
+brew "gh"
+brew "go"
+brew "helix"
+brew "lazydocker"
+brew "lazygit"
+brew "mas"
+brew "mise"
+brew "opencode"
+brew "python@3.14"
+brew "starship"
+brew "tmux"
+brew "uv"
+brew "yazi"
+brew "zoxide"
+brew "oven-sh/bun/bun"
+cask "codex"
+cask "font-jetbrains-mono"
+cask "font-jetbrains-mono-nerd-font"
+cask "ghostty"
+cask "helium-browser"
+cask "orbstack"
+cask "wireshark-app"
+cask "zed"
+mas "DigiDoc4", id: 1370791134
+mas "Infuse", id: 1136220934
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+mas "Reeder", id: 6475002485
+mas "Tailscale", id: 1475387142
+mas "uBlock Origin Lite", id: 6745342698
+mas "Web eID", id: 1576665083
+mas "Windows App", id: 1295203466
+mas "WireGuard", id: 1451685025

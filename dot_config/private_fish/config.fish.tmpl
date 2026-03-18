@@ -1,0 +1,13 @@
+if status is-interactive
+    fish_config theme choose catppuccin-mocha
+    type -q mise; and mise activate fish | source
+    type -q starship; and starship init fish | source
+    type -q zoxide; and zoxide init fish --cmd cd | source
+    type -q atuin; and atuin hex init fish | source
+else
+    type -q mise; and mise activate fish --shims | source
+end
+
+{{ - if eq .chezmoi.os darwin }}
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :
+{{ - end }}

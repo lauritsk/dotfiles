@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "autoupdate": true,
+  "default_agent": "plan",
+    "compaction": {
+    "auto": true,
+    "prune": true,
+    "reserved": 10000,
+  },
+  "server": {
+    "port": 4096,
+    "hostname": "localhost",
+    "cors": ["http://localhost:5173"],
+  },
+}
