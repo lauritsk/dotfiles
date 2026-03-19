@@ -12,4 +12,10 @@
     "hostname": "localhost",
     "cors": ["http://localhost:5173"],
   },
+  "mcp": {
+    "chrome-devtools": {
+      "type": "local",
+      "command": ["npx", "-y", "chrome-devtools-mcp@latest"]
+    }
+  }
 }
