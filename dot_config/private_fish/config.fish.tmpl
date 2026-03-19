@@ -9,6 +9,8 @@ else
     type -q mise; and mise activate fish --shims | source
 end
 
+source "{{ .chezmoi.homeDir }}/.vite-plus/env.fish"
+
 {{- if eq .chezmoi.os "darwin" }}
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 {{- end }}
