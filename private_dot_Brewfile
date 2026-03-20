@@ -16,6 +16,7 @@ brew "usage"
 brew "fnox"
 brew "fzf"
 brew "gh"
+brew "gnupg"
 brew "go"
 brew "helix"
 brew "lazydocker"
@@ -49,3 +50,5 @@ mas "uBlock Origin Lite", id: 6745342698
 mas "Web eID", id: 1576665083
 mas "Windows App", id: 1295203466
 mas "WireGuard", id: 1451685025
+go "cmd/go"
+go "cmd/gofmt"
