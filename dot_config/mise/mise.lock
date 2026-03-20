@@ -216,58 +216,6 @@ checksum = "sha256:3fde293232fa3fca98635e1167de6b7c7fda83caf24b9d6c91ec9eefb4f4d
 url = "https://conda.anaconda.org/conda-forge/linux-64/readline-8.3-h853b02a_0.conda"
 checksum = "sha256:12ffde5a6f958e285aa22c191ca01bbd3d6e710aa852e00618fa6ddc59149002"
 
-[conda-packages.macos-arm64."icu-78.3-hef89b57_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/icu-78.3-hef89b57_0.conda"
-checksum = "sha256:3a7907a17e9937d3a46dfd41cffaf815abad59a569440d1e25177c15fd0684e5"
-
-[conda-packages.macos-arm64."libsqlite-3.52.0-h1ae2325_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/libsqlite-3.52.0-h1ae2325_0.conda"
-checksum = "sha256:beb0fd5594d6d7c7cd42c992b6bb4d66cbb39d6c94a8234f15956da99a04306c"
-
-[conda-packages.macos-arm64."libzlib-1.3.1-h8359307_2"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/libzlib-1.3.1-h8359307_2.conda"
-checksum = "sha256:ce34669eadaba351cd54910743e6a2261b67009624dbc7daeeafdef93616711b"
-
-[conda-packages.macos-arm64."ncurses-6.5-h5e97a16_3"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/ncurses-6.5-h5e97a16_3.conda"
-checksum = "sha256:2827ada40e8d9ca69a153a45f7fd14f32b2ead7045d3bbb5d10964898fe65733"
-
-[conda-packages.macos-arm64."readline-8.3-h46df422_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-arm64/readline-8.3-h46df422_0.conda"
-checksum = "sha256:a77010528efb4b548ac2a4484eaf7e1c3907f2aec86123ed9c5212ae44502477"
-
-[conda-packages.macos-x64."libsqlite-3.52.0-h77d7759_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/libsqlite-3.52.0-h77d7759_0.conda"
-checksum = "sha256:f500d1cd50cfcd288d02b8fc3c3b7ecf8de6fec7b86e57ea058def02908e4231"
-
-[conda-packages.macos-x64."libzlib-1.3.1-hd23fc13_2"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/libzlib-1.3.1-hd23fc13_2.conda"
-checksum = "sha256:8412f96504fc5993a63edf1e211d042a1fd5b1d51dedec755d2058948fcced09"
-
-[conda-packages.macos-x64."ncurses-6.5-h0622a9a_3"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/ncurses-6.5-h0622a9a_3.conda"
-checksum = "sha256:ea4a5d27ded18443749aefa49dc79f6356da8506d508b5296f60b8d51e0c4bd9"
-
-[conda-packages.macos-x64."readline-8.3-h68b038d_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/readline-8.3-h68b038d_0.conda"
-checksum = "sha256:4614af680aa0920e82b953fece85a03007e0719c3399f13d7de64176874b80d5"
-
-[conda-packages.macos-x64-baseline."libsqlite-3.52.0-h77d7759_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/libsqlite-3.52.0-h77d7759_0.conda"
-checksum = "sha256:f500d1cd50cfcd288d02b8fc3c3b7ecf8de6fec7b86e57ea058def02908e4231"
-
-[conda-packages.macos-x64-baseline."libzlib-1.3.1-hd23fc13_2"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/libzlib-1.3.1-hd23fc13_2.conda"
-checksum = "sha256:8412f96504fc5993a63edf1e211d042a1fd5b1d51dedec755d2058948fcced09"
-
-[conda-packages.macos-x64-baseline."ncurses-6.5-h0622a9a_3"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/ncurses-6.5-h0622a9a_3.conda"
-checksum = "sha256:ea4a5d27ded18443749aefa49dc79f6356da8506d508b5296f60b8d51e0c4bd9"
-
-[conda-packages.macos-x64-baseline."readline-8.3-h68b038d_0"]
-url = "https://conda.anaconda.org/conda-forge/osx-64/readline-8.3-h68b038d_0.conda"
-checksum = "sha256:4614af680aa0920e82b953fece85a03007e0719c3399f13d7de64176874b80d5"
-
 [conda-packages.windows-x64."libsqlite-3.52.0-hf5d6505_0"]
 url = "https://conda.anaconda.org/conda-forge/win-64/libsqlite-3.52.0-hf5d6505_0.conda"
 checksum = "sha256:5fccf1e4e4062f8b9a554abf4f9735a98e70f82e2865d0bfdb47b9de94887583"
@@ -1527,6 +1475,54 @@ url = "https://github.com/jdx/usage/releases/download/v3.0.0/usage-x86_64-pc-win
 [tools.usage."platforms.windows-x64-baseline"]
 checksum = "sha256:b0a8cb81f4a259f8eaee134d9d427ed8284177141d615669dce2bde184ab06b3"
 url = "https://github.com/jdx/usage/releases/download/v3.0.0/usage-x86_64-pc-windows-msvc.zip"
+
+[[tools.usql]]
+version = "0.21.1"
+backend = "aqua:xo/usql"
+
+[tools.usql."platforms.linux-arm64"]
+checksum = "sha256:0df1f17d5137ce78e70cebc2bbf3bdb34d9b1ad935b3106f749dfd7b2d807959"
+url = "https://github.com/xo/usql/releases/download/v0.21.1/usql-0.21.1-linux-arm64.tar.bz2"
+
+[tools.usql."platforms.linux-arm64-musl"]
+checksum = "sha256:0df1f17d5137ce78e70cebc2bbf3bdb34d9b1ad935b3106f749dfd7b2d807959"
+url = "https://github.com/xo/usql/releases/download/v0.21.1/usql-0.21.1-linux-arm64.tar.bz2"
+
+[tools.usql."platforms.linux-x64"]
+checksum = "sha256:a2ff6402bd8ed68a842066a70610fad323530d091685ab28890e5e42bb296ff8"
+url = "https://github.com/xo/usql/releases/download/v0.21.1/usql-0.21.1-linux-amd64.tar.bz2"
+
+[tools.usql."platforms.linux-x64-baseline"]
+checksum = "sha256:a2ff6402bd8ed68a842066a70610fad323530d091685ab28890e5e42bb296ff8"
+url = "https://github.com/xo/usql/releases/download/v0.21.1/usql-0.21.1-linux-amd64.tar.bz2"
+
+[tools.usql."platforms.linux-x64-musl"]
+checksum = "sha256:a2ff6402bd8ed68a842066a70610fad323530d091685ab28890e5e42bb296ff8"
+url = "https://github.com/xo/usql/releases/download/v0.21.1/usql-0.21.1-linux-amd64.tar.bz2"
+
+[tools.usql."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:a2ff6402bd8ed68a842066a70610fad323530d091685ab28890e5e42bb296ff8"
+url = "https://github.com/xo/usql/releases/download/v0.21.1/usql-0.21.1-linux-amd64.tar.bz2"
+
+[tools.usql."platforms.macos-arm64"]
+checksum = "sha256:974f6dfdf1aac4403a60afe41cb4ee59308ba5f36e33b781b43091c49a9b19e9"
+url = "https://github.com/xo/usql/releases/download/v0.21.1/usql-0.21.1-darwin-arm64.tar.bz2"
+
+[tools.usql."platforms.macos-x64"]
+checksum = "sha256:163436095a8e13a50f8572139900077f60edbf1283406578202084964adf0c24"
+url = "https://github.com/xo/usql/releases/download/v0.21.1/usql-0.21.1-darwin-amd64.tar.bz2"
+
+[tools.usql."platforms.macos-x64-baseline"]
+checksum = "sha256:163436095a8e13a50f8572139900077f60edbf1283406578202084964adf0c24"
+url = "https://github.com/xo/usql/releases/download/v0.21.1/usql-0.21.1-darwin-amd64.tar.bz2"
+
+[tools.usql."platforms.windows-x64"]
+checksum = "sha256:7d2d38020651e273208eb3dbbc825383d56832629ee6bb211123a7f6e52f905b"
+url = "https://github.com/xo/usql/releases/download/v0.21.1/usql-0.21.1-windows-amd64.zip"
+
+[tools.usql."platforms.windows-x64-baseline"]
+checksum = "sha256:7d2d38020651e273208eb3dbbc825383d56832629ee6bb211123a7f6e52f905b"
+url = "https://github.com/xo/usql/releases/download/v0.21.1/usql-0.21.1-windows-amd64.zip"
 
 [[tools.uv]]
 version = "0.10.12"
