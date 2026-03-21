@@ -26,7 +26,19 @@
   },
   "buffer_line_height": "comfortable",
   "ui_font_family": ".ZedSans",
-  "ssh_connections": [],
+  "ssh_connections": [
+    {
+      "host": "work",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/karl/Projects/stuudium-authentik-sync"
+          ]
+        }
+      ]
+    }
+  ],
   "centered_layout": {
     "right_padding": null,
     "left_padding": null
