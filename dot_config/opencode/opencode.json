@@ -16,18 +16,6 @@
     "chrome-devtools": {
       "type": "local",
       "command": ["npx", "-y", "chrome-devtools-mcp@latest"]
-    },
-    "cloudflare-api": {
-      "type": "remote",
-      "url": "https://mcp.cloudflare.com/mcp"
-    },
-    "astro": {
-      "type": "remote",
-      "url": "https://mcp.docs.astro.build/mcp"
-    },
-    "svelte": {
-      "type": "remote",
-      "url": "https://mcp.svelte.dev/mcp"
     }
   }
 }
