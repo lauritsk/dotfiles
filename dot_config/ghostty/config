@@ -1,0 +1,4 @@
+theme = dark:Catppuccin Mocha,light:Catppuccin Latte
+font-size = 14
+maximize = true
+shell-integration-features = "no-cursor,ssh-terminfo,ssh-env"
