@@ -34,13 +34,14 @@
     {
       "host": "work",
       "args": [],
-      "projects": [
-        {
-          "paths": [
-            "/home/karl/Projects/stuudium-authentik-sync"
-          ]
-        }
-      ]
+      "projects": [],
+      "nickname": "Work"
+    },
+    {
+      "host": "mc",
+      "args": [],
+      "projects": [],
+      "nickname": "McServer"
     }
   ],
   "centered_layout": {
