@@ -2,6 +2,7 @@
 color_theme = "catppuccin"
 experimental = true
 activate_aggressive = true
+env_shell_expand = true
 pin = true
 lockfile = true
 # locked = true
@@ -28,6 +29,9 @@ fish_greeting = ""
 fish_key_bindings = "fish_vi_key_bindings"
 BAT_THEME_LIGHT = "Catppuccin Latte"
 BAT_THEME_DARK = "Catppuccin Mocha"
+_ZO_DATA_DIR = "$HOME/.local/share/zoxide"
+_ZO_EXCLUDE_PATHS = ".git"
+_ZO_EXCLUDE_DIRS = "/tmp:/var:/proc:/sys"
 SHELL = "fish"
 EDITOR = "hx"
 PAGER = "bat"
