@@ -6,7 +6,14 @@ Include ~/.ssh/config.d/*
 
 Host *
     {{- if eq .chezmoi.os "darwin" }}
+    IgnoreUnknown UseKeychain
     UseKeychain yes
     {{- end }}
     AddKeysToAgent yes
     IdentityFile ~/.ssh/id_ed25519
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+    TCPKeepAlive yes
+    ControlMaster auto
+    ControlPersist 10m
+    ControlPath ~/.ssh/controlmasters/%C
