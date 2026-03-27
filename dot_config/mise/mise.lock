@@ -1115,6 +1115,54 @@ url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15
 version = "1.94.0"
 backend = "core:rust"
 
+[[tools.scooter]]
+version = "0.9.0"
+backend = "aqua:thomasschafer/scooter"
+
+[tools.scooter."platforms.linux-arm64"]
+checksum = "sha256:a8ded19fab489b3ccbd75827f61c692e7871c354d41813a3c543d9e62fa42c31"
+url = "https://github.com/thomasschafer/scooter/releases/download/v0.9.0/scooter-v0.9.0-aarch64-unknown-linux-musl.tar.gz"
+
+[tools.scooter."platforms.linux-arm64-musl"]
+checksum = "sha256:a8ded19fab489b3ccbd75827f61c692e7871c354d41813a3c543d9e62fa42c31"
+url = "https://github.com/thomasschafer/scooter/releases/download/v0.9.0/scooter-v0.9.0-aarch64-unknown-linux-musl.tar.gz"
+
+[tools.scooter."platforms.linux-x64"]
+checksum = "sha256:5db85eaed5d1ba2d6c947f87d36a339f85e3f9740c2bc8d9a9febace64f31933"
+url = "https://github.com/thomasschafer/scooter/releases/download/v0.9.0/scooter-v0.9.0-x86_64-unknown-linux-musl.tar.gz"
+
+[tools.scooter."platforms.linux-x64-baseline"]
+checksum = "sha256:5db85eaed5d1ba2d6c947f87d36a339f85e3f9740c2bc8d9a9febace64f31933"
+url = "https://github.com/thomasschafer/scooter/releases/download/v0.9.0/scooter-v0.9.0-x86_64-unknown-linux-musl.tar.gz"
+
+[tools.scooter."platforms.linux-x64-musl"]
+checksum = "sha256:5db85eaed5d1ba2d6c947f87d36a339f85e3f9740c2bc8d9a9febace64f31933"
+url = "https://github.com/thomasschafer/scooter/releases/download/v0.9.0/scooter-v0.9.0-x86_64-unknown-linux-musl.tar.gz"
+
+[tools.scooter."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:5db85eaed5d1ba2d6c947f87d36a339f85e3f9740c2bc8d9a9febace64f31933"
+url = "https://github.com/thomasschafer/scooter/releases/download/v0.9.0/scooter-v0.9.0-x86_64-unknown-linux-musl.tar.gz"
+
+[tools.scooter."platforms.macos-arm64"]
+checksum = "sha256:9e920cae4afbdbd0a202eb15278ae378b33699399a6f72ee953f280d13087881"
+url = "https://github.com/thomasschafer/scooter/releases/download/v0.9.0/scooter-v0.9.0-aarch64-apple-darwin.tar.gz"
+
+[tools.scooter."platforms.macos-x64"]
+checksum = "sha256:26ce8ba597bfa5e509943cc327ecf8dfbd495be5913d866e3eca21c86499f7e6"
+url = "https://github.com/thomasschafer/scooter/releases/download/v0.9.0/scooter-v0.9.0-x86_64-apple-darwin.tar.gz"
+
+[tools.scooter."platforms.macos-x64-baseline"]
+checksum = "sha256:26ce8ba597bfa5e509943cc327ecf8dfbd495be5913d866e3eca21c86499f7e6"
+url = "https://github.com/thomasschafer/scooter/releases/download/v0.9.0/scooter-v0.9.0-x86_64-apple-darwin.tar.gz"
+
+[tools.scooter."platforms.windows-x64"]
+checksum = "sha256:9501ed1055f371171d71ccbe825e8bbb5b8a245ec1c01bb01033406908a1f6d5"
+url = "https://github.com/thomasschafer/scooter/releases/download/v0.9.0/scooter-v0.9.0-x86_64-pc-windows-msvc.zip"
+
+[tools.scooter."platforms.windows-x64-baseline"]
+checksum = "sha256:9501ed1055f371171d71ccbe825e8bbb5b8a245ec1c01bb01033406908a1f6d5"
+url = "https://github.com/thomasschafer/scooter/releases/download/v0.9.0/scooter-v0.9.0-x86_64-pc-windows-msvc.zip"
+
 [[tools.sqlite]]
 version = "3.52.0"
 backend = "conda:sqlite"
