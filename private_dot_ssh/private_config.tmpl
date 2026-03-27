@@ -11,6 +11,7 @@ Host *
     {{- end }}
     AddKeysToAgent yes
     IdentityFile ~/.ssh/id_ed25519
+    ConnectTimeout 10
     ServerAliveInterval 30
     ServerAliveCountMax 3
     TCPKeepAlive yes
