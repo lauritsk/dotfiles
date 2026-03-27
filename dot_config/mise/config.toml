@@ -35,6 +35,10 @@ _ZO_EXCLUDE_DIRS = "/tmp:/var:/proc:/sys"
 SHELL = "fish"
 EDITOR = "hx"
 PAGER = "bat"
+XDG_DATA_HOME = "$HOME/.local/share"
+XDG_CONFIG_HOME = "$HOME/.config"
+XDG_STATE_HOME = "$HOME/.local/state"
+XDG_CACHE_HOME = "$HOME/.cache"
 
 [shell_alias]
 cm = "chezmoi"
