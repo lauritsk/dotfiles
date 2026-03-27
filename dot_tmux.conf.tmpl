@@ -60,8 +60,12 @@ set -g message-style 'bg=#00e68a fg=#000000 bold'
 setw -g mode-keys vi
 
 bind -T copy-mode-vi v send -X begin-selection
-bind -T copy-mode-vi y send -X copy-pipe-and-cancel "pbcopy"  # macOS
-# bind -T copy-mode-vi y send -X copy-pipe-and-cancel "xclip -selection clipboard -i"  # Linux
+
+{{- if eq .chezmoi.os "darwin" }}
+bind -T copy-mode-vi y send -X copy-pipe-and-cancel "pbcopy"
+{{- else if eq .chezmoi.os "linux" }}
+bind -T copy-mode-vi y send -X copy-pipe-and-cancel "xclip -selection clipboard -i"
+{{- end }}
 
 # Ctrl+b :setw synchronize-panes on
 # Ctrl+b :setw synchronize-panes off
