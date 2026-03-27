@@ -1,0 +1,11 @@
+[services.mc]
+type = "sftp"
+host = "mcserver"
+user = "karl"
+port = 22
+
+[services.work]
+type = "sftp"
+host = "work"
+user = "karl"
+port = 22
