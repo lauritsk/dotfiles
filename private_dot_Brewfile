@@ -3,7 +3,7 @@ brew "git"
 brew "gnupg"
 brew "usage"
 brew "mise"
-brew "syncthing"
+brew "syncthing", restart_service: :changed
 brew "tpm"
 cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
