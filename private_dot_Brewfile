@@ -1,4 +1,5 @@
 brew "bottom"
+brew "duf"
 brew "fish"
 brew "git"
 brew "gnupg"
