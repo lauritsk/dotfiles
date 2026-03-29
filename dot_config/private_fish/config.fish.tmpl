@@ -1,0 +1,22 @@
+if status is-interactive
+    fish_config theme choose catppuccin-mocha
+    {{- if eq .chezmoi.os "darwin" }}
+    fish_add_path /opt/homebrew/bin
+    fish_add_path /opt/homebrew/sbin
+    {{- else if eq .chezmoi.os "linux" }}
+    fish_add_path /home/linuxbrew/.linuxbrew/bin
+    fish_add_path /home/linuxbrew/.linuxbrew/sbin
+    {{- end }}
+    fish_add_path {{ .chezmoi.homeDir }}/.local/bin
+    type -q mise; and mise activate fish | source
+    type -q starship; and starship init fish | source
+    type -q zoxide; and zoxide init fish --cmd cd | source
+    type -q atuin; and atuin hex init fish | source
+    type -q atuin; and atuin init fish | source
+else
+    type -q mise; and mise activate fish --shims | source
+end
+
+{{- if eq .chezmoi.os "darwin" }}
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :
+{{- end }}
