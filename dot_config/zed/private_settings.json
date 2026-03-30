@@ -1,4 +1,11 @@
 {
+  "notification_panel": {
+    "show_count_badge": true
+  },
+  "tab_bar": {
+    "show_pinned_tabs_in_separate_row": false
+  },
+  "document_symbols": "on",
   "audio": {
     "experimental.auto_microphone_volume": true,
     "experimental.rodio_audio": true
@@ -60,12 +67,15 @@
   "colorize_brackets": true,
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "git_panel": {
+    "show_count_badge": true,
+    "file_icons": true,
     "tree_view": true,
     "status_style": "icon",
     "sort_by_path": true,
     "collapse_untracked_diff": true,
   },
   "project_panel": {
+    "diagnostic_badges": true,
     "hide_hidden": false,
     "bold_folder_labels": true,
     "sort_mode": "directories_first",
@@ -77,6 +87,8 @@
     "hide_root": true,
   },
   "search": {
+    "whole_word": true,
+    "case_sensitive": true,
     "include_ignored": true,
     "regex": true,
     "center_on_match": true,
@@ -144,6 +156,7 @@
     "show_branch_icon": true,
   },
   "terminal": {
+    "show_count_badge": true,
     "shell": "system",
     "toolbar": {
       "breadcrumbs": true,
