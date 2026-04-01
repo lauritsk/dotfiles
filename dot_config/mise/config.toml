@@ -49,6 +49,7 @@ sc = "scooter"
 oc = "opencode"
 ts = "tailscale"
 dc = "docker compose"
+tf = "terraform"
 t = "sesh connect $(sesh list | fzf)"
 run = "atuin scripts run"
 
