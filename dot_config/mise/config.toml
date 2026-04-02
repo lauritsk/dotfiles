@@ -41,9 +41,10 @@ XDG_STATE_HOME = "$HOME/.local/state"
 XDG_CACHE_HOME = "$HOME/.cache"
 
 [shell_alias]
-ls = "eza --color=auto --icons=auto"
-la = "eza --color=auto --icons=auto --group-directories-first --long --all --smart-group --changed --git --git-repos --time-style=relative"
-lt = "eza --color=auto --icons=auto --group-directories-last --recurse --tree --level"
+ls = "eza --icons=auto --classify=auto --group-directories-first"
+la = "eza --icons=auto --classify=auto --group-directories-first --long --all --smart-group"
+ll = "eza --icons=auto --classify=auto --group-directories-first --long --all --smart-group --changed --git --git-repos --time-style=relative"
+lt = "eza --icons=auto --classify=auto --group-directories-first --tree --level"
 cm = "chezmoi"
 lg = "lazygit"
 ld = "lazydocker"
