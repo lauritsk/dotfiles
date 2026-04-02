@@ -516,6 +516,10 @@ url = "https://github.com/openai/codex/releases/download/rust-v0.116.0/codex-x86
 checksum = "sha256:56ef51db7b015dcef872b34325e5a1bd9a66c03fd44ee161be7b95a2184acba1"
 url = "https://github.com/openai/codex/releases/download/rust-v0.116.0/codex-x86_64-pc-windows-msvc.exe.zst"
 
+[[tools.eza]]
+version = "0.23.4"
+backend = "asdf:eza"
+
 [[tools.fd]]
 version = "10.4.2"
 backend = "aqua:sharkdp/fd"
@@ -1720,6 +1724,54 @@ url = "https://github.com/xo/usql/releases/download/v0.21.1/usql-0.21.1-windows-
 [tools.usql."platforms.windows-x64-baseline"]
 checksum = "sha256:7d2d38020651e273208eb3dbbc825383d56832629ee6bb211123a7f6e52f905b"
 url = "https://github.com/xo/usql/releases/download/v0.21.1/usql-0.21.1-windows-amd64.zip"
+
+[[tools.usql]]
+version = "0.21.4"
+backend = "aqua:xo/usql"
+
+[tools.usql."platforms.linux-arm64"]
+checksum = "sha256:ccad89d6f4c67a9bf595df0aa8a550e0a9e3d6a6f9356356ba1e164e311335e4"
+url = "https://github.com/xo/usql/releases/download/v0.21.4/usql-0.21.4-linux-arm64.tar.bz2"
+
+[tools.usql."platforms.linux-arm64-musl"]
+checksum = "sha256:ccad89d6f4c67a9bf595df0aa8a550e0a9e3d6a6f9356356ba1e164e311335e4"
+url = "https://github.com/xo/usql/releases/download/v0.21.4/usql-0.21.4-linux-arm64.tar.bz2"
+
+[tools.usql."platforms.linux-x64"]
+checksum = "sha256:78bd9b221e223d7a954d41f51e9eca98bdd94b401618367ba0f3887abebd44fc"
+url = "https://github.com/xo/usql/releases/download/v0.21.4/usql-0.21.4-linux-amd64.tar.bz2"
+
+[tools.usql."platforms.linux-x64-baseline"]
+checksum = "sha256:78bd9b221e223d7a954d41f51e9eca98bdd94b401618367ba0f3887abebd44fc"
+url = "https://github.com/xo/usql/releases/download/v0.21.4/usql-0.21.4-linux-amd64.tar.bz2"
+
+[tools.usql."platforms.linux-x64-musl"]
+checksum = "sha256:78bd9b221e223d7a954d41f51e9eca98bdd94b401618367ba0f3887abebd44fc"
+url = "https://github.com/xo/usql/releases/download/v0.21.4/usql-0.21.4-linux-amd64.tar.bz2"
+
+[tools.usql."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:78bd9b221e223d7a954d41f51e9eca98bdd94b401618367ba0f3887abebd44fc"
+url = "https://github.com/xo/usql/releases/download/v0.21.4/usql-0.21.4-linux-amd64.tar.bz2"
+
+[tools.usql."platforms.macos-arm64"]
+checksum = "sha256:cee9fd2117c17fd622fe0df37b334c356b80cf48d6e9bb164084830ae4ce6d05"
+url = "https://github.com/xo/usql/releases/download/v0.21.4/usql-0.21.4-darwin-arm64.tar.bz2"
+
+[tools.usql."platforms.macos-x64"]
+checksum = "sha256:60feb0d73b2e29e4ecf6b36bf34b23c230d8233c778893b0b56811036d16d17e"
+url = "https://github.com/xo/usql/releases/download/v0.21.4/usql-0.21.4-darwin-amd64.tar.bz2"
+
+[tools.usql."platforms.macos-x64-baseline"]
+checksum = "sha256:60feb0d73b2e29e4ecf6b36bf34b23c230d8233c778893b0b56811036d16d17e"
+url = "https://github.com/xo/usql/releases/download/v0.21.4/usql-0.21.4-darwin-amd64.tar.bz2"
+
+[tools.usql."platforms.windows-x64"]
+checksum = "sha256:9f5e9311ba98703af69b6d8e1d618a232a0e6ec902edc2316b04dd5a99d6b1f3"
+url = "https://github.com/xo/usql/releases/download/v0.21.4/usql-0.21.4-windows-amd64.zip"
+
+[tools.usql."platforms.windows-x64-baseline"]
+checksum = "sha256:9f5e9311ba98703af69b6d8e1d618a232a0e6ec902edc2316b04dd5a99d6b1f3"
+url = "https://github.com/xo/usql/releases/download/v0.21.4/usql-0.21.4-windows-amd64.zip"
 
 [[tools.uv]]
 version = "0.10.12"
