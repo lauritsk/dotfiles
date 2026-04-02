@@ -70,13 +70,3 @@ bind -T copy-mode-vi y send -X copy-pipe-and-cancel "xclip -selection clipboard 
 # Ctrl+b :setw synchronize-panes on
 # Ctrl+b :setw synchronize-panes off
 bind S setw synchronize-panes
-
-set -g @plugin 'tmux-plugins/tpm'
-set -g @plugin 'tmux-plugins/tmux-sensible'
-set -g @plugin 'tmux-plugins/tmux-resurrect'
-set -g @plugin 'tmux-plugins/tmux-continuum'
-
-set -g @resurrect-strategy-vim 'session'
-set -g @continuum-restore 'on'
-
-run '~/.tmux/plugins/tpm/tpm'
