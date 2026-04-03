@@ -3,11 +3,10 @@
 [user]
         name = {{ .name }}
         email = {{ .email }}
-        signingkey = {{ .chezmoi.homeDir }}/.ssh/id_ed25519.pub
 [gpg]
-        format = ssh
-[gpg "ssh"]
-        allowedSignersFile = {{ .chezmoi.homeDir }}/.ssh/allowed_signers
+        format = x509
+[gpg "x509"]
+        program = gitsign
 [core]
         fsmonitor = true
         untrackedCache = true
