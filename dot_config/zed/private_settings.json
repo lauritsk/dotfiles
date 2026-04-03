@@ -65,7 +65,7 @@
     "show": "auto"
   },
   "colorize_brackets": true,
-  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_family": "Monaspace Argon",
   "git_panel": {
     "show_count_badge": true,
     "file_icons": true,
