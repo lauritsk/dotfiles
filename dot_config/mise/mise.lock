@@ -184,6 +184,45 @@ url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi_2.70
 checksum = "sha256:bd75e4892ed22d5ab767c06242fc72c23c5848ad5b1aea27fd95aec03c10c777"
 url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.0/chezmoi_2.70.0_windows_amd64.zip"
 
+[[tools.cosign]]
+version = "3.0.5"
+backend = "aqua:sigstore/cosign"
+
+[tools.cosign."platforms.linux-arm64"]
+checksum = "sha256:d098f3168ae4b3aa70b4ca78947329b953272b487727d1722cb3cb098a1a20ab"
+url = "https://github.com/sigstore/cosign/releases/download/v3.0.5/cosign-linux-arm64"
+provenance = "cosign"
+
+[tools.cosign."platforms.linux-arm64-musl"]
+checksum = "sha256:d098f3168ae4b3aa70b4ca78947329b953272b487727d1722cb3cb098a1a20ab"
+url = "https://github.com/sigstore/cosign/releases/download/v3.0.5/cosign-linux-arm64"
+provenance = "cosign"
+
+[tools.cosign."platforms.linux-x64"]
+checksum = "sha256:db15cc99e6e4837daabab023742aaddc3841ce57f193d11b7c3e06c8003642b2"
+url = "https://github.com/sigstore/cosign/releases/download/v3.0.5/cosign-linux-amd64"
+provenance = "cosign"
+
+[tools.cosign."platforms.linux-x64-musl"]
+checksum = "sha256:db15cc99e6e4837daabab023742aaddc3841ce57f193d11b7c3e06c8003642b2"
+url = "https://github.com/sigstore/cosign/releases/download/v3.0.5/cosign-linux-amd64"
+provenance = "cosign"
+
+[tools.cosign."platforms.macos-arm64"]
+checksum = "sha256:4888c898e2901521a6bd4cf4f0383c9465588a6a46ecd2465ad34faf13f09eb7"
+url = "https://github.com/sigstore/cosign/releases/download/v3.0.5/cosign-darwin-arm64"
+provenance = "cosign"
+
+[tools.cosign."platforms.macos-x64"]
+checksum = "sha256:e032c44d3f7c247bbb2966b41239f88ffba002497a4516358d327ad5693c386f"
+url = "https://github.com/sigstore/cosign/releases/download/v3.0.5/cosign-darwin-amd64"
+provenance = "cosign"
+
+[tools.cosign."platforms.windows-x64"]
+checksum = "sha256:44e9e44202b67ddfaaf5ea1234f5a265417960c4ae98c5b57c35bc40ba9dd714"
+url = "https://github.com/sigstore/cosign/releases/download/v3.0.5/cosign-windows-amd64.exe"
+provenance = "cosign"
+
 [[tools.duf]]
 version = "0.9.1"
 backend = "aqua:muesli/duf"
