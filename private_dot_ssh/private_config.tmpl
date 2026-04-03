@@ -4,8 +4,8 @@ Include ~/.orbstack/ssh/config
 
 Host mcserver work
     ForwardAgent yes
-    RemoteCommand tmux new-session -A -s main
-    RequestTTY force
+    # RemoteCommand tmux new-session -A -s main
+    # RequestTTY force
     ConnectTimeout 10
     ServerAliveInterval 30
     ServerAliveCountMax 3
