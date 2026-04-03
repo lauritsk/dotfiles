@@ -15,9 +15,6 @@ package_manager = "pnpm"
 [settings.python]
 uv_venv_auto = "create|source"
 
-[settings.age]
-key_file = "~/.ssh/age.txt"
-
 [settings.github]
 use_git_credentials = true
 
