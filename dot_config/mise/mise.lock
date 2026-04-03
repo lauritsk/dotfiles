@@ -390,45 +390,6 @@ url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_macOS_amd6
 checksum = "sha256:f3326f6406c98c99701b257d77e2b040eedf83d0176c2c2e9809aa339ceb467e"
 url = "https://github.com/cli/cli/releases/download/v2.89.0/gh_2.89.0_windows_amd64.zip"
 
-[[tools."github:joshmedeski/sesh"]]
-version = "2.24.2"
-backend = "github:joshmedeski/sesh"
-
-[tools."github:joshmedeski/sesh"."platforms.linux-arm64"]
-checksum = "sha256:0eede121cd57da3c141d2922348604d3faf6034a140ffb27c9dc98d9bc37ad9b"
-url = "https://github.com/joshmedeski/sesh/releases/download/v2.24.2/sesh_Linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/joshmedeski/sesh/releases/assets/360996657"
-
-[tools."github:joshmedeski/sesh"."platforms.linux-arm64-musl"]
-checksum = "sha256:0eede121cd57da3c141d2922348604d3faf6034a140ffb27c9dc98d9bc37ad9b"
-url = "https://github.com/joshmedeski/sesh/releases/download/v2.24.2/sesh_Linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/joshmedeski/sesh/releases/assets/360996657"
-
-[tools."github:joshmedeski/sesh"."platforms.linux-x64"]
-checksum = "sha256:a33199a6fd5c39628872be1bc40753af755e1dc822f64a27c09a23e330ddd0d0"
-url = "https://github.com/joshmedeski/sesh/releases/download/v2.24.2/sesh_Linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/joshmedeski/sesh/releases/assets/360996654"
-
-[tools."github:joshmedeski/sesh"."platforms.linux-x64-musl"]
-checksum = "sha256:a33199a6fd5c39628872be1bc40753af755e1dc822f64a27c09a23e330ddd0d0"
-url = "https://github.com/joshmedeski/sesh/releases/download/v2.24.2/sesh_Linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/joshmedeski/sesh/releases/assets/360996654"
-
-[tools."github:joshmedeski/sesh"."platforms.macos-arm64"]
-checksum = "sha256:23ab8bb8b405251c148cc5b6b10f933f57c4be051304b8eb3e85827aa87114da"
-url = "https://github.com/joshmedeski/sesh/releases/download/v2.24.2/sesh_Darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/joshmedeski/sesh/releases/assets/360996663"
-
-[tools."github:joshmedeski/sesh"."platforms.macos-x64"]
-checksum = "sha256:19cb95d86c122874c5acb97840a966778bc9cbbe2078e022e10bba7eb71981b6"
-url = "https://github.com/joshmedeski/sesh/releases/download/v2.24.2/sesh_Darwin_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/joshmedeski/sesh/releases/assets/360996665"
-
-[tools."github:joshmedeski/sesh"."platforms.windows-x64"]
-checksum = "sha256:2dfbf3d32f6f850cb281f3de5d135cdfc24f5931c55daa73e6c20f771a10e4c2"
-url = "https://github.com/joshmedeski/sesh/releases/download/v2.24.2/sesh_Windows_x86_64.zip"
-url_api = "https://api.github.com/repos/joshmedeski/sesh/releases/assets/360996656"
-
 [[tools.gitleaks]]
 version = "8.30.1"
 backend = "aqua:gitleaks/gitleaks"
