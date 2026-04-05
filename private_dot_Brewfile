@@ -1,4 +1,6 @@
+brew "bottom"
 brew "devcontainer"
+brew "duf"
 brew "fish"
 brew "git"
 brew "gnupg"
