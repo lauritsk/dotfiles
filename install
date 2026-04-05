@@ -1,4 +1,6 @@
 #!/usr/bin/env fish
 
-mise trust --all && mise run setup
+mise trust --all
+mise run --raw setup
+mise install --raw
 exec fish
