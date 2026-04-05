@@ -567,35 +567,6 @@ url = "https://github.com/starship/starship/releases/download/v1.24.2/starship-x
 checksum = "sha256:d38424c595320e9639a276666347d5e44cb004de3972f40b9a5a1a6b88537f29"
 url = "https://github.com/starship/starship/releases/download/v1.24.2/starship-x86_64-pc-windows-msvc.zip"
 
-[[tools.tlrc]]
-version = "1.13.0"
-backend = "aqua:tldr-pages/tlrc"
-
-[tools.tlrc."platforms.linux-x64"]
-checksum = "sha256:29afac4831274fb0b4f26951f9c8fb006ceb3b6c84f301c7bc48395badd27c3e"
-url = "https://github.com/tldr-pages/tlrc/releases/download/v1.13.0/tlrc-v1.13.0-x86_64-unknown-linux-musl.tar.gz"
-provenance = "github-attestations"
-
-[tools.tlrc."platforms.linux-x64-musl"]
-checksum = "sha256:29afac4831274fb0b4f26951f9c8fb006ceb3b6c84f301c7bc48395badd27c3e"
-url = "https://github.com/tldr-pages/tlrc/releases/download/v1.13.0/tlrc-v1.13.0-x86_64-unknown-linux-musl.tar.gz"
-provenance = "github-attestations"
-
-[tools.tlrc."platforms.macos-arm64"]
-checksum = "sha256:ca84b09390d81058c8f6c532da7ffb06dbe42a0d208bd3a35f1649b368ebacba"
-url = "https://github.com/tldr-pages/tlrc/releases/download/v1.13.0/tlrc-v1.13.0-x86_64-apple-darwin.tar.gz"
-provenance = "github-attestations"
-
-[tools.tlrc."platforms.macos-x64"]
-checksum = "sha256:ca84b09390d81058c8f6c532da7ffb06dbe42a0d208bd3a35f1649b368ebacba"
-url = "https://github.com/tldr-pages/tlrc/releases/download/v1.13.0/tlrc-v1.13.0-x86_64-apple-darwin.tar.gz"
-provenance = "github-attestations"
-
-[tools.tlrc."platforms.windows-x64"]
-checksum = "sha256:d26fa0e5e190513b66a7834945846370aced3f945f681f901ebbe55e1b11901d"
-url = "https://github.com/tldr-pages/tlrc/releases/download/v1.13.0/tlrc-v1.13.0-x86_64-pc-windows-msvc.zip"
-provenance = "github-attestations"
-
 [[tools.tmux]]
 version = "3.6a"
 backend = "aqua:tmux/tmux-builds"
