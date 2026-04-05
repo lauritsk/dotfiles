@@ -3,4 +3,3 @@
 mise trust --all
 mise run --raw setup
 mise install --raw
-exec fish
