@@ -1,5 +1,4 @@
 #!/usr/bin/env fish
 
-set script_dir (path resolve (path dirname (status filename)))
-mise trust "$script_dir/mise.toml"
-exec mise exec chezmoi -- chezmoi init --apply --source="$script_dir"
+mise trust --all && mise run setup
+exec fish
