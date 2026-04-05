@@ -56,7 +56,7 @@ chezmoi = "2.70.0"
 cosign = "3.0.5"
 eza = "0.23.4"
 fd = "10.4.2"
-fnox = "1.19.0"
+fnox = "1.20.0"
 fzf = "0.71.0"
 gh = "2.89.0"
 gitleaks = "8.30.1"
@@ -121,5 +121,5 @@ if ! devcontainer up --workspace-folder "$repo_dir" --dotfiles-repository "$DOTF
   exec "$SHELL" -il
 fi
 
-exec devcontainer exec --workspace-folder "$repo_dir" bash -il
+exec devcontainer exec --workspace-folder "$repo_dir" fish
 '''
