@@ -1,9 +1,5 @@
 #!/usr/bin/env fish
 
-set -e
-
 set script_dir (cd -P -- (path dirname (status filename)); and pwd -P)
 set args init --apply --source="$script_dir"
-
-echo "Running 'mise exec chezmoi -- chezmoi $args'" >&2
 exec mise exec chezmoi -- chezmoi $args
