@@ -75,3 +75,58 @@ tmux = "3.6a"
 usage = "3.2.0"
 yazi = "26.1.22"
 zoxide = "0.9.9"
+
+[tasks.dev]
+tools.devcontainer-cli = "0.84.1"
+tools.pnpm = "10.33.0"
+tools.gh = "2.89.0"
+tools.fzf = "0.71.0"
+env.PROJECTS_DIR = "{{env.HOME}}/Projects"
+env.DOTFILES_REPOSITORY = "https://github.com/lauritsk/dotfiles.git"
+description = "Pick a repo, clone it, and enter its devcontainer"
+interactive = true
+run = '''
+#!/usr/bin/env bash
+set -euo pipefail
+
+selected_repo="$(gh repo list \
+  --json nameWithOwner,description,isPrivate,pushedAt \
+  --jq '.[] | [.nameWithOwner, (if .isPrivate then "private" else "public" end), (.pushedAt // ""), (.description // "")] | @tsv' \
+  | fzf \
+      --delimiter=$'\t' \
+      --with-nth=1,2,4 \
+      --prompt="repo> " \
+      --header="enter to clone/open, ctrl-c to cancel" \
+  | cut -f1)"
+
+if [[ -z "$selected_repo" ]]; then
+  echo "No repository selected" >&2
+  exit 1
+fi
+
+repo_dir="$PROJECTS_DIR/$selected_repo"
+
+mkdir -p "$(dirname "$repo_dir")"
+
+if [[ ! -e "$repo_dir" ]]; then
+  echo "Cloning $selected_repo into $repo_dir"
+  gh repo clone "$selected_repo" "$repo_dir"
+elif ! git -C "$repo_dir" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  echo "Target path exists but is not a git repo: $repo_dir" >&2
+  exit 1
+fi
+
+if [[ ! -f "$repo_dir/.devcontainer/devcontainer.json" && ! -f "$repo_dir/.devcontainer.json" ]]; then
+  echo "No devcontainer found in $selected_repo"
+  cd "$repo_dir"
+  exec "$SHELL" -il
+fi
+
+if ! devcontainer up --workspace-folder "$repo_dir" --dotfiles-repository "$DOTFILES_REPOSITORY"; then
+  echo "Devcontainer failed for $selected_repo; starting local shell instead" >&2
+  cd "$repo_dir"
+  exec "$SHELL" -il
+fi
+
+exec devcontainer exec --workspace-folder "$repo_dir" bash -il
+'''
