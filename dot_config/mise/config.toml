@@ -36,7 +36,7 @@ XDG_CACHE_HOME = "$HOME/.cache"
 
 [shell_alias]
 ls = "eza --icons=auto --classify=auto --group-directories-first"
-la = "eza --icons=auto --classify=auto --group-directories-first --long --all --smart-group --changed --git --time-style=relative"
+la = "eza --icons=auto --classify=auto --group-directories-first --long --all --smart-group --changed --git --git-repos --time-style=relative"
 lt = "eza --icons=auto --classify=auto --group-directories-first --tree --level"
 cat = "bat"
 cm = "chezmoi"
