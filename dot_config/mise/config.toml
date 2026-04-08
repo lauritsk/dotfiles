@@ -51,7 +51,7 @@ dc = "docker compose"
 [tools]
 atuin = "18.13.6"
 bat = "0.26.1"
-chezmoi = "2.70.0"
+chezmoi = "2.70.1"
 cocogitto = "7.0.0"
 cosign = "3.0.6"
 delta = "0.19.2"
