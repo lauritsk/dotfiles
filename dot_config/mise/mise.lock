@@ -70,6 +70,34 @@ url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_
 version = "2.70.1"
 backend = "aqua:twpayne/chezmoi"
 
+[tools.chezmoi."platforms.linux-arm64"]
+checksum = "sha256:7f8307cef8aade159cdee372a10871a606a50c6239284c0860fb463a174faba0"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.1/chezmoi_2.70.1_linux_arm64.tar.gz"
+
+[tools.chezmoi."platforms.linux-arm64-musl"]
+checksum = "sha256:7f8307cef8aade159cdee372a10871a606a50c6239284c0860fb463a174faba0"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.1/chezmoi_2.70.1_linux_arm64.tar.gz"
+
+[tools.chezmoi."platforms.linux-x64"]
+checksum = "sha256:3bd054238e2a95548eee62a6c5b4d9d1352f2c6c69c6d32f3d1964878398f91a"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.1/chezmoi_2.70.1_linux_amd64.tar.gz"
+
+[tools.chezmoi."platforms.linux-x64-musl"]
+checksum = "sha256:3bd054238e2a95548eee62a6c5b4d9d1352f2c6c69c6d32f3d1964878398f91a"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.1/chezmoi_2.70.1_linux_amd64.tar.gz"
+
+[tools.chezmoi."platforms.macos-arm64"]
+checksum = "sha256:814fd391b755046d9dbe17c1a7e93d7dd725b2842bf9663c08645771f4a92cf1"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.1/chezmoi_2.70.1_darwin_arm64.tar.gz"
+
+[tools.chezmoi."platforms.macos-x64"]
+checksum = "sha256:36b9b41dd88485afd30c7940398edef3b4757c19e36689f9324012391ea7dbff"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.1/chezmoi_2.70.1_darwin_amd64.tar.gz"
+
+[tools.chezmoi."platforms.windows-x64"]
+checksum = "sha256:dfd54ea02f4290dd7d072c2c932efcbdbe3af01035f22315986654711c6d97bd"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.1/chezmoi_2.70.1_windows_amd64.zip"
+
 [[tools.cocogitto]]
 version = "7.0.0"
 backend = "aqua:cocogitto/cocogitto"
@@ -472,36 +500,36 @@ checksum = "sha256:26bb374ee7f3c6e52627262c7f8cc96ab23f96dfd3ef95b3d485d2ef9b842
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.61.0/lazygit_0.61.0_windows_x86_64.zip"
 
 [[tools.opencode]]
-version = "1.4.0"
+version = "1.4.1"
 backend = "aqua:anomalyco/opencode"
 
 [tools.opencode."platforms.linux-arm64"]
-checksum = "sha256:2f5728ed47d8147da9163e4c10a83914131bf849bfc0f17590ab6d58b7d03ba3"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.0/opencode-linux-arm64.tar.gz"
+checksum = "sha256:041ffe46f451afdd48722e1697fa45dd5d80f235902c63859fdaaf8c7b1f4c89"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.1/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-arm64-musl"]
-checksum = "sha256:2f5728ed47d8147da9163e4c10a83914131bf849bfc0f17590ab6d58b7d03ba3"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.0/opencode-linux-arm64.tar.gz"
+checksum = "sha256:041ffe46f451afdd48722e1697fa45dd5d80f235902c63859fdaaf8c7b1f4c89"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.1/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-x64"]
-checksum = "sha256:5117eb08aa542d49b0149ba837d01c7ebc1d79ba332e8518859edc33c4eff2cf"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.0/opencode-linux-x64.tar.gz"
+checksum = "sha256:6b27023380d06847c1a5d824f8327e4483b5a388aa0ef7a1c76785651446d6c3"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.1/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:5117eb08aa542d49b0149ba837d01c7ebc1d79ba332e8518859edc33c4eff2cf"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.0/opencode-linux-x64.tar.gz"
+checksum = "sha256:6b27023380d06847c1a5d824f8327e4483b5a388aa0ef7a1c76785651446d6c3"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.1/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:be968e559051bb622f0b9fc628216670240b7e7441a11b0eb11f79a6f03239a5"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.0/opencode-darwin-arm64.zip"
+checksum = "sha256:d69896dd5ffd669e5a9227dcacac2061ead0aad7d50815500bcacb4a2d2464cc"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.1/opencode-darwin-arm64.zip"
 
 [tools.opencode."platforms.macos-x64"]
-checksum = "sha256:fb2ab4b4995bcced575f19f90bb08cb657accdb90ebeec9f0cd182f02e1e9e0c"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.0/opencode-darwin-x64.zip"
+checksum = "sha256:9e901e9e778bde8aa66dc8489d8aad10c9666f82ffbf8b5e0dacf3d5f791e5f3"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.1/opencode-darwin-x64.zip"
 
 [tools.opencode."platforms.windows-x64"]
-checksum = "sha256:378cb5fd511c90f4bdbb5a69c79d65c241e17d0f825d49b78a2cf6457d3a8e90"
-url = "https://github.com/anomalyco/opencode/releases/download/v1.4.0/opencode-windows-x64.zip"
+checksum = "sha256:65a7601a5f45c30ca9a4d3ba2a7cc35b74e2b33807a78379222f1836f26256d0"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.4.1/opencode-windows-x64.zip"
 
 [[tools.rg]]
 version = "15.1.0"
