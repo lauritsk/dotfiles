@@ -6,6 +6,7 @@ env_shell_expand = true
 pin = true
 lockfile = true
 # locked = true
+lockfile_platforms = ["macos-arm64", "linux-x64", "linux-arm64"]
 install_before = "7d"
 trusted_config_paths = ["/workspaces"]
 
