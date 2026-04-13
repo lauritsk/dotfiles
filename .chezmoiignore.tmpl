@@ -1,0 +1,9 @@
+README.md
+install
+mise.toml
+mise.lock
+
+{{- if not (and (eq .chezmoi.os "darwin") (lookPath "orb")) }}
+~/.config/fish/conf.d/orbstack.fish
+~/.ssh/config.d/orbstack.config
+{{- end }}
