@@ -1,0 +1,3 @@
+{{- if and (eq .chezmoi.os "darwin") (stat (joinPath .chezmoi.homeDir ".orbstack/ssh/config")) -}}
+Include ~/.orbstack/ssh/config
+{{- end -}}
