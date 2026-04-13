@@ -2,17 +2,6 @@
 Include ~/.orbstack/ssh/config
 {{- end }}
 
-Host mcserver work
-    ForwardAgent yes
-    # RemoteCommand tmux new-session -A -s main
-    # RequestTTY force
-    ConnectTimeout 10
-    ServerAliveInterval 30
-    ServerAliveCountMax 3
-    ControlMaster auto
-    ControlPersist 10m
-    ControlPath ~/.ssh/controlmasters/%C
-
 Host *
     {{- if eq .chezmoi.os "darwin" }}
     IgnoreUnknown UseKeychain
