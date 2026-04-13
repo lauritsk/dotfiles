@@ -17,7 +17,3 @@ if status is-interactive
 else
     type -q mise; and mise activate fish --shims | source
 end
-
-{{- if eq .chezmoi.os "darwin" }}
-source ~/.orbstack/shell/init2.fish 2>/dev/null || :
-{{- end }}
