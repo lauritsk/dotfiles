@@ -1,7 +1,0 @@
-Include ~/.orbstack/ssh/config
-
-Host *
-    IgnoreUnknown UseKeychain
-    UseKeychain yes
-    AddKeysToAgent yes
-    IdentityFile ~/.ssh/id_ed25519_sk
