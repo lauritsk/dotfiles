@@ -13,13 +13,6 @@
         fsmonitor = true
         untrackedCache = true
         excludesfile = {{ .chezmoi.homeDir }}/.config/git/ignore
-        pager = delta
-[interactive]
-        diffFilter = delta --color-only
-[delta]
-        navigate = true
-        side-by-side = true
-        line-numbers = true
 [tag]
         sort = version:refname
         gpgsign = true
@@ -58,7 +51,7 @@
         autocorrect = prompt
 [credential "https://github.com"]
         helper =
-        helper = {{ lookPath "gh" }} auth git-credential
+        helper = gh auth git-credential
 [credential "https://gist.github.com"]
         helper =
-        helper = {{ lookPath "gh" }} auth git-credential
+        helper = gh auth git-credential
