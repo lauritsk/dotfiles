@@ -1,8 +1,0 @@
-[settings]
-experimental = true
-pin = true
-lockfile = true
-install_before = "7d"
-
-[settings.github]
-use_git_credentials = true
