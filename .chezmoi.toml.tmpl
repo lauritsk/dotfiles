@@ -1,18 +1,4 @@
-[add]
-    secrets = "error"
-
-[edit]
-    apply = true
-
 [git]
     autoAdd = true
     autoCommit = true
     autoPush = true
-
-[hooks.edit-config-template.post]
-    command = "chezmoi"
-    args = ["init"]
-
-[data]
-    name = "Karl Hans Laurits"
-    email = "karl@laurits.dev"
