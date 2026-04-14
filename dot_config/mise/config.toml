@@ -1,12 +1,9 @@
 [settings]
 color_theme = "catppuccin"
 experimental = true
-activate_aggressive = true
-env_shell_expand = true
 pin = true
 lockfile = true
 # locked = true
-lockfile_platforms = ["macos-arm64", "linux-x64", "linux-arm64"]
 install_before = "7d"
 trusted_config_paths = ["/workspaces"]
 
@@ -22,51 +19,16 @@ use_git_credentials = true
 [env]
 fish_greeting = ""
 fish_key_bindings = "fish_vi_key_bindings"
-BAT_THEME_LIGHT = "Catppuccin Latte"
-BAT_THEME_DARK = "Catppuccin Mocha"
-_ZO_DATA_DIR = "$HOME/.local/share/zoxide"
-_ZO_EXCLUDE_PATHS = ".git"
-_ZO_EXCLUDE_DIRS = "/tmp:/var:/proc:/sys"
-SHELL = "fish"
-EDITOR = "hx"
-PAGER = "bat"
-XDG_DATA_HOME = "$HOME/.local/share"
-XDG_CONFIG_HOME = "$HOME/.config"
-XDG_STATE_HOME = "$HOME/.local/state"
-XDG_CACHE_HOME = "$HOME/.cache"
 
 [shell_alias]
-y = "yazi"
-ls = "eza --icons=auto --classify=auto --group-directories-first"
-la = "eza --icons=auto --classify=auto --group-directories-first --long --all --smart-group --changed --git --git-repos --time-style=relative"
-lt = "eza --icons=auto --classify=auto --group-directories-first --tree --level"
-cat = "bat"
-sc = "scooter"
 cm = "chezmoi"
-lg = "lazygit"
-ld = "lazydocker"
 oc = "opencode"
-ts = "tailscale"
-dc = "docker compose"
 
 [tools]
-atuin = "18.14.1"
-bat = "0.26.1"
 chezmoi = "2.70.1"
-delta = "0.19.2"
-eza = "0.23.4"
 fd = "10.4.2"
-fnox = "1.20.0"
-fzf = "0.71.0"
 gh = "2.89.0"
 gitsign = "0.14.0"
-helix = "25.07.1"
-lazydocker = "0.25.0"
-lazygit = "0.61.1"
 opencode = "1.4.3"
 rg = "15.1.0"
-scooter = "0.9.0"
-starship = "1.24.2"
 usage = "3.2.0"
-yazi = "26.1.22"
-zoxide = "0.9.9"
