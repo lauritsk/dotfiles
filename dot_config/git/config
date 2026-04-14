@@ -51,7 +51,7 @@
         autocorrect = prompt
 [credential "https://github.com"]
         helper =
-        helper = {{ lookPath "gh" }} auth git-credential
+        helper = /opt/homebrew/bin/gh auth git-credential
 [credential "https://gist.github.com"]
         helper =
-        helper = {{ lookPath "gh" }} auth git-credential
+        helper = /opt/homebrew/bin/gh auth git-credential
