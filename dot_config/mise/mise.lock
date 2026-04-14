@@ -263,22 +263,6 @@ url = "https://github.com/starship/starship/releases/download/v1.24.2/starship-x
 checksum = "sha256:d3a0da21374962625a2ee992110979bc1fa33424d7b6aea58a70405e26544fd9"
 url = "https://github.com/starship/starship/releases/download/v1.24.2/starship-aarch64-apple-darwin.tar.gz"
 
-[[tools.tmux]]
-version = "3.6a"
-backend = "aqua:tmux/tmux-builds"
-
-[tools.tmux."platforms.linux-arm64"]
-checksum = "sha256:bb5afd9d646df54a7d7c66e198aa22c7d293c7453534f1670f7c540534db8b5e"
-url = "https://github.com/tmux/tmux-builds/releases/download/v3.6a/tmux-3.6a-linux-arm64.tar.gz"
-
-[tools.tmux."platforms.linux-x64"]
-checksum = "sha256:c0a772a5e6ca8f129b0111d10029a52e02bcbc8352d5a8c0d3de8466a1e59c2e"
-url = "https://github.com/tmux/tmux-builds/releases/download/v3.6a/tmux-3.6a-linux-x86_64.tar.gz"
-
-[tools.tmux."platforms.macos-arm64"]
-checksum = "sha256:12b5b9f8696e1286897d946649c0a80d0169dd76e018d34476a1fbd34de89a0f"
-url = "https://github.com/tmux/tmux-builds/releases/download/v3.6a/tmux-3.6a-macos-arm64.tar.gz"
-
 [[tools.usage]]
 version = "3.2.0"
 backend = "aqua:jdx/usage"
