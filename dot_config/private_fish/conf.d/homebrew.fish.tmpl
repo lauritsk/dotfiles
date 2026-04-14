@@ -1,7 +1,0 @@
-{{- if and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "arm64") (stat "/opt/homebrew/bin/brew") -}}
-fish_add_path /opt/homebrew/bin
-fish_add_path /opt/homebrew/sbin
-{{- else if and (eq .chezmoi.os "linux") (stat "/home/linuxbrew/.linuxbrew/bin/brew") -}}
-fish_add_path /home/linuxbrew/.linuxbrew/bin
-fish_add_path /home/linuxbrew/.linuxbrew/sbin
-{{- end -}}
