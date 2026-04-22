@@ -1,0 +1,7 @@
+[mgr]
+sort_by = "natural"
+sort_dir_first = true
+sort_translit = true
+linemode = "size_and_mtime"
+show_hidden = true
+show_symlink = true
