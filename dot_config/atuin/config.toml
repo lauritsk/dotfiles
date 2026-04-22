@@ -1,0 +1,17 @@
+workspaces = true
+enter_accept = true
+command_chaining = true
+search_mode = "daemon-fuzzy"
+
+[sync]
+records = true
+
+[daemon]
+enabled = true
+autostart = true
+
+[dotfiles]
+enabled = true
+
+[ai]
+enabled = true
