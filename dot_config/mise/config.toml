@@ -1,0 +1,64 @@
+[settings]
+color_theme = "catppuccin"
+experimental = true
+pin = true
+lockfile = true
+install_before = "7d"
+
+[settings.npm]
+package_manager = "aube"
+
+[settings.python]
+uv_venv_auto = "create|source"
+
+[settings.github]
+use_git_credentials = true
+
+[env]
+fish_greeting = ""
+fish_key_bindings = "fish_vi_key_bindings"
+BAT_THEME_LIGHT = "Catppuccin Latte"
+BAT_THEME_DARK = "Catppuccin Mocha"
+SHELL = "fish"
+EDITOR = "hx"
+PAGER = "bat"
+
+[shell_alias]
+sc = "scooter"
+cm = "chezmoi"
+lg = "lazygit"
+ld = "lazydocker"
+ts = "tailscale"
+dc = "docker compose"
+
+[tools]
+"aqua:gastownhall/beads" = "1.0.2"
+atuin = "18.14.1"
+aube = "latest"
+bat = "0.26.1"
+cocogitto = "7.0.0"
+delta = "0.19.2"
+fd = "10.4.2"
+fnox = "1.20.0"
+fzf = "0.71.0"
+gh = "2.91.0"
+gitsign = "0.14.0"
+go = "1.26.2"
+helix = "25.07.1"
+lazydocker = "0.25.0"
+lazygit = "0.61.1"
+node = "25.9.0"
+pi = "0.68.1"
+rg = "15.1.0"
+scooter = "0.9.0"
+starship = "1.24.2"
+usage = "3.2.1"
+uv = "0.11.6"
+yazi = "26.1.22"
+zoxide = "0.9.9"
+python = "3.14.4"
+pnpm = "10.33.0"
+jq = "1.8.1"
+resvg = "0.47.0"
+chezmoi = "2.70.1"
+tlrc = "1.13.0"
