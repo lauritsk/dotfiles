@@ -1,0 +1,9 @@
+if status is-interactive
+    fish_config theme choose catppuccin-mocha
+    type -q mise; and mise activate fish | source
+    type -q fnox; and fnox activate fish | source
+    type -q starship; and starship init fish | source
+    type -q zoxide; and zoxide init fish --cmd cd | source
+    type -q atuin; and atuin hex init fish | source
+    type -q atuin; and atuin init fish | source
+end
