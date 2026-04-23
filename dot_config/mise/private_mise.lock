@@ -224,6 +224,10 @@ url = "https://github.com/dandavison/delta/releases/download/0.19.2/delta-0.19.2
 checksum = "sha256:ac8ebb4a9f1cbee8b9ea897ba119808a244181adae6f3bed1f3b6b923c50b557"
 url = "https://github.com/dandavison/delta/releases/download/0.19.2/delta-0.19.2-x86_64-pc-windows-msvc.zip"
 
+[[tools.eza]]
+version = "0.23.4"
+backend = "asdf:eza"
+
 [[tools.fd]]
 version = "10.4.2"
 backend = "aqua:sharkdp/fd"
@@ -594,43 +598,43 @@ checksum = "sha256:929552b8305effac843ba7b4270c437aefb702fc3fbd73fcd1bffd35d4ac2
 url = "https://nodejs.org/dist/v25.9.0/node-v25.9.0-win-x64.zip"
 
 [[tools.pi]]
-version = "0.68.1"
+version = "0.69.0"
 backend = "github:badlogic/pi-mono"
 
 [tools.pi."platforms.linux-arm64"]
-checksum = "sha256:7345682138e4e8fc2b1944ec178e99a2cfc83c8e5dee256666e7e391172c82f2"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.68.1/pi-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/402014170"
+checksum = "sha256:fd61bead89e57e7c212a1e1b7ed43e54b4da8d0ca11bfb579a2c4606c54addfc"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.69.0/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/402796993"
 
 [tools.pi."platforms.linux-arm64-musl"]
-checksum = "sha256:7345682138e4e8fc2b1944ec178e99a2cfc83c8e5dee256666e7e391172c82f2"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.68.1/pi-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/402014170"
+checksum = "sha256:fd61bead89e57e7c212a1e1b7ed43e54b4da8d0ca11bfb579a2c4606c54addfc"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.69.0/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/402796993"
 
 [tools.pi."platforms.linux-x64"]
-checksum = "sha256:82cd035a83407127ca8421639e10e3c54b9d79113a17a699bcd1edc287894519"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.68.1/pi-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/402014178"
+checksum = "sha256:f60b3ebec799d856c23b756b50d5e049bca37ff8910958d51223f57e47d09b97"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.69.0/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/402796991"
 
 [tools.pi."platforms.linux-x64-musl"]
-checksum = "sha256:82cd035a83407127ca8421639e10e3c54b9d79113a17a699bcd1edc287894519"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.68.1/pi-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/402014178"
+checksum = "sha256:f60b3ebec799d856c23b756b50d5e049bca37ff8910958d51223f57e47d09b97"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.69.0/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/402796991"
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:505190c72b02fa8046a7ae098f324fe03302e8efc5764139cb1942dfb0a47518"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.68.1/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/402014174"
+checksum = "sha256:6fccb2bd6c3eae74572682c6f137f67ff2fac3defe052ff860003a5915b5ef71"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.69.0/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/402796995"
 
 [tools.pi."platforms.macos-x64"]
-checksum = "sha256:09733054e7a9cefd2a011b4100934c2164b1ffddd4dd103348ed10b7923b7870"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.68.1/pi-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/402014176"
+checksum = "sha256:2a5032fb362bf6626d5b67142e54e0663cbd99c3e1d687dec331fdb7b9400601"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.69.0/pi-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/402796992"
 
 [tools.pi."platforms.windows-x64"]
-checksum = "sha256:27b5feb462be97d019b6ba161b0f29d03b0246b97299c440da9a793c852d90a3"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.68.1/pi-windows-x64.zip"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/402014171"
+checksum = "sha256:53a61942eb01f021d79a0764b656c847057825997811f86a530ee66cdf7724fd"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.69.0/pi-windows-x64.zip"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/402796994"
 
 [[tools.pnpm]]
 version = "10.33.0"
