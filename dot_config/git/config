@@ -14,7 +14,6 @@
 [core]
         fsmonitor = true
         untrackedCache = true
-        excludesfile = /home/karl/.config/git/ignore
         pager = delta
 [interactive]
         diffFilter = delta --color-only
@@ -29,7 +28,6 @@
         verbose = true
         gpgsign = true
 [push]
-        default = simple
         autoSetupRemote = true
         followTags = true
 [pull]
@@ -55,7 +53,6 @@
         algorithm = histogram
         colorMoved = plain
         mnemonicPrefix = true
-        renames = true
 [help]
         autocorrect = prompt
 [credential "https://github.com"]
