@@ -33,37 +33,37 @@ checksum = "sha256:24c12852d91fc6fb210e3f0415c003f4dd09a2bc1920ecffa8710633f9966
 url = "https://github.com/gastownhall/beads/releases/download/v1.0.2/beads_1.0.2_windows_amd64.zip"
 
 [[tools.atuin]]
-version = "18.15.0"
+version = "18.15.1"
 backend = "aqua:atuinsh/atuin"
 
 [tools.atuin."platforms.linux-arm64"]
-checksum = "sha256:b242b984c105774d0e3202418d2349d148031b429b1d5aa81b61a4acbc6a160e"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.15.0/atuin-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:b7c203455553927442881f364a8c9ba5d27c1869b0671fe1b236be09b11aba52"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.15.1/atuin-aarch64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
 
 [tools.atuin."platforms.linux-arm64-musl"]
-checksum = "sha256:b242b984c105774d0e3202418d2349d148031b429b1d5aa81b61a4acbc6a160e"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.15.0/atuin-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:b7c203455553927442881f364a8c9ba5d27c1869b0671fe1b236be09b11aba52"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.15.1/atuin-aarch64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
 
 [tools.atuin."platforms.linux-x64"]
-checksum = "sha256:83cf0be524ef8da85987dcf42f30ed581f19feabc38442fc6ac99b4bb6817058"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.15.0/atuin-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:454bd558795c8072d5eb50cc0ea667adaa876a1cba600305f88618f7041d4a1d"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.15.1/atuin-x86_64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
 
 [tools.atuin."platforms.linux-x64-musl"]
-checksum = "sha256:83cf0be524ef8da85987dcf42f30ed581f19feabc38442fc6ac99b4bb6817058"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.15.0/atuin-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:454bd558795c8072d5eb50cc0ea667adaa876a1cba600305f88618f7041d4a1d"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.15.1/atuin-x86_64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
 
 [tools.atuin."platforms.macos-arm64"]
-checksum = "sha256:a066cf8dd7969daee9d8de04c8bd4c6d4549e0ee36fe3b50b62fd19605e3bdc3"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.15.0/atuin-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:f0377e667dead37d627d946581284dde7ff094955bd858df88223ec2e4b21086"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.15.1/atuin-aarch64-apple-darwin.tar.gz"
 provenance = "github-attestations"
 
 [tools.atuin."platforms.windows-x64"]
-checksum = "sha256:405b62f6722da6674853b9ac532fa3f492607affb936cf4371ca0f7364eaedf3"
-url = "https://github.com/atuinsh/atuin/releases/download/v18.15.0/atuin-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:342bf71e411557f79fb5c4374a3c2a9b91a32b112f5b611244588494f1eaf2b7"
+url = "https://github.com/atuinsh/atuin/releases/download/v18.15.1/atuin-x86_64-pc-windows-msvc.zip"
 provenance = "github-attestations"
 
 [[tools.aube]]
@@ -71,34 +71,34 @@ version = "latest"
 backend = "github:endevco/aube"
 
 [tools.aube."platforms.linux-arm64"]
-checksum = "sha256:9ea60d200d001f617acd49c5ca827716117c9fb5334abaf3e50fb79296de1d6b"
-url = "https://github.com/endevco/aube/releases/download/v1.0.0-beta.11/aube-v1.0.0-beta.11-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/endevco/aube/releases/assets/401716091"
+checksum = "sha256:2090ca7a5ee569b9077f2c4f50714de310067e0abc5cb033f91ff95c486ca5c7"
+url = "https://github.com/endevco/aube/releases/download/v1.0.0-beta.12/aube-v1.0.0-beta.12-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/402905100"
 
 [tools.aube."platforms.linux-arm64-musl"]
-checksum = "sha256:9ea60d200d001f617acd49c5ca827716117c9fb5334abaf3e50fb79296de1d6b"
-url = "https://github.com/endevco/aube/releases/download/v1.0.0-beta.11/aube-v1.0.0-beta.11-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/endevco/aube/releases/assets/401716091"
+checksum = "sha256:3ef377be36638a666afad7f242260469a4293d0ae591a17cf5b740a255099faf"
+url = "https://github.com/endevco/aube/releases/download/v1.0.0-beta.12/aube-v1.0.0-beta.12-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/402905297"
 
 [tools.aube."platforms.linux-x64"]
-checksum = "sha256:c9d15fb087326074599c6d9e45139f9b243ae051b03023d4e8804caf952ae365"
-url = "https://github.com/endevco/aube/releases/download/v1.0.0-beta.11/aube-v1.0.0-beta.11-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/endevco/aube/releases/assets/401716051"
+checksum = "sha256:023cd7f1493e0a880c5311b56643b0020968e5292c7a6c8a530560f9ea0165a5"
+url = "https://github.com/endevco/aube/releases/download/v1.0.0-beta.12/aube-v1.0.0-beta.12-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/402905001"
 
 [tools.aube."platforms.linux-x64-musl"]
-checksum = "sha256:c9d15fb087326074599c6d9e45139f9b243ae051b03023d4e8804caf952ae365"
-url = "https://github.com/endevco/aube/releases/download/v1.0.0-beta.11/aube-v1.0.0-beta.11-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/endevco/aube/releases/assets/401716051"
+checksum = "sha256:865202821e0489ba50b1ed5261c1b8a4e71ce1051806ab25349f6d8239b099e7"
+url = "https://github.com/endevco/aube/releases/download/v1.0.0-beta.12/aube-v1.0.0-beta.12-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/402905104"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:9c0ad71d8f394758b0bedca1797649774a0fa209eed7aa66c40c0b1c9e50aae6"
-url = "https://github.com/endevco/aube/releases/download/v1.0.0-beta.11/aube-v1.0.0-beta.11-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/endevco/aube/releases/assets/401716623"
+checksum = "sha256:2c68f0453bee40bf6e3b990b4f47b9337ce77fac717820e8e3adb272d129004b"
+url = "https://github.com/endevco/aube/releases/download/v1.0.0-beta.12/aube-v1.0.0-beta.12-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/402905355"
 
 [tools.aube."platforms.windows-x64"]
-checksum = "sha256:ae27f5aa773f0e6e177a2b9ce20dc35ea1136cde17f4f1c61e85f687920de00f"
-url = "https://github.com/endevco/aube/releases/download/v1.0.0-beta.11/aube-v1.0.0-beta.11-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/endevco/aube/releases/assets/401717682"
+checksum = "sha256:24297909de34f8a129ea8948cd4b8d62dadc22ef8926d5938d94be1a95c8db1a"
+url = "https://github.com/endevco/aube/releases/download/v1.0.0-beta.12/aube-v1.0.0-beta.12-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/402907813"
 
 [[tools.bat]]
 version = "0.26.1"
