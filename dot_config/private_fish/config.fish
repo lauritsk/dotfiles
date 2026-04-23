@@ -1,5 +1,6 @@
 if status is-interactive
     fish_config theme choose catppuccin-mocha
+    fish_add_path /opt/homebrew/bin
     type -q mise; and mise activate fish | source
     type -q fnox; and fnox activate fish | source
     type -q starship; and starship init fish | source
