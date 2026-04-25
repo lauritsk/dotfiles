@@ -2,13 +2,24 @@
 
 Start: caveman ultra.
 
-Rules:
-- Use `mise` for setup, tools, tasks, CI.
+## Workflow
+
+- Use `mise` for setup, tools, tasks, and CI.
 - Run tasks with `mise run <task>`.
-- Quality gates: `mise` installs tools, `hk.pkl` defines checks; use `mise run lint|fix|check`.
-- Missing workflow/tool: add to `mise`, not manually.
-- Planned work: write to `TODO.md`.
-- Picked TODO item: mark in progress in `TODO.md`; write plan to `PLAN.md`.
-- TODO/PLAN updates: do immediately, in real time; do not batch later.
-- Completed TODO item: mark done in `TODO.md`; empty `PLAN.md`.
-- PR titles: Conventional Commits.
+- Add missing workflows/tools to `mise`; do not install or run them manually.
+- Quality gates live in `hk.pkl`; use `mise run lint`, `mise run fix`, and `mise run check`.
+
+## Planning
+
+- Track planned work and subtasks in `TODO.md`.
+- When starting a TODO item:
+  - mark it in progress in `TODO.md`
+  - write the active plan in `PLAN.md`
+- Update `TODO.md` and `PLAN.md` immediately as work changes; do not batch updates.
+- When completing a TODO item:
+  - mark it done in `TODO.md`
+  - empty `PLAN.md`
+
+## PRs
+
+- Use Conventional Commits for PR titles.
