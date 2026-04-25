@@ -17,7 +17,7 @@ Start: caveman ultra.
   - write the active plan in `PLAN.md`
 - Update `TODO.md` and `PLAN.md` immediately as work changes; do not batch updates.
 - When completing a TODO item:
-  - mark it done in `TODO.md`
+  - mark it done in `TODO.md` and remove its subtasks
   - empty `PLAN.md`
 
 ## PRs
