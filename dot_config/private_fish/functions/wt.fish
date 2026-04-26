@@ -5,7 +5,7 @@ function wt --description "Create a new git worktree in ../<repo>-<branch>, cd i
         return 1
     end
 
-    set pi_prompt $argv[2..-1]
+    set pi_prompt (string join ' ' -- $argv[2..-1])
 
     set repo_name (basename "$repo_root")
     set parent_dir (dirname "$repo_root")
@@ -82,6 +82,10 @@ function wt --description "Create a new git worktree in ../<repo>-<branch>, cd i
     end
 
     if command -q pi
-        pi $pi_prompt
+        if set -q pi_prompt[1]
+            pi "$pi_prompt"
+        else
+            pi
+        end
     end
 end
