@@ -3,7 +3,7 @@ if status is-interactive
     fish_add_path {{ .chezmoi.homeDir }}/.local/bin
     fish_add_path /opt/homebrew/bin
     fish_add_path /opt/homebrew/opt/sqlite/bin
-    fish_add_path {{ .chezmoi.homeDir }}/.composer/vendor/bin
+    fish_add_path {{ .chezmoi.homeDir }}/.config/composer/vendor/bin
     type -q mise; and mise activate fish | source
     type -q starship; and starship init fish | source
     type -q zoxide; and zoxide init fish --cmd cd | source
