@@ -3,7 +3,7 @@ color_theme = "catppuccin"
 experimental = true
 pin = true
 lockfile = true
-# install_before = "7d"
+# minimum_release_age = "7d"
 
 [settings.npm]
 package_manager = "aube"
@@ -37,7 +37,7 @@ cocogitto = "7.0.0"
 delta = "0.19.2"
 fd = "10.4.2"
 fnox = "1.21.0"
-fzf = "0.71.0"
+fzf = "0.72.0"
 gh = "2.91.0"
 gitsign = "0.14.0"
 go = "1.26.2"
@@ -64,6 +64,6 @@ eza = "0.23.4"
 tmux = "3.6a"
 hk = "1.44.1"
 pkl = "0.31.1"
-aube = "1.1.0"
+aube = "1.2.0"
 cargo-binstall = "1.18.1"
 pitchfork = "2.6.0"
