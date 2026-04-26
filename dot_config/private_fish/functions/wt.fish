@@ -1,4 +1,4 @@
-function wt --description "Create a new git worktree in ../<repo>-<name> on branch <name> and cd into it"
+function wt --description "Create a new git worktree in ../<repo>-<branch> on branch <branch> and cd into it"
     set repo_root (git rev-parse --show-toplevel 2>/dev/null)
     if test $status -ne 0
         echo "wt: not inside a git repository" >&2
@@ -12,10 +12,9 @@ function wt --description "Create a new git worktree in ../<repo>-<name> on bran
 
     set repo_name (basename "$repo_root")
     set parent_dir (dirname "$repo_root")
-
     set words alpha beta gamma delta omega maple cedar ember comet river stone cloud moss pine ash dune iris hazel echo drift
 
-    if test (count $argv) -ge 1
+    if test (count $argv) -eq 1
         set branch $argv[1]
     else
         while true
@@ -58,4 +57,6 @@ function wt --description "Create a new git worktree in ../<repo>-<name> on bran
     if command -q mise
         mise trust .
     end
+
+    echo "Created $worktree_path on branch $branch"
 end
