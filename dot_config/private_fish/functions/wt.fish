@@ -19,8 +19,19 @@ function wt --description "Create a new git worktree in ../<repo>-<random> on br
         end
     end
 
+    git config extensions.worktreeConfig true
+    or return 1
+
     git worktree add "$worktree_path" -b "$branch"
     or return 1
 
+    git -C "$worktree_path" config --worktree commit.gpgSign false
+    or return 1
+
     cd "$worktree_path"
+    or return 1
+
+    if command -q mise
+        mise trust .
+    end
 end
