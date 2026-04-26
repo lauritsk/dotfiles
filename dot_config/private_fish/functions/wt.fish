@@ -19,7 +19,8 @@ function wt --description "Create a new git worktree in ../<repo>-<branch> on br
     else
         while true
             set branch (random choice $words)-(random 1000 9999)
-            set worktree_path "$parent_dir/$repo_name-$branch"
+            set safe_branch (string replace -a / - $branch)
+            set worktree_path "$parent_dir/$repo_name-$safe_branch"
 
             if not git show-ref --verify --quiet "refs/heads/$branch"
                 and not test -e "$worktree_path"
@@ -28,9 +29,11 @@ function wt --description "Create a new git worktree in ../<repo>-<branch> on br
         end
     end
 
-    if test -z "$worktree_path"
-        set worktree_path "$parent_dir/$repo_name-$branch"
+    if test -z "$safe_branch"
+        set safe_branch (string replace -a / - $branch)
     end
+
+    set worktree_path "$parent_dir/$repo_name-$safe_branch"
 
     if git show-ref --verify --quiet "refs/heads/$branch"
         echo "wt: branch already exists: $branch" >&2
