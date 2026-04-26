@@ -7,6 +7,7 @@ Start: caveman ultra.
 - Use `mise` for setup, tools, tasks, and CI.
 - Run tasks with `mise run <task>`.
 - Add missing workflows/tools to `mise`; do not install or run them manually.
+- `mise` tasks: repeated, durable, rarely changed; not one-offs.
 - Quality gates live in `hk.pkl`; use `mise run lint`, `mise run fix`, and `mise run check`.
 
 ## Planning
