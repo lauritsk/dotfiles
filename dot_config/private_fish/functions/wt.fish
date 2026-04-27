@@ -1,5 +1,5 @@
 function wt --description "Create a git worktree, run pi non-interactively, auto-commit, create PR, merge, repair, and clean up"
-    set -l usage "usage: wt [ATTEMPTS] BRANCH PROMPT..."
+    set -l usage "usage: wt [ATTEMPTS] [THINKING] BRANCH PROMPT..."
 
     if test (count $argv) -eq 0; or test "$argv[1]" = "--help"; or test "$argv[1]" = "-h"
         echo "$usage"
@@ -17,11 +17,22 @@ function wt --description "Create a git worktree, run pi non-interactively, auto
         set argv $argv[2..-1]
     end
 
+    set -l thinking_level medium
+    if contains -- "$argv[1]" low medium high xhigh
+        set thinking_level "$argv[1]"
+        set argv $argv[2..-1]
+    end
+
     if test (count $argv) -eq 0
         echo "wt: branch required" >&2
         echo "$usage" >&2
         return 2
     end
+
+    set -l pi_thinking_args --thinking "$thinking_level"
+    set -l thinking_levels low medium high xhigh
+    set -l followup_thinking_level "$thinking_level"
+    set -l review_rejected_first_pass 0
 
     set -l branch $argv[1]
     set -l pi_prompt (string join ' ' -- $argv[2..-1])
@@ -183,7 +194,7 @@ function wt --description "Create a git worktree, run pi non-interactively, auto
         or return 1
     end
 
-    pi -p "$pi_prompt"
+    pi $pi_thinking_args -p "$pi_prompt"
     set -l pi_status $status
     if test $pi_status -ne 0
         echo "wt: pi exited with status $pi_status; stopping before review/commit/PR" >&2
@@ -195,6 +206,18 @@ function wt --description "Create a git worktree, run pi non-interactively, auto
     set -l initial_dirty (git status --porcelain --untracked-files=all)
     or return 1
 
+    set -l pre_review_state_hash (begin
+        git rev-parse HEAD
+        git status --porcelain=v1 --untracked-files=all
+        git diff --binary --no-ext-diff
+        git diff --cached --binary --no-ext-diff
+        git ls-files --others --exclude-standard | while read -l path
+            printf 'untracked %s\n' "$path"
+            shasum -a 256 -- "$path"
+        end
+    end | shasum -a 256 | string split -f1 ' ')
+    or return 1
+
     set -l review_target
     if test "$initial_commit_count" -gt 0
         set review_target "Review the commits in $base_rev..HEAD."
@@ -204,11 +227,32 @@ function wt --description "Create a git worktree, run pi non-interactively, auto
         set review_target "No commits or uncommitted changes exist yet; verify whether the requested task was already satisfied or make the needed changes."
     end
 
-    pi -p "Review the work for this original request and fix anything incomplete, incorrect, unsafe, or not matching the request. $review_target If fixes are needed, apply them. You may commit fixes yourself or leave them unstaged; wt will commit dirty changes afterward. Keep the worktree clean when possible. Original request: $pi_prompt"
+    pi --thinking high -p "Review the work for this original request and fix anything incomplete, incorrect, unsafe, or not matching the request. $review_target If fixes are needed, apply them. You may commit fixes yourself or leave them unstaged; wt will commit dirty changes afterward. Keep the worktree clean when possible. Original request: $pi_prompt"
     set pi_status $status
     if test $pi_status -ne 0
         echo "wt: pi review exited with status $pi_status; stopping before commit/PR" >&2
         return $pi_status
+    end
+
+    set -l post_review_state_hash (begin
+        git rev-parse HEAD
+        git status --porcelain=v1 --untracked-files=all
+        git diff --binary --no-ext-diff
+        git diff --cached --binary --no-ext-diff
+        git ls-files --others --exclude-standard | while read -l path
+            printf 'untracked %s\n' "$path"
+            shasum -a 256 -- "$path"
+        end
+    end | shasum -a 256 | string split -f1 ' ')
+    or return 1
+
+    if test "$pre_review_state_hash" != "$post_review_state_hash"
+        set review_rejected_first_pass 1
+        set -l thinking_index (contains -i -- "$followup_thinking_level" $thinking_levels)
+        if test "$thinking_index" -lt (count $thinking_levels)
+            set followup_thinking_level $thinking_levels[(math $thinking_index + 1)]
+        end
+        echo "wt: review changed first pass; follow-up pi thinking bumped to $followup_thinking_level"
     end
 
     set -l commit_count (git rev-list --count "$base_rev..HEAD")
@@ -299,7 +343,11 @@ function wt --description "Create a git worktree, run pi non-interactively, auto
                 echo "wt: CI checks failed after $attempt attempts; leaving PR open: $pr_url" >&2
                 return $checks_status
             else
-                pi -p "CI checks failed or did not finish for this PR: $pr_title ($pr_url). Fix all failures in this worktree. Commit changes if useful; otherwise leave changes unstaged and wt will commit them. Keep the worktree clean when done. Last commit title: $commit_title
+                set -l followup_pi_thinking_args
+                if test -n "$followup_thinking_level"
+                    set followup_pi_thinking_args --thinking "$followup_thinking_level"
+                end
+                pi $followup_pi_thinking_args -p "CI checks failed or did not finish for this PR: $pr_title ($pr_url). Fix all failures in this worktree. Commit changes if useful; otherwise leave changes unstaged and wt will commit them. Keep the worktree clean when done. Last commit title: $commit_title
 
 Checks output:
 $checks_out"
@@ -307,6 +355,12 @@ $checks_out"
                 if test $pi_status -ne 0
                     echo "wt: pi exited with status $pi_status while fixing CI" >&2
                     return $pi_status
+                end
+                if test "$review_rejected_first_pass" -eq 1; and test -n "$followup_thinking_level"
+                    set -l thinking_index (contains -i -- "$followup_thinking_level" $thinking_levels)
+                    if test "$thinking_index" -lt (count $thinking_levels)
+                        set followup_thinking_level $thinking_levels[(math $thinking_index + 1)]
+                    end
                 end
                 continue
             end
@@ -351,7 +405,11 @@ $checks_out"
         git rebase "origin/$default_branch"
         set -l rebase_status $status
         if test $rebase_status -ne 0
-            pi -p "GitHub squash merge failed for PR: $pr_title ($pr_url), likely because $default_branch moved. A rebase onto origin/$default_branch is now in progress and has conflicts. Resolve conflicts, finish the rebase with git rebase --continue, and leave the worktree clean. Preserve the intended changes. Last commit title: $commit_title
+            set -l followup_pi_thinking_args
+            if test -n "$followup_thinking_level"
+                set followup_pi_thinking_args --thinking "$followup_thinking_level"
+            end
+            pi $followup_pi_thinking_args -p "GitHub squash merge failed for PR: $pr_title ($pr_url), likely because $default_branch moved. A rebase onto origin/$default_branch is now in progress and has conflicts. Resolve conflicts, finish the rebase with git rebase --continue, and leave the worktree clean. Preserve the intended changes. Last commit title: $commit_title
 
 Merge failure output:
 $merge_out"
@@ -359,6 +417,12 @@ $merge_out"
             if test $pi_status -ne 0
                 echo "wt: pi exited with status $pi_status while resolving rebase" >&2
                 return $pi_status
+            end
+            if test "$review_rejected_first_pass" -eq 1; and test -n "$followup_thinking_level"
+                set -l thinking_index (contains -i -- "$followup_thinking_level" $thinking_levels)
+                if test "$thinking_index" -lt (count $thinking_levels)
+                    set followup_thinking_level $thinking_levels[(math $thinking_index + 1)]
+                end
             end
         end
 
