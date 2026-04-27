@@ -75,6 +75,11 @@ function wt --description "Create a git worktree, run pi non-interactively, auto
     end
 
     set -l branch_commit_title "$commit_type: $subject"
+    set -l wt_reset (set_color normal)
+    set -l wt_bold (set_color --bold)
+    set -l wt_dim (set_color brblack)
+    set -l wt_green (set_color green)
+    set -l wt_cyan (set_color cyan)
 
     set -l repo_root (git rev-parse --show-toplevel 2>/dev/null)
     or begin
@@ -88,7 +93,7 @@ function wt --description "Create a git worktree, run pi non-interactively, auto
         return 1
     end
 
-    echo "wt: commit message: $branch_commit_title"
+    printf '\n%swt:%s commit message\n%s────────────────────────────────────────%s\n  %s%s%s\n%s────────────────────────────────────────%s\n\n' "$wt_bold" "$wt_reset" "$wt_dim" "$wt_reset" "$wt_bold$wt_green" "$branch_commit_title" "$wt_reset" "$wt_dim" "$wt_reset"
     set -l cog_out (cog verify "$branch_commit_title" 2>&1 | string collect)
     set -l cog_status $pipestatus[1]
     if test $cog_status -ne 0
@@ -417,7 +422,7 @@ $checks_prompt_out
             or return 1
             git -C "$main_wt" branch -D "$branch" >/dev/null 2>/dev/null
 
-            echo "wt: github squash merged $pr_title ($pr_url)"
+            printf '\n%swt:%s github squash merged\n%s────────────────────────────────────────%s\n  %scommit:%s %s%s%s\n  %sPR:%s     %s%s%s\n%s────────────────────────────────────────%s\n\n' "$wt_bold" "$wt_reset" "$wt_dim" "$wt_reset" "$wt_cyan" "$wt_reset" "$wt_bold$wt_green" "$pr_title" "$wt_reset" "$wt_cyan" "$wt_reset" "$wt_bold" "$pr_url" "$wt_reset" "$wt_dim" "$wt_reset"
             return 0
         end
 
@@ -439,7 +444,7 @@ $checks_prompt_out
             or return 1
             git -C "$main_wt" branch -D "$branch" >/dev/null 2>/dev/null
 
-            echo "wt: github squash merged $pr_title ($pr_url)"
+            printf '\n%swt:%s github squash merged\n%s────────────────────────────────────────%s\n  %scommit:%s %s%s%s\n  %sPR:%s     %s%s%s\n%s────────────────────────────────────────%s\n\n' "$wt_bold" "$wt_reset" "$wt_dim" "$wt_reset" "$wt_cyan" "$wt_reset" "$wt_bold$wt_green" "$pr_title" "$wt_reset" "$wt_cyan" "$wt_reset" "$wt_bold" "$pr_url" "$wt_reset" "$wt_dim" "$wt_reset"
             return 0
         end
 
