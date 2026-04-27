@@ -21,6 +21,10 @@ Start: caveman ultra.
   - mark it done in `TODO.md` and remove its subtasks
   - empty `PLAN.md`
 
+## Git
+
+- When merging branches, always squash. Do not create merge commits. Do not fast-forward.
+
 ## PRs
 
 - Use Conventional Commits for PR titles.
