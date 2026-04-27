@@ -1,0 +1,3 @@
+eval "$(mise activate zsh --shims)"
+eval "$(mise activate zsh)"
+source ~/.orbstack/shell/init.zsh 2>/dev/null || :
