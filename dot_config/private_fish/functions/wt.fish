@@ -1,47 +1,88 @@
 function wt --description "Create a git worktree, run pi non-interactively, auto-commit, create PR, merge, repair, and clean up"
-    argparse -n wt 'b/branch=' 'a/attempts=' p/prompt h/help -- $argv
-    or return 2
+    set -l usage "usage: wt [ATTEMPTS] BRANCH PROMPT..."
 
-    if set -q _flag_help
-        echo "usage: wt [--attempts N] [--branch BRANCH] PROMPT..."
-        echo "       wt [--attempts N] BRANCH PROMPT...      # legacy"
-        echo "       wt [--attempts N] --prompt PROMPT...    # random branch"
+    if test (count $argv) -eq 0; or test "$argv[1]" = "--help"; or test "$argv[1]" = "-h"
+        echo "$usage"
         return 0
     end
 
-    set -l branch
-    set -l pi_prompt
     set -l max_attempts 3
-
-    if set -q _flag_attempts[1]
-        set max_attempts $_flag_attempts[-1]
+    if string match -qr '^[0-9]+$' -- "$argv[1]"
+        set max_attempts $argv[1]
         if not string match -qr '^[1-9][0-9]*$' -- "$max_attempts"
-            echo "wt: --attempts must be a positive integer" >&2
+            echo "wt: ATTEMPTS must be a positive integer" >&2
+            echo "$usage" >&2
             return 2
         end
+        set argv $argv[2..-1]
     end
 
-    if set -q _flag_branch[1]
-        set branch $_flag_branch[-1]
-        set pi_prompt (string join ' ' -- $argv)
-    else if set -q _flag_prompt
-        set pi_prompt (string join ' ' -- $argv)
-    else if test (count $argv) -ge 1
-        set branch $argv[1]
-        set pi_prompt (string join ' ' -- $argv[2..-1])
+    if test (count $argv) -eq 0
+        echo "wt: branch required" >&2
+        echo "$usage" >&2
+        return 2
+    end
+
+    set -l branch $argv[1]
+    set -l pi_prompt (string join ' ' -- $argv[2..-1])
+
+    if test -z "$branch"
+        echo "wt: branch must be non-empty" >&2
+        echo "$usage" >&2
+        return 2
     end
 
     if not set -q pi_prompt[1]
         echo "wt: prompt required for non-interactive pi -p flow" >&2
-        echo "usage: wt [--branch BRANCH] PROMPT..." >&2
-        echo "       wt --prompt PROMPT...    # random branch" >&2
+        echo "$usage" >&2
         return 2
     end
+
+    git check-ref-format --branch "$branch" >/dev/null 2>/dev/null
+    or begin
+        echo "wt: invalid branch name: $branch" >&2
+        return 1
+    end
+
+    set -l branch_parts (string split -m1 / -- "$branch")
+    set -l raw_type chore
+    set -l subject $branch
+    if test (count $branch_parts) -gt 1
+        set raw_type $branch_parts[1]
+        set subject $branch_parts[2]
+    end
+
+    set -l commit_type (string replace -r '^feature$' feat -- "$raw_type")
+    if not string match -qr '^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\(.+\))?!?$' -- "$commit_type"
+        set commit_type chore
+        set subject $branch
+    end
+
+    set subject (string replace -ra '[-_/]+' ' ' -- "$subject" | string trim)
+    if test -z "$subject"
+        set subject work
+    end
+
+    set -l branch_commit_title "$commit_type: $subject"
 
     set -l repo_root (git rev-parse --show-toplevel 2>/dev/null)
     or begin
         echo "wt: not inside a git repository" >&2
         return 1
+    end
+
+    command -q cog
+    or begin
+        echo "wt: cog is required for commit message verification" >&2
+        return 1
+    end
+
+    echo "wt: commit message: $branch_commit_title"
+    set -l cog_out (cog verify "$branch_commit_title" 2>&1 | string collect)
+    set -l cog_status $pipestatus[1]
+    if test $cog_status -ne 0
+        echo "$cog_out" >&2
+        return $cog_status
     end
 
     command -q pi
@@ -98,36 +139,8 @@ function wt --description "Create a git worktree, run pi non-interactively, auto
 
     set -l repo_name (path basename -- "$repo_root")
     set -l parent_dir (path dirname -- "$repo_root")
-    set -l words alpha beta gamma delta omega maple cedar ember comet river stone cloud moss pine ash dune iris hazel echo drift
     set -l safe_branch
     set -l worktree_path
-
-    if test -z "$branch"
-        for _ in (seq 1 100)
-            set branch (random choice $words)-(random 1000 9999)
-            set safe_branch (string replace -a / - $branch)
-            set worktree_path "$parent_dir/$repo_name-$safe_branch"
-
-            if not git -C "$main_wt" show-ref --verify --quiet "refs/heads/$branch"
-                and not git -C "$main_wt" show-ref --verify --quiet "refs/remotes/origin/$branch"
-                and not test -e "$worktree_path"
-                break
-            end
-
-            set -e branch safe_branch worktree_path
-        end
-
-        if test -z "$branch"
-            echo "wt: could not find an unused branch/worktree name" >&2
-            return 1
-        end
-    end
-
-    git check-ref-format --branch "$branch" >/dev/null 2>/dev/null
-    or begin
-        echo "wt: invalid branch name: $branch" >&2
-        return 1
-    end
 
     set safe_branch (string replace -a / - $branch)
     set worktree_path "$parent_dir/$repo_name-$safe_branch"
@@ -210,26 +223,7 @@ function wt --description "Create a git worktree, run pi non-interactively, auto
             return 0
         end
 
-        set -l branch_parts (string split -m1 / -- "$branch")
-        set -l raw_type chore
-        set -l subject $branch
-        if test (count $branch_parts) -gt 1
-            set raw_type $branch_parts[1]
-            set subject $branch_parts[2]
-        end
-
-        set -l commit_type (string replace -r '^feature$' feat -- "$raw_type")
-        if not string match -qr '^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\(.+\))?!?$' -- "$commit_type"
-            set commit_type chore
-            set subject $branch
-        end
-
-        set subject (string replace -ra '[-_/]+' ' ' -- "$subject" | string trim)
-        if test -z "$subject"
-            set subject work
-        end
-
-        set commit_title "$commit_type: $subject"
+        set commit_title "$branch_commit_title"
         git add -A
         or return 1
         git commit -m "$commit_title"
@@ -279,15 +273,17 @@ function wt --description "Create a git worktree, run pi non-interactively, auto
         end
 
         if not gh pr view "$branch" >/dev/null 2>/dev/null
-            set -l pr_create_out (gh pr create --fill | string collect)
+            set -l pr_create_out (gh pr create --title "$branch_commit_title" --body '' | string collect)
             or return 1
             if set -q pr_create_out[1]
                 echo "$pr_create_out"
             end
+        else
+            gh pr edit "$branch" --title "$branch_commit_title" --body '' >/dev/null
+            or return 1
         end
 
-        set pr_title (gh pr view "$branch" --json title --jq '.title')
-        or return 1
+        set pr_title "$branch_commit_title"
         set pr_url (gh pr view "$branch" --json url --jq '.url')
         or return 1
 
