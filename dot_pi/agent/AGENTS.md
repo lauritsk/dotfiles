@@ -12,14 +12,9 @@ Start: caveman ultra.
 
 ## Planning
 
-- Track planned work and subtasks in `TODO.md`.
-- When starting a TODO item:
-  - mark it in progress in `TODO.md`
-  - write the active plan in `PLAN.md`
-- Update `TODO.md` and `PLAN.md` immediately as work changes; do not batch updates.
-- When completing a TODO item:
-  - mark it done in `TODO.md` and remove its subtasks
-  - empty `PLAN.md`
+- In GitHub repositories, GitHub Issues are the source of truth for task tracking.
+- Record subtasks, status updates, decisions, and scope changes in the relevant issue.
+- Keep issue status current as work starts, changes, and completes.
 
 ## Git
 
