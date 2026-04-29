@@ -25,6 +25,10 @@ run "getsentry/skills" "find-bugs"
 run "openai/skills" "frontend-skill"
 run "cloudflare/skills" "sandbox-sdk"
 run "getsentry/skills" "code-simplifier"
+run "getsentry/skills" "find-bugs"
+run "getsentry/skills" "security-review"
+run "getsentry/skills" "code-review"
+run "getsentry/skills" "agents-md"
 
 echo ">>> Done. Installed global skills:"
 npx skills ls -g --json
