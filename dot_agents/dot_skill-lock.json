@@ -135,7 +135,18 @@
       "skillFolderHash": "4d90eab74b6f49050c92b95ba635bc99c41671e9",
       "installedAt": "2026-04-22T16:00:36.059Z",
       "updatedAt": "2026-04-22T21:25:03.799Z"
+    },
+    "code-simplifier": {
+      "source": "getsentry/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/getsentry/skills.git",
+      "skillPath": "skills/code-simplifier/SKILL.md",
+      "skillFolderHash": "f1e945be4e7ef079a2cc8c8663deccb81d436b2a",
+      "installedAt": "2026-04-29T17:08:01.305Z",
+      "updatedAt": "2026-04-29T17:08:01.305Z"
     }
   },
-  "dismissed": {}
+  "dismissed": {
+    "findSkillsPrompt": true
+  }
 }

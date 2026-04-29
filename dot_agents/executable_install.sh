@@ -24,6 +24,7 @@ run "madsnorgaard/agent-resources" "drupal-security"
 run "getsentry/skills" "find-bugs"
 run "openai/skills" "frontend-skill"
 run "cloudflare/skills" "sandbox-sdk"
+run "getsentry/skills" "code-simplifier"
 
 echo ">>> Done. Installed global skills:"
 npx skills ls -g --json
