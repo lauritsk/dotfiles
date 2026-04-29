@@ -116,7 +116,7 @@
       "skillPath": "skills/find-bugs/SKILL.md",
       "skillFolderHash": "511ece7796877f203c57a2c45a9068ee82587c88",
       "installedAt": "2026-04-22T16:00:31.431Z",
-      "updatedAt": "2026-04-24T13:28:52.583Z"
+      "updatedAt": "2026-04-29T17:09:30.263Z"
     },
     "frontend-skill": {
       "source": "openai/skills",
@@ -144,6 +144,33 @@
       "skillFolderHash": "f1e945be4e7ef079a2cc8c8663deccb81d436b2a",
       "installedAt": "2026-04-29T17:08:01.305Z",
       "updatedAt": "2026-04-29T17:08:01.305Z"
+    },
+    "security-review": {
+      "source": "getsentry/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/getsentry/skills.git",
+      "skillPath": "skills/security-review/SKILL.md",
+      "skillFolderHash": "598da260ce536813c8bce1607b3c447bdc2f54f7",
+      "installedAt": "2026-04-29T17:09:40.884Z",
+      "updatedAt": "2026-04-29T17:09:40.884Z"
+    },
+    "code-review": {
+      "source": "getsentry/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/getsentry/skills.git",
+      "skillPath": "skills/code-review/SKILL.md",
+      "skillFolderHash": "b7760b1d61900ceaa93362ef677c55f01523ef05",
+      "installedAt": "2026-04-29T17:09:56.267Z",
+      "updatedAt": "2026-04-29T17:09:56.267Z"
+    },
+    "agents-md": {
+      "source": "getsentry/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/getsentry/skills.git",
+      "skillPath": "skills/agents-md/SKILL.md",
+      "skillFolderHash": "9968665256623aa1a8c18fd0a10188fd679215d8",
+      "installedAt": "2026-04-29T17:10:05.350Z",
+      "updatedAt": "2026-04-29T17:10:05.350Z"
     }
   },
   "dismissed": {
