@@ -985,6 +985,45 @@ url = "https://github.com/tmux/tmux-builds/releases/download/v3.6a/tmux-3.6a-mac
 checksum = "sha256:b9b12eaeba43acf5671acf3857d947525440b544185a8db34ea557199a090251"
 url = "https://github.com/tmux/tmux-builds/releases/download/v3.6a/tmux-3.6a-macos-x86_64.tar.gz"
 
+[[tools.topgrade]]
+version = "17.4.0"
+backend = "aqua:topgrade-rs/topgrade"
+
+[tools.topgrade."platforms.linux-arm64"]
+checksum = "sha256:db2db36402adf3dc243d5c148a4ec45d4bdea303fdeddb7d8c4edddd7af369b2"
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrade-v17.4.0-aarch64-unknown-linux-musl.tar.gz"
+provenance = "github-attestations"
+
+[tools.topgrade."platforms.linux-arm64-musl"]
+checksum = "sha256:db2db36402adf3dc243d5c148a4ec45d4bdea303fdeddb7d8c4edddd7af369b2"
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrade-v17.4.0-aarch64-unknown-linux-musl.tar.gz"
+provenance = "github-attestations"
+
+[tools.topgrade."platforms.linux-x64"]
+checksum = "sha256:d1496f23defc84cb3252cbe75e919b71cd4a34d56a77973134de25ed81f29ad0"
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrade-v17.4.0-x86_64-unknown-linux-musl.tar.gz"
+provenance = "github-attestations"
+
+[tools.topgrade."platforms.linux-x64-musl"]
+checksum = "sha256:d1496f23defc84cb3252cbe75e919b71cd4a34d56a77973134de25ed81f29ad0"
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrade-v17.4.0-x86_64-unknown-linux-musl.tar.gz"
+provenance = "github-attestations"
+
+[tools.topgrade."platforms.macos-arm64"]
+checksum = "sha256:f129657078c4bd38463a23c5727b1ecf984658c030085231bab9a024460a0873"
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrade-v17.4.0-aarch64-apple-darwin.tar.gz"
+provenance = "github-attestations"
+
+[tools.topgrade."platforms.macos-x64"]
+checksum = "sha256:39639c63ec8f6e88734d69ec015a6e92d1887209bdd28b8d4a5fbdde4498266e"
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrade-v17.4.0-x86_64-apple-darwin.tar.gz"
+provenance = "github-attestations"
+
+[tools.topgrade."platforms.windows-x64"]
+checksum = "sha256:5d9f278b1e3f1fbfbc85c31d661f347e6b1bb447f4482a7b3e6240cc8870d913"
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrade-v17.4.0-x86_64-pc-windows-msvc.zip"
+provenance = "github-attestations"
+
 [[tools.usage]]
 version = "3.2.1"
 backend = "aqua:jdx/usage"
