@@ -398,7 +398,7 @@ bump = true
 
 # Run 'docker system prune' to clean up unused containers, networks, and build cache
 # (default: false)
-# system_prune = false
+system_prune = true
 
 # Use sudo for updating containers. Necessary for non-rootless installs.
 # (default: false)
