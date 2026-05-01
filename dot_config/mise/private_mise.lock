@@ -372,44 +372,44 @@ url = "https://github.com/cli/cli/releases/download/v2.92.0/gh_2.92.0_windows_am
 provenance = "github-attestations"
 
 [[tools."github:pnpm/pnpm"]]
-version = "11.0.0"
+version = "11.0.3"
 backend = "github:pnpm/pnpm"
 
 [tools."github:pnpm/pnpm"."platforms.linux-arm64"]
-checksum = "sha256:1e6d87ebfd7ff169966ff5b3ad71b780b883c68d3e59987df1096dfd8853df75"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.0.0/pnpm-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/407276690"
+checksum = "sha256:1bd8ffddbbd1d7ea179351c8c1dc620990a17550a8597e8961d08c64c9854d55"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.0.3/pnpm-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/409374707"
 
 [tools."github:pnpm/pnpm"."platforms.linux-arm64-musl"]
-checksum = "sha256:ebd648694f2b7fd675350f0ce1e26b0e7c7165a7f27f2b01616d5bbe9b7d7534"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.0.0/pnpm-linux-arm64-musl.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/407276695"
+checksum = "sha256:57a778a4b782234f34cc749f8609576effa7ccecfba43717181eb69eed4000b1"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.0.3/pnpm-linux-arm64-musl.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/409374706"
 
 [tools."github:pnpm/pnpm"."platforms.linux-x64"]
-checksum = "sha256:9b44acc77ada40fc41b665fde1d57367a5ebec31bd4b1b00598daed195da3e17"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.0.0/pnpm-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/407276691"
+checksum = "sha256:5c236f22568453e76f05c2c0a37b483d326ddb3c7759f3b7a7f13a8860109771"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.0.3/pnpm-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/409374712"
 
 [tools."github:pnpm/pnpm"."platforms.linux-x64-musl"]
-checksum = "sha256:b145fa7bb90f2082e8d57ec9b220c34b49c7c35dc65ff4b122c3094356848023"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.0.0/pnpm-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/407276696"
+checksum = "sha256:c90e8a251a60e808e5f65d5365224fa5143275db6c7cb8ac8396ccb30e07ab93"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.0.3/pnpm-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/409374709"
 
 [tools."github:pnpm/pnpm"."platforms.macos-arm64"]
-checksum = "sha256:3620a0fcaf81ecd3aaeccd5965919d90dbc913f4d07a96e11e7cafc2c785054b"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.0.0/pnpm-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/407276697"
+checksum = "sha256:a24f12a75b371acfbb69cee3ffd54dd7865daa25323d4f12bb22be12edff0ed2"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.0.3/pnpm-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/409374710"
 provenance = "github-attestations"
 
 [tools."github:pnpm/pnpm"."platforms.macos-x64"]
-checksum = "sha256:1701748b75187f1333a9c616827943ff84ff46cc42becc156ff6864b9bd0f948"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.0.0/pnpm-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/407276693"
+checksum = "sha256:c05a97abd756b6cd8ca1c1e70bca14eddc1b129b4e5b8cd2131474615e57483a"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.0.3/pnpm-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/409374711"
 
 [tools."github:pnpm/pnpm"."platforms.windows-x64"]
-checksum = "sha256:581e222e622cd0cc4f0ac5f85dd0db76b65117e3b17507979d89e63fdc68edca"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.0.0/pnpm-win32-x64.zip"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/407276689"
+checksum = "sha256:1acab0c306c08e26be5b702c19466d14f6aa44797a7166191e81138f50291741"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.0.3/pnpm-win32-x64.zip"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/409374715"
 
 [[tools.gitsign]]
 version = "0.14.0"
@@ -671,43 +671,43 @@ checksum = "sha256:929552b8305effac843ba7b4270c437aefb702fc3fbd73fcd1bffd35d4ac2
 url = "https://nodejs.org/dist/v25.9.0/node-v25.9.0-win-x64.zip"
 
 [[tools.pi]]
-version = "0.70.6"
+version = "0.71.0"
 backend = "github:badlogic/pi-mono"
 
 [tools.pi."platforms.linux-arm64"]
-checksum = "sha256:2672140e51c9ed6426a55d6e6ff6e98f1e5c24d0e426d0739d1be1592957d271"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.70.6/pi-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/407568959"
+checksum = "sha256:534f40d4c08fb0e0381c7accdcd71db31c897e4727e9011addf625fbc2d0a6fe"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.71.0/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/409433511"
 
 [tools.pi."platforms.linux-arm64-musl"]
-checksum = "sha256:2672140e51c9ed6426a55d6e6ff6e98f1e5c24d0e426d0739d1be1592957d271"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.70.6/pi-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/407568959"
+checksum = "sha256:534f40d4c08fb0e0381c7accdcd71db31c897e4727e9011addf625fbc2d0a6fe"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.71.0/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/409433511"
 
 [tools.pi."platforms.linux-x64"]
-checksum = "sha256:32b5b8944b5b4da0ed493f02a4ab712fa2456a00e6db8444b460a024a73b1cec"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.70.6/pi-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/407568953"
+checksum = "sha256:778de89cc04043df3b5450686a6eda5d664525054a17f51d20e0ebebd2c8cc4b"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.71.0/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/409433513"
 
 [tools.pi."platforms.linux-x64-musl"]
-checksum = "sha256:32b5b8944b5b4da0ed493f02a4ab712fa2456a00e6db8444b460a024a73b1cec"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.70.6/pi-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/407568953"
+checksum = "sha256:778de89cc04043df3b5450686a6eda5d664525054a17f51d20e0ebebd2c8cc4b"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.71.0/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/409433513"
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:82b19e956a46e5c0b9792eb1385b5b618bf318f5d8ad22e26439d4a36ab89402"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.70.6/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/407568960"
+checksum = "sha256:2e5fc98b250ecb2c064762e0e7521831a20956cf78e1542ada5c37c78ff60807"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.71.0/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/409433514"
 
 [tools.pi."platforms.macos-x64"]
-checksum = "sha256:03b36df8673db7060acea32ad9424e6570b24ddebadc2710f38f95999aa5ec44"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.70.6/pi-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/407568951"
+checksum = "sha256:4a39821e42164254f70ce0b26cf819ac99072f790daee5d185710e88298e4b40"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.71.0/pi-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/409433512"
 
 [tools.pi."platforms.windows-x64"]
-checksum = "sha256:d8ce45273d6c35fbc6e7f689c37819323e7391ed2812136d8b5018865b86583f"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.70.6/pi-windows-x64.zip"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/407568955"
+checksum = "sha256:432fa972ba088448b11ca891e1c3b7ddaba2909502375368120155faa8a90a0c"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.71.0/pi-windows-x64.zip"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/409433515"
 
 [[tools.pitchfork]]
 version = "2.8.0"
