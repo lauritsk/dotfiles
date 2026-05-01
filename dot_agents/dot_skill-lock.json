@@ -24,9 +24,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/juliusbrussee/caveman.git",
       "skillPath": "caveman/SKILL.md",
-      "skillFolderHash": "825e13085d1515fe67881b2123f3bf9b34c26154",
+      "skillFolderHash": "f524c391d466fe35e0bdbe9707854fcb2be52b26",
       "installedAt": "2026-04-22T16:00:18.241Z",
-      "updatedAt": "2026-04-24T13:27:31.798Z"
+      "updatedAt": "2026-05-01T06:55:39.928Z"
     },
     "create-readme": {
       "source": "github/awesome-copilot",
