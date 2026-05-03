@@ -67,36 +67,36 @@ checksum = "sha256:0f729b4b6f5f28d395c641eacc2e9ff68d0096b85aa0eec344aa62425144b
 url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-pc-windows-msvc.zip"
 
 [[tools.cargo-binstall]]
-version = "1.18.1"
+version = "1.19.0"
 backend = "aqua:cargo-bins/cargo-binstall"
 
 [tools.cargo-binstall."platforms.linux-arm64"]
-checksum = "sha256:c55962a0115f9716b709216de7f8bdd59d6ba8738779e60b051b4593f677717a"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.1/cargo-binstall-aarch64-unknown-linux-musl.tgz"
+checksum = "sha256:57148539e6160789715745e6f50e0aac9193636df42bd9b4554cd9012195866c"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.19.0/cargo-binstall-aarch64-unknown-linux-musl.tgz"
 
 [tools.cargo-binstall."platforms.linux-arm64-musl"]
-checksum = "sha256:c55962a0115f9716b709216de7f8bdd59d6ba8738779e60b051b4593f677717a"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.1/cargo-binstall-aarch64-unknown-linux-musl.tgz"
+checksum = "sha256:57148539e6160789715745e6f50e0aac9193636df42bd9b4554cd9012195866c"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.19.0/cargo-binstall-aarch64-unknown-linux-musl.tgz"
 
 [tools.cargo-binstall."platforms.linux-x64"]
-checksum = "sha256:cf2a4b54494ea8555d6349685e9a301efc1051d9fba6308c76914b2486f8700f"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.1/cargo-binstall-x86_64-unknown-linux-musl.tgz"
+checksum = "sha256:a7a4271099ce891368bc544d3f89315f12547df653ba16de2030461e8867edd6"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.19.0/cargo-binstall-x86_64-unknown-linux-musl.tgz"
 
 [tools.cargo-binstall."platforms.linux-x64-musl"]
-checksum = "sha256:cf2a4b54494ea8555d6349685e9a301efc1051d9fba6308c76914b2486f8700f"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.1/cargo-binstall-x86_64-unknown-linux-musl.tgz"
+checksum = "sha256:a7a4271099ce891368bc544d3f89315f12547df653ba16de2030461e8867edd6"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.19.0/cargo-binstall-x86_64-unknown-linux-musl.tgz"
 
 [tools.cargo-binstall."platforms.macos-arm64"]
-checksum = "sha256:955abf167994c90f3547e233edace4c0f794465dd4aa408249b38999aa5ca3cf"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.1/cargo-binstall-aarch64-apple-darwin.zip"
+checksum = "sha256:1208282e0719ae33fc1db20fe533a50827673d017fb85ed5dec0cb9b0c7ca569"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.19.0/cargo-binstall-aarch64-apple-darwin.zip"
 
 [tools.cargo-binstall."platforms.macos-x64"]
-checksum = "sha256:e06370bec7143668653bb7c09d0b8b689fc703dd4fa58ec5847c4b571d8a490d"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.1/cargo-binstall-x86_64-apple-darwin.zip"
+checksum = "sha256:289007dce39f181188b620c19783d3a0e8f37fb9e5d7c3ff1da9cfb9a2d8ecc3"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.19.0/cargo-binstall-x86_64-apple-darwin.zip"
 
 [tools.cargo-binstall."platforms.windows-x64"]
-checksum = "sha256:89706aa5215c164d8d091597a470fee72308ac87e8553af395ea77db844a888c"
-url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.18.1/cargo-binstall-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:1113c92eb53160c4e0c12dc803f582a266d26b26ca529520e104806cce8d0204"
+url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.19.0/cargo-binstall-x86_64-pc-windows-msvc.zip"
 
 [[tools.chezmoi]]
 version = "2.70.2"
@@ -262,43 +262,44 @@ checksum = "sha256:b2816e506390a89941c63c9187d58a3cc10e9a55f2ef0685f9ea0eccaf7c9
 url = "https://github.com/sharkdp/fd/releases/download/v10.4.2/fd-v10.4.2-x86_64-pc-windows-msvc.zip"
 
 [[tools.fnox]]
-version = "1.23.0"
+version = "1.23.1"
 backend = "github:jdx/fnox"
 
 [tools.fnox."platforms.linux-arm64"]
-checksum = "sha256:5875b1d5e915a7cfb40b052e3c330912c7cd74021b6a1a8e9ca2b6692834595f"
-url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084769"
+checksum = "sha256:de4c06fc8851ad4be8109d077d0362ee8603ae0aac0cbffb715ac89e2238f2c4"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.1/fnox-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/410690612"
 
 [tools.fnox."platforms.linux-arm64-musl"]
-checksum = "sha256:5875b1d5e915a7cfb40b052e3c330912c7cd74021b6a1a8e9ca2b6692834595f"
-url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084769"
+checksum = "sha256:c7a9c2e80346e7ebb175a033856549c3bbefe7fafda3d34fca3f5cd33dc2a9f3"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.1/fnox-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/410690611"
 
 [tools.fnox."platforms.linux-x64"]
-checksum = "sha256:4b716fac7f03b0d652ab77cec489394728ac32246f17acb667a9f93b6d137c25"
-url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084780"
+checksum = "sha256:021c4fe683e109b616a4b936117c60e63f351b4000bd0999f0110f3088fc7f58"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.1/fnox-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/410690622"
 
 [tools.fnox."platforms.linux-x64-musl"]
-checksum = "sha256:4b716fac7f03b0d652ab77cec489394728ac32246f17acb667a9f93b6d137c25"
-url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084780"
+checksum = "sha256:8c78f965d5e655c3ea025551baf8d19c2e588ed9911b706deb6a7211bfbc7b9a"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.1/fnox-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/410690624"
 
 [tools.fnox."platforms.macos-arm64"]
-checksum = "sha256:98cc2767dac9be1eb61e659ca888e951d4bc9862980c3ddc9838ac049f26ff1f"
-url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084771"
+checksum = "sha256:f92d60ee4bb669b97a500f000fe053f92f7cbf0817ed4678e5b0f506d1357dd6"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.1/fnox-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/410690610"
+provenance = "github-attestations"
 
 [tools.fnox."platforms.macos-x64"]
-checksum = "sha256:fc838d0ed2145853b711c838b5ab76e709ab5092c8c3b98dbd2ffdc02be8687d"
-url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084770"
+checksum = "sha256:0b09405d648387a163d3f21be3e88972332d3fa04e5db55955726890a3f22877"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.1/fnox-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/410690609"
 
 [tools.fnox."platforms.windows-x64"]
-checksum = "sha256:d862245fac003ca121ebc81e5a7ae3a9d4b9f5f1d4d4d2728438185bb8e429db"
-url = "https://github.com/jdx/fnox/releases/download/v1.23.0/fnox-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/406084772"
+checksum = "sha256:ea8b2569d8667c7644a25efd22546aff9dc1ac4eeb62c9c1dd4469e5f2bb34ff"
+url = "https://github.com/jdx/fnox/releases/download/v1.23.1/fnox-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/jdx/fnox/releases/assets/410690623"
 
 [[tools.fzf]]
 version = "0.72.0"
@@ -372,76 +373,76 @@ url = "https://github.com/cli/cli/releases/download/v2.92.0/gh_2.92.0_windows_am
 provenance = "github-attestations"
 
 [[tools."github:pnpm/pnpm"]]
-version = "11.0.3"
+version = "11.0.4"
 backend = "github:pnpm/pnpm"
 
 [tools."github:pnpm/pnpm"."platforms.linux-arm64"]
-checksum = "sha256:1bd8ffddbbd1d7ea179351c8c1dc620990a17550a8597e8961d08c64c9854d55"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.0.3/pnpm-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/409374707"
+checksum = "sha256:77ab05d5db4aec5bf9448a78f8dc60f0c67dca5104412aa192609fb8c1f7204f"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.0.4/pnpm-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/410798345"
 
 [tools."github:pnpm/pnpm"."platforms.linux-arm64-musl"]
-checksum = "sha256:57a778a4b782234f34cc749f8609576effa7ccecfba43717181eb69eed4000b1"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.0.3/pnpm-linux-arm64-musl.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/409374706"
+checksum = "sha256:4da815463a92e043b6a2ad928442ac0122a60e5127d6c9658dd79aceee6b5fef"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.0.4/pnpm-linux-arm64-musl.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/410798348"
 
 [tools."github:pnpm/pnpm"."platforms.linux-x64"]
-checksum = "sha256:5c236f22568453e76f05c2c0a37b483d326ddb3c7759f3b7a7f13a8860109771"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.0.3/pnpm-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/409374712"
+checksum = "sha256:af148fa26d8bfc3b3e2bda40d96c79f0d449364cc7cc4530bfbb2fb2a23d983f"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.0.4/pnpm-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/410798343"
 
 [tools."github:pnpm/pnpm"."platforms.linux-x64-musl"]
-checksum = "sha256:c90e8a251a60e808e5f65d5365224fa5143275db6c7cb8ac8396ccb30e07ab93"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.0.3/pnpm-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/409374709"
+checksum = "sha256:920c534067af813f638f4724e38c63fee411d71f5b43ba417c17e35598a94a68"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.0.4/pnpm-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/410798347"
 
 [tools."github:pnpm/pnpm"."platforms.macos-arm64"]
-checksum = "sha256:a24f12a75b371acfbb69cee3ffd54dd7865daa25323d4f12bb22be12edff0ed2"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.0.3/pnpm-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/409374710"
+checksum = "sha256:e3114eaa5c5ac6bd80e6245781200486e4f2c0a938f382048dc026b5ba113ddc"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.0.4/pnpm-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/410798350"
 provenance = "github-attestations"
 
 [tools."github:pnpm/pnpm"."platforms.macos-x64"]
-checksum = "sha256:c05a97abd756b6cd8ca1c1e70bca14eddc1b129b4e5b8cd2131474615e57483a"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.0.3/pnpm-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/409374711"
+checksum = "sha256:9bc026288b81982fb89fd565e13a2c2a3cc4bc9d669354d03450527f0a4b365d"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.0.4/pnpm-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/410798346"
 
 [tools."github:pnpm/pnpm"."platforms.windows-x64"]
-checksum = "sha256:1acab0c306c08e26be5b702c19466d14f6aa44797a7166191e81138f50291741"
-url = "https://github.com/pnpm/pnpm/releases/download/v11.0.3/pnpm-win32-x64.zip"
-url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/409374715"
+checksum = "sha256:9dacdc858b58a069112eb02e78947e45727bd61fdfb8c77fcc8c08d922de180a"
+url = "https://github.com/pnpm/pnpm/releases/download/v11.0.4/pnpm-win32-x64.zip"
+url_api = "https://api.github.com/repos/pnpm/pnpm/releases/assets/410798342"
 
 [[tools.gitsign]]
-version = "0.14.0"
+version = "0.15.1"
 backend = "aqua:sigstore/gitsign"
 
 [tools.gitsign."platforms.linux-arm64"]
-checksum = "sha256:adaa11fb9557618737fc127be1e2f236eee3c11d97c5499d2b4a7018b28252af"
-url = "https://github.com/sigstore/gitsign/releases/download/v0.14.0/gitsign_0.14.0_linux_arm64"
+checksum = "sha256:5b60d027bf95b4d7769232e861d6fccb5db9ed34e15e474f55a4584ed27fc537"
+url = "https://github.com/sigstore/gitsign/releases/download/v0.15.1/gitsign_0.15.1_linux_arm64"
 
 [tools.gitsign."platforms.linux-arm64-musl"]
-checksum = "sha256:adaa11fb9557618737fc127be1e2f236eee3c11d97c5499d2b4a7018b28252af"
-url = "https://github.com/sigstore/gitsign/releases/download/v0.14.0/gitsign_0.14.0_linux_arm64"
+checksum = "sha256:5b60d027bf95b4d7769232e861d6fccb5db9ed34e15e474f55a4584ed27fc537"
+url = "https://github.com/sigstore/gitsign/releases/download/v0.15.1/gitsign_0.15.1_linux_arm64"
 
 [tools.gitsign."platforms.linux-x64"]
-checksum = "sha256:23fcc3d71e0abcbc635b1b95dbe758ac08773e3642b407646c32c3cf4c6def74"
-url = "https://github.com/sigstore/gitsign/releases/download/v0.14.0/gitsign_0.14.0_linux_amd64"
+checksum = "sha256:8712be2e5fe89c9728c50beed20f1d37340b9f2dc3306cfb8830ef975549e170"
+url = "https://github.com/sigstore/gitsign/releases/download/v0.15.1/gitsign_0.15.1_linux_amd64"
 
 [tools.gitsign."platforms.linux-x64-musl"]
-checksum = "sha256:23fcc3d71e0abcbc635b1b95dbe758ac08773e3642b407646c32c3cf4c6def74"
-url = "https://github.com/sigstore/gitsign/releases/download/v0.14.0/gitsign_0.14.0_linux_amd64"
+checksum = "sha256:8712be2e5fe89c9728c50beed20f1d37340b9f2dc3306cfb8830ef975549e170"
+url = "https://github.com/sigstore/gitsign/releases/download/v0.15.1/gitsign_0.15.1_linux_amd64"
 
 [tools.gitsign."platforms.macos-arm64"]
-checksum = "sha256:58a6741848860faaa15306e4ee4fa6d4901607f818771f05be2449c6e73920bb"
-url = "https://github.com/sigstore/gitsign/releases/download/v0.14.0/gitsign_0.14.0_darwin_arm64"
+checksum = "sha256:9a2c07d0de1af2c25babc3e6cfaf7bf8f4c0933ff17951df149f1c50014d21a1"
+url = "https://github.com/sigstore/gitsign/releases/download/v0.15.1/gitsign_0.15.1_darwin_arm64"
 
 [tools.gitsign."platforms.macos-x64"]
-checksum = "sha256:65c93942d663e24b45a37a41e2604d5d39926c03ad6432356ce3304162c3ef46"
-url = "https://github.com/sigstore/gitsign/releases/download/v0.14.0/gitsign_0.14.0_darwin_amd64"
+checksum = "sha256:6a0a34bf3de861d4eee5d0210f4148166e8169098a94c90010a43d8c12c8b270"
+url = "https://github.com/sigstore/gitsign/releases/download/v0.15.1/gitsign_0.15.1_darwin_amd64"
 
 [tools.gitsign."platforms.windows-x64"]
-checksum = "sha256:393a6c68509e9071e1747146e94b2417ad0257399a2fa10186ff0ae114e73603"
-url = "https://github.com/sigstore/gitsign/releases/download/v0.14.0/gitsign_0.14.0_windows_amd64.exe"
+checksum = "sha256:112235b28b357cbadc1436965df92017514519177e3afed10b5bc2e1bc9e34a1"
+url = "https://github.com/sigstore/gitsign/releases/download/v0.15.1/gitsign_0.15.1_windows_amd64.exe"
 
 [[tools.go]]
 version = "1.26.2"
@@ -671,43 +672,43 @@ checksum = "sha256:929552b8305effac843ba7b4270c437aefb702fc3fbd73fcd1bffd35d4ac2
 url = "https://nodejs.org/dist/v25.9.0/node-v25.9.0-win-x64.zip"
 
 [[tools.pi]]
-version = "0.71.1"
+version = "0.72.1"
 backend = "github:badlogic/pi-mono"
 
 [tools.pi."platforms.linux-arm64"]
-checksum = "sha256:46a6fd9433211a16f34f884d4eacaf158a7911c510be56a639d7f4e9273949b1"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.71.1/pi-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/409811511"
+checksum = "sha256:79c4c585765cfda01624bde1ef529c6e55081bcdde3058e64ebe8fdfdc14b4a8"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.72.1/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/410528022"
 
 [tools.pi."platforms.linux-arm64-musl"]
-checksum = "sha256:46a6fd9433211a16f34f884d4eacaf158a7911c510be56a639d7f4e9273949b1"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.71.1/pi-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/409811511"
+checksum = "sha256:79c4c585765cfda01624bde1ef529c6e55081bcdde3058e64ebe8fdfdc14b4a8"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.72.1/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/410528022"
 
 [tools.pi."platforms.linux-x64"]
-checksum = "sha256:e49d2d764999a5e9b0c9c55dd227a0e6ac6fd1229d5516bc51d3b9e85198c4cb"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.71.1/pi-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/409811508"
+checksum = "sha256:00fab8b1f194140a8c9dbd2614b38e99726cd5dde3b5b2d607bd5daa6f851d40"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.72.1/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/410528018"
 
 [tools.pi."platforms.linux-x64-musl"]
-checksum = "sha256:e49d2d764999a5e9b0c9c55dd227a0e6ac6fd1229d5516bc51d3b9e85198c4cb"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.71.1/pi-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/409811508"
+checksum = "sha256:00fab8b1f194140a8c9dbd2614b38e99726cd5dde3b5b2d607bd5daa6f851d40"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.72.1/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/410528018"
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:335f34851384a483084501d111af538a702f060bf2729d2ea0e2d1b339ff7f9d"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.71.1/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/409811506"
+checksum = "sha256:40b2f027fc0f581317072921bf2e7ddfec871c3a4e94b73c39d73fc2abc5e517"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.72.1/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/410528021"
 
 [tools.pi."platforms.macos-x64"]
-checksum = "sha256:cb5f7c478106e62a7be6e2e404c3a866068db665bc2e689c506b434b5ac7dbe5"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.71.1/pi-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/409811507"
+checksum = "sha256:59aa55b483cd42d78079f1a3b6244f8baebb63ea4dec8208d72eb0bf2df69aa2"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.72.1/pi-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/410528020"
 
 [tools.pi."platforms.windows-x64"]
-checksum = "sha256:04910d5ce4132dfc0ae2a78f75061f2f8a46a8e6916c0cb2e717f7c937fb1004"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.71.1/pi-windows-x64.zip"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/409811509"
+checksum = "sha256:aca4fec27b4ecc74dbc74fd8a49db46eb9e876e809865db0e585c87a78288330"
+url = "https://github.com/badlogic/pi-mono/releases/download/v0.72.1/pi-windows-x64.zip"
+url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/410528019"
 
 [[tools.pitchfork]]
 version = "2.8.0"
