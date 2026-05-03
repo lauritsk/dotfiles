@@ -711,24 +711,24 @@ url = "https://github.com/badlogic/pi-mono/releases/download/v0.72.1/pi-windows-
 url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/410528019"
 
 [[tools.pitchfork]]
-version = "2.8.0"
+version = "2.9.1"
 backend = "aqua:jdx/pitchfork"
 
 [tools.pitchfork."platforms.linux-arm64"]
-checksum = "sha256:982281c482f6de7f65dd5c3f96725a88198c6c69887d88406ec8a3c36861768a"
-url = "https://github.com/endevco/pitchfork/releases/download/v2.8.0/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:012a59c30cee94d82a2d2d5c3adffa63940d76576a3975b4d6da75550dabe301"
+url = "https://github.com/endevco/pitchfork/releases/download/v2.9.1/pitchfork-aarch64-unknown-linux-gnu.tar.gz"
 
 [tools.pitchfork."platforms.linux-x64"]
-checksum = "sha256:172df18d336d137ed5e22076b39c374451ca4c81375a0d2fb78121c261c92913"
-url = "https://github.com/endevco/pitchfork/releases/download/v2.8.0/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:dbc4262e3ab6c7973eeeea5f303fd5b01dca01dcaa3efb26383ed5276220df6e"
+url = "https://github.com/endevco/pitchfork/releases/download/v2.9.1/pitchfork-x86_64-unknown-linux-gnu.tar.gz"
 
 [tools.pitchfork."platforms.macos-arm64"]
-checksum = "sha256:deb1781d058ab723093ad335869068b3be5638703c0441454ad17bc96095fbe6"
-url = "https://github.com/endevco/pitchfork/releases/download/v2.8.0/pitchfork-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:7f5efc5f8cf386fb93fbc4e90b1b73c09a9c6e9c158364722c332cfdf5e38059"
+url = "https://github.com/endevco/pitchfork/releases/download/v2.9.1/pitchfork-aarch64-apple-darwin.tar.gz"
 
 [tools.pitchfork."platforms.windows-x64"]
-checksum = "sha256:ce9b4aa97a12f62304d22ebe99c81c57d620fcc6109654c7355302dafe49cc03"
-url = "https://github.com/endevco/pitchfork/releases/download/v2.8.0/pitchfork-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:671986539a5f63d672f8db322dac72dffbc47af6c1926256211351f7b4d28754"
+url = "https://github.com/endevco/pitchfork/releases/download/v2.9.1/pitchfork-x86_64-pc-windows-msvc.zip"
 
 [[tools.pkl]]
 version = "0.31.1"
@@ -1026,36 +1026,36 @@ url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrad
 provenance = "github-attestations"
 
 [[tools.usage]]
-version = "3.2.1"
+version = "3.3.0"
 backend = "aqua:jdx/usage"
 
 [tools.usage."platforms.linux-arm64"]
-checksum = "sha256:c5a237c272e3b08d05a698aa37e6775ab36152e12e74084363c7a230d9fc7070"
-url = "https://github.com/jdx/usage/releases/download/v3.2.1/usage-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:55a0c94c35bb9e2c5cbc223973667cd450759cd3410d4c5836ef2fdfd95adc57"
+url = "https://github.com/jdx/usage/releases/download/v3.3.0/usage-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.usage."platforms.linux-arm64-musl"]
-checksum = "sha256:c5a237c272e3b08d05a698aa37e6775ab36152e12e74084363c7a230d9fc7070"
-url = "https://github.com/jdx/usage/releases/download/v3.2.1/usage-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:55a0c94c35bb9e2c5cbc223973667cd450759cd3410d4c5836ef2fdfd95adc57"
+url = "https://github.com/jdx/usage/releases/download/v3.3.0/usage-aarch64-unknown-linux-musl.tar.gz"
 
 [tools.usage."platforms.linux-x64"]
-checksum = "sha256:aea16298c6fa7d13e10a04ce7a9e7c743a1d49151a7065aa3f80697c56a89452"
-url = "https://github.com/jdx/usage/releases/download/v3.2.1/usage-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:9a4316d633243aa54308ff3bf6970923b18c105dea34fbc3009d51889e1dd03f"
+url = "https://github.com/jdx/usage/releases/download/v3.3.0/usage-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.usage."platforms.linux-x64-musl"]
-checksum = "sha256:aea16298c6fa7d13e10a04ce7a9e7c743a1d49151a7065aa3f80697c56a89452"
-url = "https://github.com/jdx/usage/releases/download/v3.2.1/usage-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:9a4316d633243aa54308ff3bf6970923b18c105dea34fbc3009d51889e1dd03f"
+url = "https://github.com/jdx/usage/releases/download/v3.3.0/usage-x86_64-unknown-linux-musl.tar.gz"
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:94c0b8a913618e24c0bc8002a688112210ec3f5e8bbb5431a2687eed9fad2dff"
-url = "https://github.com/jdx/usage/releases/download/v3.2.1/usage-universal-apple-darwin.tar.gz"
+checksum = "sha256:ab6c69a6541e18ffca7bd950dd4cc867ea9267d0f91115c13aa650cde6634d62"
+url = "https://github.com/jdx/usage/releases/download/v3.3.0/usage-universal-apple-darwin.tar.gz"
 
 [tools.usage."platforms.macos-x64"]
-checksum = "sha256:94c0b8a913618e24c0bc8002a688112210ec3f5e8bbb5431a2687eed9fad2dff"
-url = "https://github.com/jdx/usage/releases/download/v3.2.1/usage-universal-apple-darwin.tar.gz"
+checksum = "sha256:ab6c69a6541e18ffca7bd950dd4cc867ea9267d0f91115c13aa650cde6634d62"
+url = "https://github.com/jdx/usage/releases/download/v3.3.0/usage-universal-apple-darwin.tar.gz"
 
 [tools.usage."platforms.windows-x64"]
-checksum = "sha256:9ac550ddcb67c1bb30e76fbf04126d50704004fc7850e7fa1aaa6994ce4601f5"
-url = "https://github.com/jdx/usage/releases/download/v3.2.1/usage-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:628b8743d552f2cff2dee2b783a4827ef555409def3fb9ec536117d96cda2018"
+url = "https://github.com/jdx/usage/releases/download/v3.3.0/usage-x86_64-pc-windows-msvc.zip"
 
 [[tools.uv]]
 version = "0.11.8"
