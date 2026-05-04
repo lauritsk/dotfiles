@@ -639,6 +639,66 @@ url = "https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygi
 checksum = "sha256:6024f3094904caaf9b9672b801cba31a65ad36729a0d2c5a03c432f739c0678b"
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_windows_x86_64.zip"
 
+[[tools.lazyjournal]]
+version = "0.8.6"
+backend = "aqua:Lifailon/lazyjournal"
+
+[tools.lazyjournal."platforms.linux-arm64"]
+checksum = "sha256:2718c73349ff1ef297f5a19d3e636ca116c6f8e85106ea5744c6d71bf8df6924"
+url = "https://github.com/Lifailon/lazyjournal/releases/download/0.8.6/lazyjournal-0.8.6-linux-arm64"
+
+[tools.lazyjournal."platforms.linux-arm64-musl"]
+checksum = "sha256:2718c73349ff1ef297f5a19d3e636ca116c6f8e85106ea5744c6d71bf8df6924"
+url = "https://github.com/Lifailon/lazyjournal/releases/download/0.8.6/lazyjournal-0.8.6-linux-arm64"
+
+[tools.lazyjournal."platforms.linux-x64"]
+checksum = "sha256:c264bbcb6b30fa6418bbfce2087d0e1ecdc7ad17421772c0f002e4cbf8cf4bd7"
+url = "https://github.com/Lifailon/lazyjournal/releases/download/0.8.6/lazyjournal-0.8.6-linux-amd64"
+
+[tools.lazyjournal."platforms.linux-x64-musl"]
+checksum = "sha256:c264bbcb6b30fa6418bbfce2087d0e1ecdc7ad17421772c0f002e4cbf8cf4bd7"
+url = "https://github.com/Lifailon/lazyjournal/releases/download/0.8.6/lazyjournal-0.8.6-linux-amd64"
+
+[tools.lazyjournal."platforms.macos-arm64"]
+checksum = "sha256:806374515099844f2b97790df19d215ea18cd9f45717afab30fe0a0b1de50e23"
+url = "https://github.com/Lifailon/lazyjournal/releases/download/0.8.6/lazyjournal-0.8.6-darwin-arm64"
+
+[tools.lazyjournal."platforms.macos-x64"]
+checksum = "sha256:0134a1c51685661d406d126210391c6c06e577dd65ed433ef2124b339fb9b3f4"
+url = "https://github.com/Lifailon/lazyjournal/releases/download/0.8.6/lazyjournal-0.8.6-darwin-amd64"
+
+[[tools.lazyssh]]
+version = "0.3.0"
+backend = "aqua:Adembc/lazyssh"
+
+[tools.lazyssh."platforms.linux-arm64"]
+checksum = "sha256:d859663160af7d7752ec7bccfa1b6dcff5cb2d2a03cfb1d04b3a1127171f5e35"
+url = "https://github.com/Adembc/lazyssh/releases/download/v0.3.0/lazyssh_Linux_arm64.tar.gz"
+
+[tools.lazyssh."platforms.linux-arm64-musl"]
+checksum = "sha256:d859663160af7d7752ec7bccfa1b6dcff5cb2d2a03cfb1d04b3a1127171f5e35"
+url = "https://github.com/Adembc/lazyssh/releases/download/v0.3.0/lazyssh_Linux_arm64.tar.gz"
+
+[tools.lazyssh."platforms.linux-x64"]
+checksum = "sha256:3e87196faf748905f98062040d5a0e056de0e0eb0247413b70c2fc03c3928ad9"
+url = "https://github.com/Adembc/lazyssh/releases/download/v0.3.0/lazyssh_Linux_x86_64.tar.gz"
+
+[tools.lazyssh."platforms.linux-x64-musl"]
+checksum = "sha256:3e87196faf748905f98062040d5a0e056de0e0eb0247413b70c2fc03c3928ad9"
+url = "https://github.com/Adembc/lazyssh/releases/download/v0.3.0/lazyssh_Linux_x86_64.tar.gz"
+
+[tools.lazyssh."platforms.macos-arm64"]
+checksum = "sha256:43163742c109e73f2b71db682fe04fb25dac23e132edd6cf93752b26b408e8c8"
+url = "https://github.com/Adembc/lazyssh/releases/download/v0.3.0/lazyssh_Darwin_arm64.tar.gz"
+
+[tools.lazyssh."platforms.macos-x64"]
+checksum = "sha256:8c06b27ddb51939570066682e4fcd55d2453cc6b6c6ca226cb617371f6a51279"
+url = "https://github.com/Adembc/lazyssh/releases/download/v0.3.0/lazyssh_Darwin_x86_64.tar.gz"
+
+[tools.lazyssh."platforms.windows-x64"]
+checksum = "sha256:ca4353a910e453deb5de68c95d83aa8738ff0e52c4bff919f6d74dc27560a1df"
+url = "https://github.com/Adembc/lazyssh/releases/download/v0.3.0/lazyssh_Windows_x86_64.zip"
+
 [[tools.node]]
 version = "25.9.0"
 backend = "core:node"
