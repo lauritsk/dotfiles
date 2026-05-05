@@ -34,6 +34,46 @@ checksum = "sha256:10f019669502e2b0368fcd877765036e325fe488ca155f7b02b755d68cb31
 url = "https://github.com/atuinsh/atuin/releases/download/v18.16.0/atuin-x86_64-pc-windows-msvc.zip"
 provenance = "github-attestations"
 
+[[tools.aube]]
+version = "1.9.0"
+backend = "github:endevco/aube"
+
+[tools.aube."platforms.linux-arm64"]
+checksum = "sha256:218559ad1bc0335689b0bf94217dec53147e6819b514cd1edca2b25578a9eb71"
+url = "https://github.com/endevco/aube/releases/download/v1.9.0/aube-v1.9.0-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/412878187"
+provenance = "github-attestations"
+
+[tools.aube."platforms.linux-arm64-musl"]
+checksum = "sha256:6a635d407637d94ef2aba1cfd8f36189b88d3703080a788fe3e36cf628d91049"
+url = "https://github.com/endevco/aube/releases/download/v1.9.0/aube-v1.9.0-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/412876816"
+provenance = "github-attestations"
+
+[tools.aube."platforms.linux-x64"]
+checksum = "sha256:f27e4ecdd5669e76d2d1f7be69ca29e0ba0a8943b71172e5f7b785ab9a5c5132"
+url = "https://github.com/endevco/aube/releases/download/v1.9.0/aube-v1.9.0-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/412877756"
+provenance = "github-attestations"
+
+[tools.aube."platforms.linux-x64-musl"]
+checksum = "sha256:6245a25dab1903d76222edc493f5c908b6fc52cac1dc591a3e1760b066af5c6b"
+url = "https://github.com/endevco/aube/releases/download/v1.9.0/aube-v1.9.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/412878508"
+provenance = "github-attestations"
+
+[tools.aube."platforms.macos-arm64"]
+checksum = "sha256:7d85ecf1af62b65fd6ea386057f63808b5a1e18bd1201851a24619dc5cf337b0"
+url = "https://github.com/endevco/aube/releases/download/v1.9.0/aube-v1.9.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/412878487"
+provenance = "github-attestations"
+
+[tools.aube."platforms.windows-x64"]
+checksum = "sha256:79df31772c03cb22407dacdef59a3abed74d76fae20587c9f96f4b972a47eba4"
+url = "https://github.com/endevco/aube/releases/download/v1.9.0/aube-v1.9.0-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/endevco/aube/releases/assets/412888080"
+provenance = "github-attestations"
+
 [[tools.bat]]
 version = "0.26.1"
 backend = "aqua:sharkdp/bat"
@@ -1143,6 +1183,10 @@ provenance = "github-attestations"
 checksum = "sha256:7a0c424c7bc55a74751f13592235953ebbe182fa00355f7ae3fb7ab734a51638"
 url = "https://github.com/astral-sh/uv/releases/download/0.11.10/uv-x86_64-pc-windows-msvc.zip"
 provenance = "github-attestations"
+
+[[tools.viteplus]]
+version = "0.1.20"
+backend = "npm:vite-plus"
 
 [[tools.yazi]]
 version = "26.5.6"
