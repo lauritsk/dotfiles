@@ -28,7 +28,7 @@
 # sudo_command = "sudo"
 
 # Disable specific steps - same options as the command line flag
-disable = ["pi", "pnpm"]
+disable = ["pi", "pnpm", "viteplus"]
 
 # Run these steps before all others
 first = ["chezmoi"]
