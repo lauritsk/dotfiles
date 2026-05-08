@@ -15,9 +15,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/agent-browser.git",
       "skillPath": "skills/agent-browser/SKILL.md",
-      "skillFolderHash": "121eecacd86c0aab06aef5cd4663e80c5397cd41",
+      "skillFolderHash": "c1470a475a0472fceda2401ea6763708a91680a8",
       "installedAt": "2026-04-22T16:00:15.477Z",
-      "updatedAt": "2026-04-24T13:27:30.017Z"
+      "updatedAt": "2026-05-08T15:45:12.404Z"
     },
     "caveman": {
       "source": "juliusbrussee/caveman",
