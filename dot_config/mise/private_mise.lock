@@ -139,36 +139,36 @@ checksum = "sha256:dd1f425c177aa1a57c9b17883ff76257f913a5f0afb35424f0767c6984164
 url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.19.1/cargo-binstall-x86_64-pc-windows-msvc.zip"
 
 [[tools.chezmoi]]
-version = "2.70.2"
+version = "2.70.3"
 backend = "aqua:twpayne/chezmoi"
 
 [tools.chezmoi."platforms.linux-arm64"]
-checksum = "sha256:99e402af70f457dbf3ad545f62f78892375f2d9361db1c9c354e6d924a3b4fae"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.2/chezmoi_2.70.2_linux_arm64.tar.gz"
+checksum = "sha256:f094f9baccbe1e5e9744fc70f74974ba1793f2cba550f8b4a9d0fe5310f4a38f"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.3/chezmoi_2.70.3_linux_arm64.tar.gz"
 
 [tools.chezmoi."platforms.linux-arm64-musl"]
-checksum = "sha256:99e402af70f457dbf3ad545f62f78892375f2d9361db1c9c354e6d924a3b4fae"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.2/chezmoi_2.70.2_linux_arm64.tar.gz"
+checksum = "sha256:f094f9baccbe1e5e9744fc70f74974ba1793f2cba550f8b4a9d0fe5310f4a38f"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.3/chezmoi_2.70.3_linux_arm64.tar.gz"
 
 [tools.chezmoi."platforms.linux-x64"]
-checksum = "sha256:dda79928bf8428c1bb3d48497be00237a6ecc95a2bef7ded573608436ec7270b"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.2/chezmoi_2.70.2_linux_amd64.tar.gz"
+checksum = "sha256:ed3a131a7e71798513255d8c05534a14a16d98839820708e839d3403be5b46b2"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.3/chezmoi_2.70.3_linux_amd64.tar.gz"
 
 [tools.chezmoi."platforms.linux-x64-musl"]
-checksum = "sha256:d57f46e19fff897b34e5b46f5fc372d48fdc09cc0a5afa6be3c47dda2b90fb85"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.2/chezmoi_2.70.2_linux-musl_amd64.tar.gz"
+checksum = "sha256:dc8a51f3572bf4e26002dd38ad6b9cf438c3bb30d5b31defa6f8ef12266e786c"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.3/chezmoi_2.70.3_linux-musl_amd64.tar.gz"
 
 [tools.chezmoi."platforms.macos-arm64"]
-checksum = "sha256:30dd21291a9d623fd334d83d97313660beea86f0053f483a30dbbb7a0d5b78ba"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.2/chezmoi_2.70.2_darwin_arm64.tar.gz"
+checksum = "sha256:2de26b4217795c2bcf2c5209739f8f0f4c8d687e9441f99e3ca9b51d2269caab"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.3/chezmoi_2.70.3_darwin_arm64.tar.gz"
 
 [tools.chezmoi."platforms.macos-x64"]
-checksum = "sha256:e421d3941db71242350afe5759e2cc12036b3edc14b9370b51df9109f4065ac5"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.2/chezmoi_2.70.2_darwin_amd64.tar.gz"
+checksum = "sha256:b1df8211b594375eed78c6685b7e1019e08a0e4e607f28ff452fbb87f62c2211"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.3/chezmoi_2.70.3_darwin_amd64.tar.gz"
 
 [tools.chezmoi."platforms.windows-x64"]
-checksum = "sha256:0dec4f62a04c203da809c670b11c4271315ba1dc3f5d5571883c9d7a6f45bec6"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.2/chezmoi_2.70.2_windows_amd64.zip"
+checksum = "sha256:d6985fd4cbbfda7fb50574a20b7f1fb1cf5c540da121cf1ebfd94461e861a3e3"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.70.3/chezmoi_2.70.3_windows_amd64.zip"
 
 [[tools.cocogitto]]
 version = "7.0.0"
@@ -445,36 +445,36 @@ checksum = "sha256:e5ce5bb90da49678d5ac3dbc6e92ca6b02d9cf1aefd2945d49b78fe65bd94
 url = "https://github.com/sigstore/gitsign/releases/download/v0.16.0/gitsign_0.16.0_windows_amd64.exe"
 
 [[tools.go]]
-version = "1.26.2"
+version = "1.26.3"
 backend = "core:go"
 
 [tools.go."platforms.linux-arm64"]
-checksum = "sha256:c958a1fe1b361391db163a485e21f5f228142d6f8b584f6bef89b26f66dc5b23"
-url = "https://dl.google.com/go/go1.26.2.linux-arm64.tar.gz"
+checksum = "sha256:9d89a3ea57d141c2b22d70083f2c8459ba3890f2d9e818e7e933b75614936565"
+url = "https://dl.google.com/go/go1.26.3.linux-arm64.tar.gz"
 
 [tools.go."platforms.linux-arm64-musl"]
-checksum = "sha256:c958a1fe1b361391db163a485e21f5f228142d6f8b584f6bef89b26f66dc5b23"
-url = "https://dl.google.com/go/go1.26.2.linux-arm64.tar.gz"
+checksum = "sha256:9d89a3ea57d141c2b22d70083f2c8459ba3890f2d9e818e7e933b75614936565"
+url = "https://dl.google.com/go/go1.26.3.linux-arm64.tar.gz"
 
 [tools.go."platforms.linux-x64"]
-checksum = "sha256:990e6b4bbba816dc3ee129eaeaf4b42f17c2800b88a2166c265ac1a200262282"
-url = "https://dl.google.com/go/go1.26.2.linux-amd64.tar.gz"
+checksum = "sha256:2b2cfc7148493da5e73981bffbf3353af381d5f93e789c82c79aff64962eb556"
+url = "https://dl.google.com/go/go1.26.3.linux-amd64.tar.gz"
 
 [tools.go."platforms.linux-x64-musl"]
-checksum = "sha256:990e6b4bbba816dc3ee129eaeaf4b42f17c2800b88a2166c265ac1a200262282"
-url = "https://dl.google.com/go/go1.26.2.linux-amd64.tar.gz"
+checksum = "sha256:2b2cfc7148493da5e73981bffbf3353af381d5f93e789c82c79aff64962eb556"
+url = "https://dl.google.com/go/go1.26.3.linux-amd64.tar.gz"
 
 [tools.go."platforms.macos-arm64"]
-checksum = "sha256:32af1522bf3e3ff3975864780a429cc0b41d190ec7bf90faa661d6d64566e7af"
-url = "https://dl.google.com/go/go1.26.2.darwin-arm64.tar.gz"
+checksum = "sha256:875cf54a15311eee2c99b9dd67c68c4a49351d489ab622bf2cfd28c8f2078d3c"
+url = "https://dl.google.com/go/go1.26.3.darwin-arm64.tar.gz"
 
 [tools.go."platforms.macos-x64"]
-checksum = "sha256:bc3f1500d9968c36d705442d90ba91addf9271665033748b82532682e90a7966"
-url = "https://dl.google.com/go/go1.26.2.darwin-amd64.tar.gz"
+checksum = "sha256:278d580b32e299fe4a9c990fcf2d02acfe538c7e551a6ee18f9c7164573d2c63"
+url = "https://dl.google.com/go/go1.26.3.darwin-amd64.tar.gz"
 
 [tools.go."platforms.windows-x64"]
-checksum = "sha256:98eb3570bade15cb826b0909338df6cc6d2cf590bc39c471142002db3832b708"
-url = "https://dl.google.com/go/go1.26.2.windows-amd64.zip"
+checksum = "sha256:20d2ceafb4ed41b96b879010927b28bc92a5be57a7c1801ce365a9ca51d3224a"
+url = "https://dl.google.com/go/go1.26.3.windows-amd64.zip"
 
 [[tools.helix]]
 version = "25.07.1"
@@ -730,43 +730,43 @@ checksum = "sha256:089a02c4c687451c9f0b7f1bfd252dae85a7ba27df0295a14096bdcc956fd
 url = "https://nodejs.org/dist/v26.1.0/node-v26.1.0-win-x64.zip"
 
 [[tools.pi]]
-version = "0.73.0"
+version = "0.74.0"
 backend = "github:badlogic/pi-mono"
 
 [tools.pi."platforms.linux-arm64"]
-checksum = "sha256:66d07237cc68e25f531f0afa8749552dda03e2beaf47a490bd9101874603b87b"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.73.0/pi-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/412042241"
+checksum = "sha256:261aa912878ca983c903d9c4a0408310dd8637b583085651d9b5ddb70c9df572"
+url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593863"
 
 [tools.pi."platforms.linux-arm64-musl"]
-checksum = "sha256:66d07237cc68e25f531f0afa8749552dda03e2beaf47a490bd9101874603b87b"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.73.0/pi-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/412042241"
+checksum = "sha256:261aa912878ca983c903d9c4a0408310dd8637b583085651d9b5ddb70c9df572"
+url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593863"
 
 [tools.pi."platforms.linux-x64"]
-checksum = "sha256:5ee97ac6aa5ed7258decc416afdebbefbd5bf9e2cd5c814197bd4bf1e4f25f9f"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.73.0/pi-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/412042236"
+checksum = "sha256:d67657a30d49c9faca80868d2a4bdba4dfcac04702893f45a6d14b249345eb8d"
+url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593861"
 
 [tools.pi."platforms.linux-x64-musl"]
-checksum = "sha256:5ee97ac6aa5ed7258decc416afdebbefbd5bf9e2cd5c814197bd4bf1e4f25f9f"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.73.0/pi-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/412042236"
+checksum = "sha256:d67657a30d49c9faca80868d2a4bdba4dfcac04702893f45a6d14b249345eb8d"
+url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593861"
 
 [tools.pi."platforms.macos-arm64"]
-checksum = "sha256:1b0cc3f93dcebf56bae6d3484c0571184ee53254fc41da51b160ae77780d2d30"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.73.0/pi-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/412042239"
+checksum = "sha256:3063179823c6a985634312240c57015024316f7fe6661edd41f14c77d8b15e10"
+url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593862"
 
 [tools.pi."platforms.macos-x64"]
-checksum = "sha256:b09aa67b8b8d8c50899e307bc9413ed7d21474fee72e60cf9f7fa5765599fb7f"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.73.0/pi-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/412042240"
+checksum = "sha256:fa65c98f2c651ec2f89fb1a8a3dc9b987947bc9b102361a2f178862abacc7560"
+url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593859"
 
 [tools.pi."platforms.windows-x64"]
-checksum = "sha256:3581a94d72c28ea908ea51d37c31f10c25ed53920d7b6390333a5bfa5061d5db"
-url = "https://github.com/badlogic/pi-mono/releases/download/v0.73.0/pi-windows-x64.zip"
-url_api = "https://api.github.com/repos/badlogic/pi-mono/releases/assets/412042237"
+checksum = "sha256:0cbfb81e31b0fea0a4f88f95d05f3a32a782a686d54771ede30042ae42e9931f"
+url = "https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-windows-x64.zip"
+url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/414593860"
 
 [[tools.pitchfork]]
 version = "2.10.0"
