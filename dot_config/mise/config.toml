@@ -1,6 +1,7 @@
 [settings]
 color_theme = "catppuccin"
 experimental = true
+trusted_config_paths = ["~/Projects"]
 pin = true
 lockfile = true
 # minimum_release_age = "7d"
