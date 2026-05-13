@@ -69,7 +69,6 @@ cm = "chezmoi"
 lg = "lazygit"
 ld = "lazydocker"
 lj = "lazyjournal"
-lssh = "lazyssh"
 ts = "tailscale"
 dc = "docker compose"
 
