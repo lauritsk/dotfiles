@@ -30,6 +30,7 @@ XDG_DATA_HOME = "$HOME/.local/share"
 XDG_STATE_HOME = "$HOME/.local/state"
 DOCKER_CONFIG="$XDG_CONFIG_HOME/docker"
 CARGO_HOME="$XDG_DATA_HOME/cargo"
+TUF_ROOT="$XDG_DATA_HOME/sigstore/root"
 
 [shell_alias]
 sc = "scooter"
