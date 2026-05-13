@@ -5,6 +5,7 @@ trusted_config_paths = ["~/Projects"]
 pin = true
 lockfile = true
 # minimum_release_age = "7d"
+env_shell_expand = true
 
 [settings.npm]
 package_manager = "aube"
@@ -16,6 +17,10 @@ uv_venv_auto = "create|source"
 use_git_credentials = true
 
 [env]
+XDG_CONFIG_HOME = "$HOME/.config"
+XDG_CACHE_HOME = "$HOME/.cache"
+XDG_DATA_HOME = "$HOME/.local/share"
+XDG_STATE_HOME = "$HOME/.local/state"
 fish_greeting = ""
 fish_key_bindings = "fish_vi_key_bindings"
 BAT_THEME_LIGHT = "Catppuccin Latte"
