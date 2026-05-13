@@ -36,6 +36,7 @@ GOPATH="$XDG_DATA_HOME/go"
 GOMODCACHE="$XDG_CACHE_HOME/go/mod"
 GOCACHE="$XDG_CACHE_HOME/go-build"
 CARGO_HOME="$XDG_DATA_HOME/cargo"
+SQLITE_HISTORY="$XDG_STATE_HOME/sqlite_history"
 
 [shell_alias]
 sc = "scooter"
