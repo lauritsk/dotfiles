@@ -1630,62 +1630,62 @@ checksum = "sha256:b9b12eaeba43acf5671acf3857d947525440b544185a8db34ea557199a090
 url = "https://github.com/tmux/tmux-builds/releases/download/v3.6a/tmux-3.6a-macos-x86_64.tar.gz"
 
 [[tools.topgrade]]
-version = "17.4.0"
+version = "17.5.0"
 backend = "aqua:topgrade-rs/topgrade"
 
 [tools.topgrade."platforms.linux-arm64"]
-checksum = "sha256:db2db36402adf3dc243d5c148a4ec45d4bdea303fdeddb7d8c4edddd7af369b2"
-url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrade-v17.4.0-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:09de53d3bd458c8aa0ff687d46a834f8a04d0d30e6c6d98573730a3e893c2136"
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.5.0/topgrade-v17.5.0-aarch64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
 
 [tools.topgrade."platforms.linux-arm64-musl"]
-checksum = "sha256:db2db36402adf3dc243d5c148a4ec45d4bdea303fdeddb7d8c4edddd7af369b2"
-url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrade-v17.4.0-aarch64-unknown-linux-musl.tar.gz"
+checksum = "sha256:09de53d3bd458c8aa0ff687d46a834f8a04d0d30e6c6d98573730a3e893c2136"
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.5.0/topgrade-v17.5.0-aarch64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
 
 [tools.topgrade."platforms.linux-x64"]
-checksum = "sha256:d1496f23defc84cb3252cbe75e919b71cd4a34d56a77973134de25ed81f29ad0"
-url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrade-v17.4.0-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:a424d38c6e0bddd33633e7622788d8d39ceeeb190a11ebf1b779b77dfeeffed3"
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.5.0/topgrade-v17.5.0-x86_64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
 
 [tools.topgrade."platforms.linux-x64-baseline"]
-checksum = "sha256:d1496f23defc84cb3252cbe75e919b71cd4a34d56a77973134de25ed81f29ad0"
-url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrade-v17.4.0-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:a424d38c6e0bddd33633e7622788d8d39ceeeb190a11ebf1b779b77dfeeffed3"
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.5.0/topgrade-v17.5.0-x86_64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
 
 [tools.topgrade."platforms.linux-x64-musl"]
-checksum = "sha256:d1496f23defc84cb3252cbe75e919b71cd4a34d56a77973134de25ed81f29ad0"
-url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrade-v17.4.0-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:a424d38c6e0bddd33633e7622788d8d39ceeeb190a11ebf1b779b77dfeeffed3"
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.5.0/topgrade-v17.5.0-x86_64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
 
 [tools.topgrade."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:d1496f23defc84cb3252cbe75e919b71cd4a34d56a77973134de25ed81f29ad0"
-url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrade-v17.4.0-x86_64-unknown-linux-musl.tar.gz"
+checksum = "sha256:a424d38c6e0bddd33633e7622788d8d39ceeeb190a11ebf1b779b77dfeeffed3"
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.5.0/topgrade-v17.5.0-x86_64-unknown-linux-musl.tar.gz"
 provenance = "github-attestations"
 
 [tools.topgrade."platforms.macos-arm64"]
-checksum = "sha256:f129657078c4bd38463a23c5727b1ecf984658c030085231bab9a024460a0873"
-url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrade-v17.4.0-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:0405706a87a98755bb6eb49ab46611f8a69650afd0f875b9d8116418255711cc"
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.5.0/topgrade-v17.5.0-aarch64-apple-darwin.tar.gz"
 provenance = "github-attestations"
 
 [tools.topgrade."platforms.macos-x64"]
-checksum = "sha256:39639c63ec8f6e88734d69ec015a6e92d1887209bdd28b8d4a5fbdde4498266e"
-url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrade-v17.4.0-x86_64-apple-darwin.tar.gz"
+checksum = "sha256:55b85d93ab27dde18eaf595884b308db181bac9e4c7a1c7b8e57cca3a14686ca"
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.5.0/topgrade-v17.5.0-x86_64-apple-darwin.tar.gz"
 provenance = "github-attestations"
 
 [tools.topgrade."platforms.macos-x64-baseline"]
-checksum = "sha256:39639c63ec8f6e88734d69ec015a6e92d1887209bdd28b8d4a5fbdde4498266e"
-url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrade-v17.4.0-x86_64-apple-darwin.tar.gz"
+checksum = "sha256:55b85d93ab27dde18eaf595884b308db181bac9e4c7a1c7b8e57cca3a14686ca"
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.5.0/topgrade-v17.5.0-x86_64-apple-darwin.tar.gz"
 provenance = "github-attestations"
 
 [tools.topgrade."platforms.windows-x64"]
-checksum = "sha256:5d9f278b1e3f1fbfbc85c31d661f347e6b1bb447f4482a7b3e6240cc8870d913"
-url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrade-v17.4.0-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:17595497b75860e222ab1771a32c2470739cd03f3dba9e1eff71107354f935e6"
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.5.0/topgrade-v17.5.0-x86_64-pc-windows-msvc.zip"
 provenance = "github-attestations"
 
 [tools.topgrade."platforms.windows-x64-baseline"]
-checksum = "sha256:5d9f278b1e3f1fbfbc85c31d661f347e6b1bb447f4482a7b3e6240cc8870d913"
-url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.4.0/topgrade-v17.4.0-x86_64-pc-windows-msvc.zip"
+checksum = "sha256:17595497b75860e222ab1771a32c2470739cd03f3dba9e1eff71107354f935e6"
+url = "https://github.com/topgrade-rs/topgrade/releases/download/v17.5.0/topgrade-v17.5.0-x86_64-pc-windows-msvc.zip"
 provenance = "github-attestations"
 
 [[tools.usage]]
