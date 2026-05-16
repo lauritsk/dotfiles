@@ -1,5 +1,4 @@
 [settings]
-color_theme = "catppuccin"
 experimental = true
 trusted_config_paths = ["~/Projects"]
 pin = true
@@ -19,9 +18,6 @@ use_git_credentials = true
 [env]
 fish_greeting = ""
 fish_key_bindings = "fish_vi_key_bindings"
-BAT_THEME_LIGHT = "Catppuccin Latte"
-BAT_THEME_DARK = "Catppuccin Mocha"
-SHELL = "fish"
 EDITOR = "zed --wait"
 PAGER = "bat"
 XDG_CONFIG_HOME = "$HOME/.config"
@@ -64,7 +60,6 @@ CODEX_HOME="$XDG_CONFIG_HOME/codex"
 PI_CODING_AGENT_DIR="${XDG_CONFIG_HOME}/pi"
 
 [shell_alias]
-sc = "scooter"
 cm = "chezmoi"
 lg = "lazygit"
 ld = "lazydocker"
@@ -74,7 +69,6 @@ dc = "docker compose"
 
 [tools]
 bat = "0.26.1"
-cocogitto = "7.0.0"
 delta = "0.19.2"
 fd = "10.4.2"
 fzf = "0.72.0"
@@ -85,7 +79,6 @@ lazydocker = "0.25.2"
 lazygit = "0.61.1"
 node = "26.1.0"
 rg = "15.1.0"
-scooter = "0.9.1"
 starship = "1.25.1"
 usage = "3.3.0"
 uv = "0.11.14"
