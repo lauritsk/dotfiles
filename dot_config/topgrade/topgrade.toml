@@ -37,7 +37,7 @@ first = ["chezmoi"]
 last = ["system"]
 
 # Ignore failures for these steps
-ignore_failures = ["helix"]
+ignore_failures = [""]
 
 # List of remote machines with Topgrade installed on them
 # remote_topgrades = ["toothless", "pi", "parnas"]
