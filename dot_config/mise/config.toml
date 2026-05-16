@@ -60,6 +60,7 @@ CODEX_HOME="$XDG_CONFIG_HOME/codex"
 PI_CODING_AGENT_DIR="${XDG_CONFIG_HOME}/pi"
 
 [shell_alias]
+y = "yazi"
 cm = "chezmoi"
 lg = "lazygit"
 ld = "lazydocker"
