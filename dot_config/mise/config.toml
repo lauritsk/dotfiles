@@ -8,7 +8,7 @@ minimum_release_age = "3d"
 env_shell_expand = true
 
 [settings.npm]
-package_manager = "aube"
+package_manager = "pnpm"
 
 [settings.python]
 uv_venv_auto = "create|source"
@@ -109,6 +109,5 @@ cosign = "3.0.6"
 topgrade = "17.5.0"
 lazyjournal = "0.8.6"
 pnpm = "11.1.2"
-aube = "1.14.1"
 viteplus = "0.1.21"
 pi = "0.74.0"
