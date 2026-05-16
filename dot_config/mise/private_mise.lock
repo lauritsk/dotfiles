@@ -302,10 +302,6 @@ url = "https://github.com/dandavison/delta/releases/download/0.19.2/delta-0.19.2
 checksum = "sha256:ac8ebb4a9f1cbee8b9ea897ba119808a244181adae6f3bed1f3b6b923c50b557"
 url = "https://github.com/dandavison/delta/releases/download/0.19.2/delta-0.19.2-x86_64-pc-windows-msvc.zip"
 
-[[tools.eza]]
-version = "0.23.4"
-backend = "asdf:eza"
-
 [[tools.fd]]
 version = "10.4.2"
 backend = "aqua:sharkdp/fd"
