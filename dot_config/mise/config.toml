@@ -4,7 +4,7 @@ experimental = true
 trusted_config_paths = ["~/Projects"]
 pin = true
 lockfile = true
-# minimum_release_age = "7d"
+minimum_release_age = "3d"
 env_shell_expand = true
 
 [settings.npm]
