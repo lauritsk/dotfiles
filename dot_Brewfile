@@ -1,0 +1,80 @@
+# Create and run Linux containers using lightweight virtual machines
+brew "container"
+# Perl lib for reading and writing EXIF metadata
+brew "exiftool"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# GNU Privacy Guard (OpenPGP)
+brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Post-modern modal text editor
+brew "helix"
+# Tools and libraries to manipulate images in select formats
+brew "imagemagick"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Mac App Store command-line interface
+brew "mas"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# OpenBSD freely-licensed SSH connectivity tools
+brew "openssh"
+# 7-Zip (high compression file archiver) implementation
+brew "p7zip"
+# AI agent toolkit
+brew "pi-coding-agent"
+# Fast, disk space efficient package manager
+brew "pnpm"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
+# SVG rendering tool and library
+brew "resvg"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
+# Unified toolchain and entry point for web development
+brew "vite-plus"
+# Blazing fast terminal file manager written in Rust, based on async I/O
+brew "yazi"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+cask "font-monaspace"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Chromium-based web browser
+cask "helium-browser"
+# Instant messaging application focusing on security
+cask "signal"
+# Administration tool for MikroTik RouterOS
+cask "winbox"
+# Network protocol analyzer
+cask "wireshark-app"
+# Multiplayer code editor
+cask "zed"
+mas "Bitwarden", id: 1352778147
+mas "DigiDoc4", id: 1370791134
+mas "Infuse", id: 1136220934
+mas "Reeder", id: 6475002485
+mas "Tailscale", id: 1475387142
+mas "uBlock Origin Lite", id: 6745342698
+mas "Web eID", id: 1576665083
+mas "WhatsApp", id: 310633997
+mas "Windows App", id: 1295203466
+mas "WireGuard", id: 1451685025
+go "github.com/bootdotdev/bootdev"
