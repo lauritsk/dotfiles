@@ -1,9 +1,23 @@
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
+# Automate deployment, configuration, and upgrading
+brew "ansible"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Language Server for Ansible Files
+brew "ansible-language-server"
+# Checks ansible playbooks for practices and behaviour
+brew "ansible-lint"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
 # Create and run Linux containers using lightweight virtual machines
 brew "container"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
+# Modern, maintained replacement for ls
+brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Play, record, convert, and stream select audio and video codecs
@@ -24,20 +38,26 @@ brew "gnupg"
 brew "go"
 # Post-modern modal text editor
 brew "helix"
+# Agent multiplexer that lives in your terminal
+brew "herdr"
 # Tools and libraries to manipulate images in select formats
 brew "imagemagick"
+# CLI client for interacting with Incus
+brew "incus"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Handy way to save and run project-specific commands
+brew "just"
+# Language server for just
+brew "just-lsp"
 # Simple terminal UI for git commands
 brew "lazygit"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.14"
 # Mac App Store command-line interface
 brew "mas"
 # Polyglot runtime manager (asdf rust clone)
 brew "mise"
-# Open-source, cross-platform JavaScript runtime environment
-brew "node"
+# Deep clean and optimize your Mac
+brew "mole"
 # OpenBSD freely-licensed SSH connectivity tools
 brew "openssh"
 # 7-Zip (high compression file archiver) implementation
@@ -56,6 +76,10 @@ brew "ripgrep"
 brew "ruff"
 # Cross-shell prompt for astronauts
 brew "starship"
+# CLI for out-of-band management of Kubernetes nodes created by Talos
+brew "talosctl"
+# Terminal multiplexer
+brew "tmux"
 # Extremely fast Python type checker, written in Rust
 brew "ty"
 # Extremely fast Python package installer and resolver, written in Rust
@@ -66,13 +90,25 @@ brew "vite-plus"
 brew "yazi"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
+# Data recovery software
+cask "disk-drill"
 cask "font-monaspace"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Chromium-based web browser
 cask "helium-browser"
+# Audible audiobook manager and liberator
+cask "libation"
+# Imaging utility to install operating systems to a microSD card
+cask "raspberry-pi-imager"
+# Open source virtual/remote desktop application
+cask "rustdesk"
 # Instant messaging application focusing on security
 cask "signal"
+# Open-source BitTorrent client
+cask "transmission"
 # Administration tool for MikroTik RouterOS
 cask "winbox"
 # Network protocol analyzer
@@ -81,7 +117,9 @@ cask "wireshark-app"
 cask "zed"
 mas "Bitwarden", id: 1352778147
 mas "DigiDoc4", id: 1370791134
+mas "Endel", id: 1346247457
 mas "Infuse", id: 1136220934
+mas "Liftin", id: 1445041669
 mas "Reeder", id: 6475002485
 mas "Tailscale", id: 1475387142
 mas "uBlock Origin Lite", id: 6745342698
