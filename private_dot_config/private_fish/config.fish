@@ -4,8 +4,8 @@ if status is-interactive
     fish_add_path /opt/homebrew/bin
     fish_add_path /opt/homebrew/sbin
     fish_add_path ~/go/bin
-    atuin init fish | source
     mise activate fish | source
+    atuin init fish | source
     starship init fish | source
     zoxide init fish --cmd cd | source
 end
