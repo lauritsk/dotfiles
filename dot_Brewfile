@@ -8,6 +8,8 @@ brew "node"
 brew "ansible-language-server"
 # Checks ansible playbooks for practices and behaviour
 brew "ansible-lint"
+# Improved shell history for zsh, bash, fish and nushell
+brew "atuin"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Manage your dotfiles across multiple diverse machines, securely
