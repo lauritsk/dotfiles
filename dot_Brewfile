@@ -12,6 +12,8 @@ brew "ansible-lint"
 brew "atuin"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Translates human-readable Butane Configs into machine-readable Ignition Configs
+brew "butane"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
 # Create and run Linux containers using lightweight virtual machines
@@ -52,6 +54,8 @@ brew "jq"
 brew "just"
 # Language server for just
 brew "just-lsp"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
 # Simple terminal UI for git commands
 brew "lazygit"
 # Mac App Store command-line interface
@@ -103,6 +107,8 @@ cask "ghostty"
 cask "helium-browser"
 # Audible audiobook manager and liberator
 cask "libation"
+# Local-first alternative to Logitech Options+ for HID++ devices
+cask "openlogi"
 # Imaging utility to install operating systems to a microSD card
 cask "raspberry-pi-imager"
 # Open source virtual/remote desktop application
