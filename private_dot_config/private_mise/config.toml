@@ -3,16 +3,6 @@ lockfile = true
 
 [env]
 SHELL="fish"
-EDITOR="hx"
-VISUAL="hx"
-
-[bootstrap.packages]
-"brew:ffmpeg" = "latest"
-"brew:exiftool" = "latest"
-"brew:imagemagick" = "latest"
-"brew:resvg" = "latest"
-"brew:poppler" = "latest"
-"brew:p7zip" = "latest"
 
 [tools]
 usage = "latest"
@@ -23,12 +13,9 @@ fzf = "latest"
 fd = "latest"
 rg = "latest"
 bat = "latest"
-yazi = "latest"
-helix = "latest"
 pi = "latest"
 gh = "latest"
 lazygit = "latest"
-lazydocker = "latest"
 uv = "latest"
 pnpm = "latest"
 go = "latest"
