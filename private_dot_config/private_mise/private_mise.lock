@@ -49,46 +49,6 @@ url = "https://github.com/lxc/incus/releases/download/v7.4.0/bin.windows.incus.x
 url_api = "https://api.github.com/repos/lxc/incus/releases/assets/532980194"
 provenance = "github-attestations"
 
-[[tools.bat]]
-version = "0.26.1"
-backend = "aqua:sharkdp/bat"
-specifiers = ["latest"]
-
-[tools.bat."platforms.linux-arm64"]
-checksum = "sha256:422eb73e11c854fddd99f5ca8461c2f1d6e6dce0a2a8c3d5daade5ffcb6564aa"
-url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323548647"
-
-[tools.bat."platforms.linux-arm64-musl"]
-checksum = "sha256:6369242c584065f195fb20cb36fbd7cb63ae690605bbe89868a7596b596c2c23"
-url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323548153"
-
-[tools.bat."platforms.linux-x64"]
-checksum = "sha256:726f04c8f576a7fd18b7634f1bbf2f915c43494c1c0f013baa3287edb0d5a2a3"
-url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323549181"
-
-[tools.bat."platforms.linux-x64-musl"]
-checksum = "sha256:0dcd8ac79732c0d5b136f11f4ee00e581440e16a44eab5b3105b611bbf2cf191"
-url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323549429"
-
-[tools.bat."platforms.macos-arm64"]
-checksum = "sha256:e30beff26779c9bf60bb541e1d79046250cb74378f2757f8eb250afddb19e114"
-url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323548442"
-
-[tools.bat."platforms.macos-x64"]
-checksum = "sha256:830d63b0bba1fa040542ec569e3cf77f60d3356b9de75116a344b061e0894245"
-url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323549786"
-
-[tools.bat."platforms.windows-x64"]
-checksum = "sha256:0f729b4b6f5f28d395c641eacc2e9ff68d0096b85aa0eec344aa62425144b69b"
-url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323549116"
-
 [[tools.chezmoi]]
 version = "2.72.1"
 backend = "aqua:twpayne/chezmoi"
@@ -170,46 +130,6 @@ url_api = "https://api.github.com/repos/sharkdp/fd/releases/assets/530481346"
 checksum = "sha256:a227701b8551c35a9931d9f6da75503cf86d88e182d71fb849a70864c5d57cd7"
 url = "https://github.com/sharkdp/fd/releases/download/v10.5.0/fd-v10.5.0-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/sharkdp/fd/releases/assets/530482901"
-
-[[tools.fzf]]
-version = "0.74.3"
-backend = "aqua:junegunn/fzf"
-specifiers = ["latest"]
-
-[tools.fzf."platforms.linux-arm64"]
-checksum = "sha256:4a17a17b46bd0c4873e995533de508995c11572c0be0664a5dbcf13f60463046"
-url = "https://github.com/junegunn/fzf/releases/download/v0.74.3/fzf-0.74.3-linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/517537065"
-
-[tools.fzf."platforms.linux-arm64-musl"]
-checksum = "sha256:4a17a17b46bd0c4873e995533de508995c11572c0be0664a5dbcf13f60463046"
-url = "https://github.com/junegunn/fzf/releases/download/v0.74.3/fzf-0.74.3-linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/517537065"
-
-[tools.fzf."platforms.linux-x64"]
-checksum = "sha256:3501a595e4b5c40a6b047340a0e8f805c46fd4e61ef95ef8a136ba8c61cf6f22"
-url = "https://github.com/junegunn/fzf/releases/download/v0.74.3/fzf-0.74.3-linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/517537066"
-
-[tools.fzf."platforms.linux-x64-musl"]
-checksum = "sha256:3501a595e4b5c40a6b047340a0e8f805c46fd4e61ef95ef8a136ba8c61cf6f22"
-url = "https://github.com/junegunn/fzf/releases/download/v0.74.3/fzf-0.74.3-linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/517537066"
-
-[tools.fzf."platforms.macos-arm64"]
-checksum = "sha256:1f8501cea4f9c0c2d6110d0ff75d0ec9451cd9d7524d9a26244a154ea89f3bd5"
-url = "https://github.com/junegunn/fzf/releases/download/v0.74.3/fzf-0.74.3-darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/517537091"
-
-[tools.fzf."platforms.macos-x64"]
-checksum = "sha256:b8a231250eedec244539ade3dc437bcd60e545a099c6cc0c8a11bdbd8574b9bc"
-url = "https://github.com/junegunn/fzf/releases/download/v0.74.3/fzf-0.74.3-darwin_amd64.tar.gz"
-url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/517537094"
-
-[tools.fzf."platforms.windows-x64"]
-checksum = "sha256:cf5c137d9b391c3988c54af8f5fc490ffbef6f70444651e7d57fdb45ad04c8bd"
-url = "https://github.com/junegunn/fzf/releases/download/v0.74.3/fzf-0.74.3-windows_amd64.zip"
-url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/517537078"
 
 [[tools.go]]
 version = "1.27.1"
