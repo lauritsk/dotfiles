@@ -3,7 +3,7 @@
 [user]
         name = Karl Hans Laurits
         email = karl@laurits.dev
-        signingkey = {{ .chezmoi.homeDir }}/.ssh/id_ed25519.pub
+        signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIZnJ+xjVH8DBYOg6HQEa2VN0Np/e7Db13y0pCU/Qqlh karl@laurits.dev
 [gpg]
         format = ssh
 [core]
@@ -43,9 +43,3 @@
         mnemonicPrefix = true
 [help]
         autocorrect = prompt
-[credential "https://github.com"]
-        helper =
-        helper = !{{ .chezmoi.homeDir }}/.local/share/mise/shims/gh auth git-credential
-[credential "https://gist.github.com"]
-        helper =
-        helper = !{{ .chezmoi.homeDir }}/.local/share/mise/shims/gh auth git-credential
