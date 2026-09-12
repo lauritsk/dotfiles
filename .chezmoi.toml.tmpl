@@ -1,7 +1,7 @@
 encryption = "age"
 
 [age]
-    identity = {{ joinPath .chezmoi.homeDir ".config/chezmoi/key.txt" | quote }}
+    identity = "{{ .chezmoi.homeDir }}/.config/chezmoi/key.txt"
     recipient = "age19wczragzgawvwhh2dnu02nl2hk3rlmsx435uj3402eruqq6u2pjqef646f"
 
 [git]
