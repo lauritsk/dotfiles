@@ -2,57 +2,13 @@
 
 lockfile_version = 1
 
-[[tools."aqua:lxc/incus"]]
-version = "7.4.0"
-backend = "aqua:lxc/incus"
-specifiers = ["latest"]
-
-[tools."aqua:lxc/incus"."platforms.linux-arm64"]
-checksum = "sha256:101b1a602c9ce2bae3a4b3277ed574acd32c177f297db3daa80ea2fec4e406fb"
-url = "https://github.com/lxc/incus/releases/download/v7.4.0/bin.linux.incus.aarch64"
-url_api = "https://api.github.com/repos/lxc/incus/releases/assets/532980221"
-provenance = "github-attestations"
-
-[tools."aqua:lxc/incus"."platforms.linux-arm64-musl"]
-checksum = "sha256:101b1a602c9ce2bae3a4b3277ed574acd32c177f297db3daa80ea2fec4e406fb"
-url = "https://github.com/lxc/incus/releases/download/v7.4.0/bin.linux.incus.aarch64"
-url_api = "https://api.github.com/repos/lxc/incus/releases/assets/532980221"
-provenance = "github-attestations"
-
-[tools."aqua:lxc/incus"."platforms.linux-x64"]
-checksum = "sha256:2fa9b2699672225dde5290962f4087b426b5ecbd4fed0df8e430687d3b76b500"
-url = "https://github.com/lxc/incus/releases/download/v7.4.0/bin.linux.incus.x86_64"
-url_api = "https://api.github.com/repos/lxc/incus/releases/assets/532980174"
-provenance = "github-attestations"
-
-[tools."aqua:lxc/incus"."platforms.linux-x64-musl"]
-checksum = "sha256:2fa9b2699672225dde5290962f4087b426b5ecbd4fed0df8e430687d3b76b500"
-url = "https://github.com/lxc/incus/releases/download/v7.4.0/bin.linux.incus.x86_64"
-url_api = "https://api.github.com/repos/lxc/incus/releases/assets/532980174"
-provenance = "github-attestations"
-
-[tools."aqua:lxc/incus"."platforms.macos-arm64"]
-checksum = "sha256:6b3f916e769f1086690ba45d96e5a7cbb570d4589481eb6173672870ef8e4724"
-url = "https://github.com/lxc/incus/releases/download/v7.4.0/bin.macos.incus.aarch64"
-url_api = "https://api.github.com/repos/lxc/incus/releases/assets/532980176"
-provenance = "github-attestations"
-
-[tools."aqua:lxc/incus"."platforms.macos-x64"]
-checksum = "sha256:edbeacd3ef8016fab1baa31b86763c3c4311810aff660d1e591fad3f2fbfed7e"
-url = "https://github.com/lxc/incus/releases/download/v7.4.0/bin.macos.incus.x86_64"
-url_api = "https://api.github.com/repos/lxc/incus/releases/assets/532980217"
-provenance = "github-attestations"
-
-[tools."aqua:lxc/incus"."platforms.windows-x64"]
-checksum = "sha256:61fe7d129e8c3fd6dc4b11d20ec69f023d9f37e08ee7b1bb3f16d7ee4ad2739e"
-url = "https://github.com/lxc/incus/releases/download/v7.4.0/bin.windows.incus.x86_64.exe"
-url_api = "https://api.github.com/repos/lxc/incus/releases/assets/532980194"
-provenance = "github-attestations"
-
 [[tools.chezmoi]]
 version = "2.72.1"
 backend = "aqua:twpayne/chezmoi"
-specifiers = ["latest"]
+specifiers = [
+    "2.72.1",
+    "latest",
+]
 
 [tools.chezmoi."platforms.linux-arm64"]
 checksum = "sha256:75508ef41216b6d64f3145986b751729d7f92d09c6bad77d51cf2895ab35a508"
@@ -99,7 +55,10 @@ provenance = "cosign"
 [[tools.fd]]
 version = "10.5.0"
 backend = "aqua:sharkdp/fd"
-specifiers = ["latest"]
+specifiers = [
+    "10.5.0",
+    "latest",
+]
 
 [tools.fd."platforms.linux-arm64"]
 checksum = "sha256:c0ee43802e3313a317c5af2f4eabd6ba13eeedd595af9775f05e18a13ac4f52c"
@@ -134,7 +93,10 @@ url_api = "https://api.github.com/repos/sharkdp/fd/releases/assets/530482901"
 [[tools.go]]
 version = "1.27.1"
 backend = "core:go"
-specifiers = ["latest"]
+specifiers = [
+    "1.27.1",
+    "latest",
+]
 
 [tools.go."platforms.linux-arm64"]
 checksum = "sha256:3450b45a3f9ee8568792736a5c5e70a1f2e9b36c35a8f74958c03e51d7d92bec"
@@ -167,7 +129,10 @@ url = "https://dl.google.com/go/go1.27.1.windows-amd64.zip"
 [[tools.lazygit]]
 version = "0.65.0"
 backend = "aqua:jesseduffield/lazygit"
-specifiers = ["latest"]
+specifiers = [
+    "0.65.0",
+    "latest",
+]
 
 [tools.lazygit."platforms.linux-arm64"]
 checksum = "sha256:d954a09c128bd37b2bd0d254308474e87de3729cfe0e37f5b46a49357a4fe257"
@@ -207,7 +172,10 @@ url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/54
 [[tools.pi]]
 version = "0.85.1"
 backend = "aqua:earendil-works/pi"
-specifiers = ["latest"]
+specifiers = [
+    "0.85.1",
+    "latest",
+]
 
 [tools.pi."platforms.linux-arm64"]
 checksum = "sha256:042d20ae885ee4f3b102815f3280b962c377b2e9fb44de4037908cc530eae4d4"
@@ -247,7 +215,10 @@ url_api = "https://api.github.com/repos/earendil-works/pi/releases/assets/545797
 [[tools.pnpm]]
 version = "12.4.1"
 backend = "aqua:pnpm/pnpm"
-specifiers = ["latest"]
+specifiers = [
+    "12.4.1",
+    "latest",
+]
 
 [tools.pnpm."platforms.linux-arm64"]
 checksum = "sha256:14f7a3e67d658d4ca8002c2aa0567f27dc5fe056a9f29f98ba7d2bfd6c81591b"
@@ -288,7 +259,10 @@ provenance = "github-attestations"
 [[tools.rg]]
 version = "15.2.0"
 backend = "aqua:BurntSushi/ripgrep"
-specifiers = ["latest"]
+specifiers = [
+    "15.2.0",
+    "latest",
+]
 
 [tools.rg."platforms.linux-arm64"]
 checksum = "sha256:a740b91c82eaf9914cfedd353572f2791cbe0162c84101ee0951058f4dcbc90d"
@@ -328,7 +302,10 @@ url_api = "https://api.github.com/repos/BurntSushi/ripgrep/releases/assets/47811
 [[tools.usage]]
 version = "6.8.0"
 backend = "aqua:jdx/usage"
-specifiers = ["latest"]
+specifiers = [
+    "6.8.0",
+    "latest",
+]
 
 [tools.usage."platforms.linux-arm64"]
 checksum = "sha256:5ac012d6a7a1aaa5049e22afb77c3ec76768c2203d323d6d26a7b494ddccc780"
@@ -368,7 +345,10 @@ url_api = "https://api.github.com/repos/jdx/usage/releases/assets/547482883"
 [[tools.uv]]
 version = "0.12.13"
 backend = "aqua:astral-sh/uv"
-specifiers = ["latest"]
+specifiers = [
+    "0.12.13",
+    "latest",
+]
 
 [tools.uv."platforms.linux-arm64"]
 checksum = "sha256:2eaa5d94f5db7b3a1a092156b9420459e42ab0217d917fe74a876309cef9b5e9"
