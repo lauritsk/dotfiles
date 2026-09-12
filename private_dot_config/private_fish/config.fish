@@ -4,7 +4,5 @@ if status is-interactive
     fish_add_path /home/linuxbrew/.linuxbrew/bin
     fish_add_path /home/linuxbrew/.linuxbrew/sbin
     mise activate fish | source
-    atuin init fish | source
-    starship init fish | source
     zoxide init fish --cmd cd | source
 end
