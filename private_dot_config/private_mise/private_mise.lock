@@ -244,46 +244,6 @@ url = "https://dl.google.com/go/go1.27.1.darwin-amd64.tar.gz"
 checksum = "sha256:a3911b5e0e1b1053f25ed0675f4c1c6aad1e2bfcf253df2b9be4caabd2edd95d"
 url = "https://dl.google.com/go/go1.27.1.windows-amd64.zip"
 
-[[tools.herdr]]
-version = "0.9.0"
-backend = "aqua:herdrdev/herdr"
-specifiers = ["latest"]
-
-[tools.herdr."platforms.linux-arm64"]
-checksum = "sha256:9c8db20fb7e7427b138d5367113f1621ffd319f2f65d6f009e2594029115f0d2"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.0/herdr-linux-aarch64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/549270160"
-
-[tools.herdr."platforms.linux-arm64-musl"]
-checksum = "sha256:9c8db20fb7e7427b138d5367113f1621ffd319f2f65d6f009e2594029115f0d2"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.0/herdr-linux-aarch64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/549270160"
-
-[tools.herdr."platforms.linux-x64"]
-checksum = "sha256:4fa1a01158dd8043da92d31b270780b0dcc10603038d9b61cac4d81ab63fb71f"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.0/herdr-linux-x86_64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/549270163"
-
-[tools.herdr."platforms.linux-x64-musl"]
-checksum = "sha256:4fa1a01158dd8043da92d31b270780b0dcc10603038d9b61cac4d81ab63fb71f"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.0/herdr-linux-x86_64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/549270163"
-
-[tools.herdr."platforms.macos-arm64"]
-checksum = "sha256:32b53df09872628059c789a69f02a6b8e29e14ddf26711421f3463f70c1aef17"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.0/herdr-macos-aarch64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/549270162"
-
-[tools.herdr."platforms.macos-x64"]
-checksum = "sha256:d0c920b2a126a74809fa1491411c9a097a44786cac9c2ca51b818a995581cf16"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.0/herdr-macos-x86_64"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/549270161"
-
-[tools.herdr."platforms.windows-x64"]
-checksum = "sha256:b4508c445de1c1a68c760a01735da2aba2fa214b2aafd4b07f732e49b2a64b11"
-url = "https://github.com/herdrdev/herdr/releases/download/v0.9.0/herdr-windows-x86_64.zip"
-url_api = "https://api.github.com/repos/herdrdev/herdr/releases/assets/549270164"
-
 [[tools.lazygit]]
 version = "0.65.0"
 backend = "aqua:jesseduffield/lazygit"
